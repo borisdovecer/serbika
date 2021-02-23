@@ -11,6 +11,7 @@
     "react-confetti": "^6.0.0",
     "react-delay-render": "^0.1.2",
     "react-dom": "^17.0.1",
+    "react-draggable": "^4.4.3",
     "react-full-screen": "^0.3.1",
     "react-preload-image": "^1.0.7",
     "react-router-dom": "^5.2.0",
