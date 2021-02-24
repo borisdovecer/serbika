@@ -45,14 +45,11 @@ class Spajanje extends React.Component{
         if(selected === guessed && guessed !== ""){
             setTimeout( () => {
                 pojmovi.forEach( function (p){
-                    console.log(p.id + " : " + selected)
-
                     if(p.id === parseInt(selected)){
                         console.log("booorisss")
                         p.color = "#46025f"
                         p.found = true
                     }
-
                 })
 
                 this.setState({pojmovi:pojmovi, selected: "", guessed: "" })

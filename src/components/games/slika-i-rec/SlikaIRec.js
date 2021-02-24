@@ -1,6 +1,8 @@
 import React from 'react'
 
 import RecMore from './RecMore'
+import RecSirena from "./RecSirena";
+import RecMotor from "./RecMotor";
 
 class SlikaIRec extends React.Component {
     state = {
@@ -9,14 +11,32 @@ class SlikaIRec extends React.Component {
     }
 
     componentDidMount() {
-        
+        if(this.props.slide === "more"){
+            this.setState({ rec: RecMore })
+        }
+        if(this.props.slide === "sirena"){
+            this.setState({ rec: RecSirena })
+        }
+        if(this.props.slide === "motor"){
+            this.setState({ rec: RecMotor })
+        }
+
     }
 
     handleClick = (e) => {
         let value = e.target.attributes.name.value
-        console.log(value);
-        if(value === this.state.rec.correct){
-            this.setState({complete: true})
+        let {rec} = this.state
+
+        if(value === rec.correct){
+            for(let i=0; i<rec.slova.length; i++){
+                if(rec.slova[i] === ""){
+                    rec.slova[i] = rec.correct
+                }
+            }
+
+            console.log(this.state.rec)
+
+            this.setState({ rec: rec, complete: true})
         }
 
     }
@@ -28,7 +48,7 @@ class SlikaIRec extends React.Component {
                 {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
 
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
-                    <img src={"./slides/" + rec.image } />
+                    <img src={"./slides/" + rec.image } width={"500px"} />
                     {rec.ponudjena.map((p,i) =>
                         <div style={{width: "200px", height:"200px" }}>
                             <img
@@ -46,14 +66,15 @@ class SlikaIRec extends React.Component {
                 </div>
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
                     {rec.slova.map((s,i) =>
-                        <div style={{width: "200px", height:"200px" }}>
-                            <img
+                        <div style={{width: "200px", height:"200px", backgroundColor: "#628ba5", margin: "20px", borderRadius: "25px"}}>
+                            {s !== "" ? <img
                                 style={{width:"100%"}}
                                 onClick={this.handleClick}
                                 key={i}
                                 name={s}
                                 src={"./slides/" + s }
-                            />
+                                /> : null }
+
                         </div>
                     )}
                 </div>

@@ -339,3 +339,8 @@
     text-shadow: 0px 0px 25px #0b9b00;
   }
 }
+
+.fake {
+  transform: scaleX(-1);
+}
+
