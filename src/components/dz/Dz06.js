@@ -14,6 +14,7 @@ import SlikaIRec from "../games/slika-i-rec/SlikaIRec"
 import Pravilna from "../games/pravilna-slova/Pravilna"
 import Opisivanje from "../games/opisivanje/Opisivanje"
 import Dzak from "../games/dzak/Dzak"
+import Leptiri from "../games/leptiri/Leptiri"
 
 import '../../App.css';
 import '../../bootstrap.css'
@@ -38,6 +39,7 @@ class Dz06 extends React.Component {
                 { this.state.slide === 6 ? <Pravilna slide={"dz06"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 7 ? <Opisivanje slide={"dz06"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 8 ? <Dzak slide={"dz06"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 9 ? <Leptiri slide={"dz06"} nextSlide={this.nextSlide}/> : null}
 
             </div>
         );
