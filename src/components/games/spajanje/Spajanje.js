@@ -29,7 +29,6 @@ class Spajanje extends React.Component{
         let row = e.target.attributes.row.value
 
         if(row === "lower"){
-
             this.setState({ selected: id })
         }else{
 
@@ -41,24 +40,23 @@ class Spajanje extends React.Component{
 
     compare = () => {
         let { pojmovi, selected, guessed } = this.state
-        console.log(selected + " ; " + guessed)
+
         if(selected === guessed && guessed !== ""){
             setTimeout( () => {
                 pojmovi.forEach( function (p){
                     if(p.id === parseInt(selected)){
-                        console.log("booorisss")
-                        p.color = "#46025f"
+                      //  p.color = "#46025f"
                         p.found = true
                     }
                 })
 
                 this.setState({pojmovi:pojmovi, selected: "", guessed: "" })
-            }, 1000 )
+            }, 200 )
         }else if( guessed.length >0 ){
             setTimeout( () => {
                 console.log("neee")
                 this.setState({ selected: "", guessed: "" })
-            }, 1000 )
+            }, 200 )
         }
 
     }
@@ -75,13 +73,12 @@ class Spajanje extends React.Component{
             setTimeout( () => {
                 console.log("pobeda")
                 this.setState({ complete: true })
-            }, 500 )        }
-
-
+            }, 500 )
+        }
     }
 
     render() {
-
+        const poj = this.state.pojmovi
         return(
             <div className={"main"}>
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
@@ -91,30 +88,38 @@ class Spajanje extends React.Component{
                             <div onClick={this.handleClick}
                                  id={p.id}
                                  row="upper"
-                                 style={{width: "200px", height: "200px", backgroundColor: p.color}}
+                                 style={{width: "200px", height: "200px", backgroundColor: p.color, borderRadius: "25px"}}
                             >
+                                {p.found ?  <img
+                                    id={p.id}
+                                    src={'./slides/' + p.image}
+                                    alt={'card'}
+                                    row="lower"
+                                    style={{width:"100%", zIndex:"-50"}}
+                                    onClick={this.handleClick}
+                                /> : null }
+
                             </div>
                         </div>
                     )}
                 </div>
                 {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
+
+
                     {this.state.pojmovi.map( (p, i) =>
                         <div key={i} className={"col-lg-2 col-md-2 col-sm-2"} style={{marginTop: "6%"}}>
-                            <img
+                            {p.found ? null : <img
                                 id={p.id}
                                 src={'./slides/' + p.image}
                                 alt={'card'}
                                 row="lower"
-                                style={{width:"50%", zIndex:"-50"}}
+                                style={{width:"100%", zIndex:"-50"}}
                                 onClick={this.handleClick}
-                            />
+                            /> }
                         </div>
                     )}
                 </div>
-
-                <h1>{this.state.guessed}</h1>
-                <h1>{this.state.selected}</h1>
             </div>
         )
     }

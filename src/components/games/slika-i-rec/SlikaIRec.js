@@ -48,13 +48,14 @@ class SlikaIRec extends React.Component {
                 {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
 
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
-                    <img src={"./slides/" + rec.image } width={"500px"} />
+                    <img src={"./slides/" + rec.image }  alt={'card'}   width={"500px"} />
                     {rec.ponudjena.map((p,i) =>
                         <div style={{width: "200px", height:"200px" }}>
                             <img
                                 style={{width:"100%"}}
                                 onClick={this.handleClick}
                                 key={i}
+                                alt={'card'}
                                 name={p}
                                 src={"./slides/" + p }
                             />
@@ -71,6 +72,7 @@ class SlikaIRec extends React.Component {
                                 style={{width:"100%"}}
                                 onClick={this.handleClick}
                                 key={i}
+                                alt={'card'}
                                 name={s}
                                 src={"./slides/" + s }
                                 /> : null }

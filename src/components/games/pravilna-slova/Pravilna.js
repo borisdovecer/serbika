@@ -10,7 +10,7 @@ class Pravilna extends React.Component {
 
     handleClick = (e) => {
         let fake = e.target.attributes.class.value
-        let {slova} = this.state
+      //  let {slova} = this.state
 
         if(fake === "fake"){
             console.log("ovaj je fake!")

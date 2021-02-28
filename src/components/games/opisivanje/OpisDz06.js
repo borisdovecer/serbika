@@ -1,13 +1,13 @@
 const OpisDz06 = [
     {
         id: 1,
-        text: "To je Marinininina torta...",
-        image: "slika-torta.jpg",
+        text: "То је Маринина торта.",
+        image: "slika-torta.png",
         found: false
     },
     {
         id: 2,
-        text: "Motor juri...",
+        text: "Мотор јури.",
         image: "slika-motor.png",
         found: false
     }

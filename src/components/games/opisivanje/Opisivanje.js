@@ -21,14 +21,20 @@ class Opisivanje extends React.Component {
         return(
             <div className={'main'}>
                 {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
-                <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
+                <div className="row justify-content-center "  style={{marginLeft: 0, marginRight: 0}} >
                     {opis.map((p,i) =>
-                        <div key={i} style={{width: "100%" }}>
-                            <h1>{p.text}</h1>
-                            <div style={{ width: "200px", height:"200px", border:"2px solid#ccc333", borderRadius: "25px"  }}>
-
+                            <div key={i} className={"col-lg-7 col-md-5 col-sm-5"} style={{width: "100%" }}>
+                                <h1 style={{ width: "50%", display:"inline-block" }}>{p.text}</h1>
+                                <div style={{ width: "250px", height:"250px", border:"2px solid#ccc333", borderRadius: "25px", display:"inline-block", margin:"20px" }}>
+                                    <img
+                                        style={{width:"100%"}}
+                                        onClick={this.handleClick}
+                                        alt={'card'}
+                                        key={i}
+                                        src={"./slides/" + p.image }
+                                    />
+                                </div>
                             </div>
-                        </div>
                     )}
                 </div>
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
@@ -37,6 +43,7 @@ class Opisivanje extends React.Component {
                             <img
                                 style={{width:"100%"}}
                                 onClick={this.handleClick}
+                                alt={'card'}
                                 key={i}
                                 src={"./slides/" + p.image }
                             />
