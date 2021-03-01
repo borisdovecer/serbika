@@ -5,34 +5,79 @@ import OpisDz06 from "./OpisDz06"
 class Opisivanje extends React.Component {
     state = {
         opis: OpisDz06,
+        selected: "",
+        guessed: "",
         complete: true
     }
 
     componentDidMount() {
+        if(this.props.slide === "dz06"){
+            this.setState({ opis: OpisDz06 })
+        }
+    }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        this.compare()
+       // this.complete()
     }
 
     handleClick = (e) => {
+        let id = e.target.attributes.id.value
+        let row = e.target.attributes.row.value
 
+        if(row === "lower"){
+            this.setState({ selected: id })
+        }else{
+            this.setState({ guessed: id })
+        }
+    }
+
+    compare = () => {
+        let { opis, selected, guessed } = this.state
+
+        if(selected === guessed && guessed !== ""){
+            setTimeout( () => {
+                opis.forEach( function (p){
+                    if(p.id === parseInt(selected)){
+                        p.found = true
+                    }
+                })
+                this.setState({opis:opis, selected: "", guessed: "" })
+            }, 200 )
+        }else if( guessed.length >0 ){
+            setTimeout( () => {
+                console.log("neee")
+                this.setState({ selected: "", guessed: "" })
+            }, 200 )
+        }
     }
 
     render() {
-        const {opis} = this.state
+        const {opis, guessed, selected} = this.state
         return(
             <div className={'main'}>
+
                 {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
                 <div className="row justify-content-center "  style={{marginLeft: 0, marginRight: 0}} >
                     {opis.map((p,i) =>
-                            <div key={i} className={"col-lg-7 col-md-5 col-sm-5"} style={{width: "100%" }}>
-                                <h1 style={{ width: "50%", display:"inline-block" }}>{p.text}</h1>
-                                <div style={{ width: "250px", height:"250px", border:"2px solid#ccc333", borderRadius: "25px", display:"inline-block", margin:"20px" }}>
+                            <div key={i} className={"col-lg-4 col-md-5 col-sm-5"}>
+                                <div >
+                                    <h1 >{p.text}</h1>
+                                </div>
+                                <div onClick={this.handleClick}
+                                     id={p.id}
+                                     row="upper"
+                                     style={{ width: "250px", height:"250px", border:"2px solid#ccc333", borderRadius: "25px", display:"inline-block", margin:"20px" }}
+                                >
+                                     {p.found ?
                                     <img
                                         style={{width:"100%"}}
-                                        onClick={this.handleClick}
+                                        id={p.id}
+                                        row="upper"
                                         alt={'card'}
                                         key={i}
                                         src={"./slides/" + p.image }
-                                    />
+                                    /> : null }
                                 </div>
                             </div>
                     )}
@@ -43,6 +88,8 @@ class Opisivanje extends React.Component {
                             <img
                                 style={{width:"100%"}}
                                 onClick={this.handleClick}
+                                id={p.id}
+                                row="lower"
                                 alt={'card'}
                                 key={i}
                                 src={"./slides/" + p.image }
@@ -50,6 +97,8 @@ class Opisivanje extends React.Component {
                         </div>
                     )}
                 </div>
+                <h2>{selected}</h2>
+                <h2>{guessed}</h2>
             </div>
         )
     }

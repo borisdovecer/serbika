@@ -31,11 +31,8 @@ class Spajanje extends React.Component{
         if(row === "lower"){
             this.setState({ selected: id })
         }else{
-
             this.setState({ guessed: id })
-
         }
-
     }
 
     compare = () => {
@@ -49,7 +46,6 @@ class Spajanje extends React.Component{
                         p.found = true
                     }
                 })
-
                 this.setState({pojmovi:pojmovi, selected: "", guessed: "" })
             }, 200 )
         }else if( guessed.length >0 ){
@@ -58,7 +54,6 @@ class Spajanje extends React.Component{
                 this.setState({ selected: "", guessed: "" })
             }, 200 )
         }
-
     }
 
     complete = () => {
@@ -78,7 +73,7 @@ class Spajanje extends React.Component{
     }
 
     render() {
-        const poj = this.state.pojmovi
+        //const poj = this.state.pojmovi
         return(
             <div className={"main"}>
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
