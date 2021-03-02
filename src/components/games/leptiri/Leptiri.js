@@ -1,7 +1,9 @@
 import React from "react"
+import Reci06 from "./Reci06"
 
 class Leptiri extends React.Component {
     state = {
+        reci: Reci06,
         complete: true
     }
 

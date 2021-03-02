@@ -7,7 +7,7 @@ class Opisivanje extends React.Component {
         opis: OpisDz06,
         selected: "",
         guessed: "",
-        complete: true
+        complete: false
     }
 
     componentDidMount() {
@@ -18,7 +18,7 @@ class Opisivanje extends React.Component {
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         this.compare()
-       // this.complete()
+        this.complete()
     }
 
     handleClick = (e) => {
@@ -49,6 +49,22 @@ class Opisivanje extends React.Component {
                 console.log("neee")
                 this.setState({ selected: "", guessed: "" })
             }, 200 )
+        }
+    }
+
+    complete = () => {
+        let {opis} = this.state
+        let count = 0
+        opis.forEach(p => {
+            if(p.found){
+                count++
+            }
+        })
+        if(count === 2){
+            setTimeout( () => {
+                console.log("pobeda")
+                this.setState({ complete: true })
+            }, 500 )
         }
     }
 
@@ -85,15 +101,16 @@ class Opisivanje extends React.Component {
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
                     {opis.map((p,i) =>
                         <div style={{width: "20%", height:"300px" }}>
-                            <img
-                                style={{width:"100%"}}
-                                onClick={this.handleClick}
-                                id={p.id}
-                                row="lower"
-                                alt={'card'}
-                                key={i}
-                                src={"./slides/" + p.image }
-                            />
+                            {p.found ? null : <img
+                                    style={{width:"100%"}}
+                                    onClick={this.handleClick}
+                                    id={p.id}
+                                    row="lower"
+                                    alt={'card'}
+                                    key={i}
+                                    src={"./slides/" + p.image }
+                                /> }
+
                         </div>
                     )}
                 </div>
