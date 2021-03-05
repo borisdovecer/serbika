@@ -12,6 +12,8 @@ import KarteS from "./KarteS"
 import KarteU from "./KarteU"
 import KarteN from "./KarteN"
 
+import KarteR from "./KarteR"
+
 class Karte extends React.Component{
     state = {
         karte: [],
@@ -25,6 +27,8 @@ class Karte extends React.Component{
         s: "",
         u: "",
         n: "",
+        j: "",
+        r: "",
         arr: [],
         err: false,
         sc: false,
@@ -41,6 +45,7 @@ class Karte extends React.Component{
         let arrS = KarteS
         let arrU = KarteU
         let arrN = KarteN
+        let arrR = KarteR
 
         // DZ 01
         if(this.props.slide === "a"){
@@ -131,6 +136,20 @@ class Karte extends React.Component{
                 m: "karta-front-m.png"
             })
         }
+        // DZ 06
+        if(this.props.slide === "r"){
+            this.setState({
+                karte: arrR.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                r: "karta-front-r.png",
+                j: "karta-front-j.png",
+                i: "karta-front-i.png",
+                s: "karta-front-s.png",
+                u: "karta-front-u.png",
+                t: "karta-front-t.png"
+            })
+        }
     }
 
     flip = (e) => {
@@ -165,6 +184,12 @@ class Karte extends React.Component{
             }
             if(card[id].name === "n"){
                 card[id].image = this.state.n
+            }
+            if(card[id].name === "j"){
+                card[id].image = this.state.j
+            }
+            if(card[id].name === "r"){
+                card[id].image = this.state.r
             }
             this.compare()
         }
@@ -214,7 +239,7 @@ class Karte extends React.Component{
             }
         })
 
-        if(arr.length === 8){
+        if(arr.length === this.state.karte.length){
             this.setState({ complete: true })
         }
     }

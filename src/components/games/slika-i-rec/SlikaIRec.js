@@ -33,12 +33,8 @@ class SlikaIRec extends React.Component {
                     rec.slova[i] = rec.correct
                 }
             }
-
-            console.log(this.state.rec)
-
             this.setState({ rec: rec, complete: true})
         }
-
     }
 
     render() {

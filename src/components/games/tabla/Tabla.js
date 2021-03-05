@@ -40,6 +40,10 @@ class Tabla extends React.Component{
         if(this.props.slide === "n"){
             this.setState({ image: bg2, audio:"16 hajde sada ti napisi nase slovo N.mp3"})
         }
+        // DZ 06
+        if(this.props.slide === "r"){
+            this.setState({ image: bg1, audio:"05 hajde sada ti napisi nase slovo R.mp3"})
+        }
     }
 
     render() {

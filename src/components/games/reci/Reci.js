@@ -4,9 +4,13 @@ import React from 'react'
 import ReciTO from './ReciTO'
 import ReciSI from './ReciSI'
 import ReciUN from './ReciUN'
+import ReciR from './ReciR'
+import ReciR3 from './ReciR3'
+
 import Delay from "react-delay-render";
 
 import bg1 from './balonihd.jpg'
+import bg2 from './vockice.jpg'
 import PreloadImage from "react-preload-image";
 
 class Reci extends React.Component{
@@ -26,7 +30,12 @@ class Reci extends React.Component{
         if(this.props.slide === "un"){
             this.setState({ reci: ReciUN })
         }
-
+        if(this.props.slide === "r"){
+            this.setState({ reci: ReciR })
+        }
+        if(this.props.slide === "r3"){
+            this.setState({ reci: ReciR3, image:bg2 })
+        }
 
     }
 
@@ -41,6 +50,7 @@ class Reci extends React.Component{
     }
 
     render() {
+        const {reci} = this.state
         const Audio1 = () => <audio
             autoPlay
             src={"./audio/" + this.state.reci[0].audio}
@@ -63,7 +73,7 @@ class Reci extends React.Component{
                     autoPlay
                     src={"./audio/FENOMENALNO.mp3"}
                 /> : null}
-                {this.state.word === 8 ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
+                {this.state.word === reci.length ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
                 {this.state.reci.map( (rec, i) =>
                     <img key={i}
                          src={"./slides/" + rec.image}
@@ -79,14 +89,13 @@ class Reci extends React.Component{
                         autoPlay
                         src={"./audio/20 sada kad znamo jos dva slova hajde da citamo.mp3"}
                     /> : null}
+
+
                 {this.state.word === 0 ? <DelayedAudio/> : null}
-                {this.state.word === 1 ? <audio autoPlay src={"./audio/" + this.state.reci[1].audio} /> : null}
-                {this.state.word === 2 ?  <audio autoPlay src={"./audio/" + this.state.reci[2].audio} /> : null}
-                {this.state.word === 3 ?  <audio autoPlay src={"./audio/" + this.state.reci[3].audio} /> : null}
-                {this.state.word === 4 ?  <audio autoPlay src={"./audio/" + this.state.reci[4].audio} /> : null}
-                {this.state.word === 5 ?  <audio autoPlay src={"./audio/" + this.state.reci[5].audio} /> : null}
-                {this.state.word === 6 ?  <audio autoPlay src={"./audio/" + this.state.reci[6].audio} /> : null}
-                {this.state.word === 7 ?  <audio autoPlay src={"./audio/" + this.state.reci[7].audio} /> : null}
+                {reci.map((r, i) =>
+                    this.state.word === r.id ? <audio autoPlay src={"./audio/" + r.audio} /> : null
+                )}
+
             </div>
         )
     }

@@ -14,6 +14,7 @@ import bg5 from './skrivalice-bg-3.jpg'
 import bg6 from './skrivalice-bg-4.jpg'
 import bg7 from './skrivalice-bg-40.jpg'
 import bg8 from './skrivalice-bg-41.jpg'
+import bg9 from './skrivalice-bg-6.jpg'
 
 
 import PreloadImage from "react-preload-image";
@@ -58,6 +59,10 @@ class Skrivalice extends React.Component{
         if(this.props.slide === "n"){
             this.setState({ image: bg8, audio:"18 nasa slova bas vole da se igraju zmurke pritisni svako slovo koje vidis.mp3", slovoImg: "radno-31.png", slova:SlovaS })
         }
+        // DZ 06
+        if(this.props.slide === "r"){
+            this.setState({ image: bg9, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-39.png", slova:SlovaI })
+        }
     }
 
     click = (e) => {
@@ -79,7 +84,8 @@ class Skrivalice extends React.Component{
     };
 
     complete = () => {
-        if(this.state.completearr.length === 3){
+        const {completearr, slova} = this.state
+        if(completearr.length === slova.length){
             this.setState({ complete: true })
         }
     }

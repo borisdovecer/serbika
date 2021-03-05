@@ -2,7 +2,9 @@ import React from 'react'
 import Delay from 'react-delay-render'
 
 import bg1 from './bg-slova-1.png'
-import bg2 from './bg-slova-2.png'
+import bg2 from './bg-slova-2.2.png'
+import bg3 from './bg-slova-3.png'
+
 import PreloadImage from "react-preload-image";
 
 class Slova extends React.Component{
@@ -85,6 +87,15 @@ class Slova extends React.Component{
                 audio: { upper: "12 nase novo slovo je slovo N kazi N.mp3", lower:"13 a ovo je nase malo slovo N kazi N.mp3", delay: 8000 },
                 veliko:"radno-31.png",
                 malo: "radno-32.png"
+            })
+        }
+        // DZ 06
+        if(this.props.slide === "r"){
+            this.setState({
+                image: bg3,
+                audio: { upper: "01 nase novo slovo je slovo R kazi R.mp3", lower:"02 ovo je nase malo slovo R kazi R.mp3", delay: 8000 },
+                veliko:"radno-39.png",
+                malo: "radno-40.png"
             })
         }
     }

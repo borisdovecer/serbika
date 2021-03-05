@@ -2,9 +2,11 @@ import React from 'react'
 import Reci from "./Reci"
 import Reci2 from "./Reci2"
 import Reci3 from "./Reci3"
+import Reci4 from "./Reci4"
 
 import bg1 from './decabg.jpg'
 import bg2 from './decabg2.jpg'
+import bg3 from './decabg3.jpg'
 import PreloadImage from "react-preload-image";
 
 class Deca extends React.Component{
@@ -31,6 +33,9 @@ class Deca extends React.Component{
         }
         if(this.props.slide === "un"){
             this.setState({ reci: Reci3, image:bg2 })
+        }
+        if(this.props.slide === "r"){
+            this.setState({ reci: Reci4, image:bg3 })
         }
 
 
