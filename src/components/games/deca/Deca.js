@@ -4,6 +4,7 @@ import Reci2 from "./Reci2"
 import Reci3 from "./Reci3"
 import Reci4 from "./Reci4"
 import ReciJE from './ReciJE'
+import ReciSh from './ReciSh'
 
 import bg1 from './decabg.jpg'
 import bg2 from './decabg2.jpg'
@@ -41,7 +42,9 @@ class Deca extends React.Component{
         if(this.props.slide === "r"){
             this.setState({ reci: Reci4, image:bg3 })
         }
-
+        if(this.props.slide === "sh"){
+            this.setState({ reci: ReciSh, image:bg3 })
+        }
 
         let ani = this.state.animation
         ani.forEach( a => {
@@ -57,6 +60,7 @@ class Deca extends React.Component{
     render() {
         return(
             <div className={"main"}>
+                <img src={"./slides/button.png"} alt="btn" className="main-button" style={{   marginTop: "32%"}} onClick={this.props.nextSlide}/>
                 { this.state.animation[4].audio ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{   marginTop: "32%"}} onClick={this.props.nextSlide}/> : null}
                 <PreloadImage
                     style={{

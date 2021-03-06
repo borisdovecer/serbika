@@ -3,7 +3,7 @@ const SlovaI = [
         id: 1,
         animation: "",
         top: "25%",
-        left: "13%",
+        left: "15%",
         found: false
     },
     {

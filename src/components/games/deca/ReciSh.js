@@ -1,8 +1,7 @@
-const ReciArr4 = [
+const ReciSh = [
     {
         id: 1,
-        name: "Мира",
-        image: "mama.png",
+        name: "Маша",
         audio: "32 Sima.mp3",
         animation: "",
         top: "21%",
@@ -11,8 +10,7 @@ const ReciArr4 = [
     },
     {
         id: 2,
-        name: "Митар",
-        image: "tata.png",
+        name: "Урош",
         audio: "33 Una.mp3",
         animation: "",
         top: "21%",
@@ -22,8 +20,7 @@ const ReciArr4 = [
     },
     {
         id: 3,
-        name: "Нора",
-        image: "toma.png",
+        name: "Шошана",
         audio: "34 Mita.mp3",
         animation: "",
         top: "21%",
@@ -32,8 +29,7 @@ const ReciArr4 = [
     },
     {
         id: 4,
-        name: "Риста",
-        image: "mata.png",
+        name: "Миша",
         audio: "35 Nina.mp3",
         animation: "",
         top: "21%",
@@ -43,7 +39,7 @@ const ReciArr4 = [
     },
     {
         id: 5,
-        name: "Сара",
+        name: "Таша",
         audio: "36 Toni.mp3",
         animation: "",
         top: "21%",
@@ -53,7 +49,7 @@ const ReciArr4 = [
     },
     {
         id: 6,
-        name: "Ренато",
+        name: "Раша",
         audio: "37 Nena.mp3",
         animation: "",
         top: "21%",
@@ -63,4 +59,4 @@ const ReciArr4 = [
     }
 ]
 
-export default ReciArr4
+export default ReciSh

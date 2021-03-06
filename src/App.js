@@ -7,6 +7,7 @@ import Dz03 from './components/dz/Dz03'
 import Dz04 from './components/dz/Dz04'
 import Dz05 from './components/dz/Dz05'
 import Dz06 from './components/dz/Dz06'
+import Dz07 from './components/dz/Dz07'
 
 import './bootstrap.css'
 import './App.css';
@@ -38,6 +39,9 @@ class App extends React.Component {
                     </Route>
                     <Route path="/dz06">
                         <Dz06 />
+                    </Route>
+                    <Route path="/dz07">
+                        <Dz07 />
                     </Route>
                 </div>
             </Router>

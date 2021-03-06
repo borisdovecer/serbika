@@ -6,6 +6,8 @@ import ReciUN from './ReciUN'
 import ReciJE from './ReciJE'
 import ReciR from './ReciR'
 import ReciR3 from './ReciR3'
+import ReciSh from './ReciSh'
+import ReciSh3 from './ReciSh3'
 
 import Delay from "react-delay-render";
 
@@ -38,6 +40,12 @@ class Reci extends React.Component{
         }
         if(this.props.slide === "r3"){
             this.setState({ reci: ReciR3, image:bg2 })
+        }
+        if(this.props.slide === "sh"){
+            this.setState({ reci: ReciSh })
+        }
+        if(this.props.slide === "sh3"){
+            this.setState({ reci: ReciSh3, image:bg2 })
         }
 
     }
@@ -76,6 +84,7 @@ class Reci extends React.Component{
                     autoPlay
                     src={"./audio/FENOMENALNO.mp3"}
                 /> : null}
+                <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/>
                 {this.state.word === reci.length ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
                 {this.state.reci.map( (rec, i) =>
                     <img key={i}

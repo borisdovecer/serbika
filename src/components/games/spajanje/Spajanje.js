@@ -1,8 +1,6 @@
 import React from 'react'
-import PojmoviR from "./PojmoviR";
-
-// import bg1 from './balonihd.jpg'
-// import PreloadImage from "react-preload-image";
+import PojmoviR from "./PojmoviR"
+import PojmoviSh from './PojmoviSh'
 
 class Spajanje extends React.Component{
     state = {
@@ -16,6 +14,9 @@ class Spajanje extends React.Component{
     componentDidMount() {
         if(this.props.slide === "r"){
             this.setState({ pojmovi: PojmoviR })
+        }
+        if(this.props.slide === "sh"){
+            this.setState({ pojmovi: PojmoviSh })
         }
     }
 
@@ -42,7 +43,6 @@ class Spajanje extends React.Component{
             setTimeout( () => {
                 pojmovi.forEach( function (p){
                     if(p.id === parseInt(selected)){
-                      //  p.color = "#46025f"
                         p.found = true
                     }
                 })
@@ -50,7 +50,6 @@ class Spajanje extends React.Component{
             }, 200 )
         }else if( guessed.length >0 ){
             setTimeout( () => {
-                console.log("neee")
                 this.setState({ selected: "", guessed: "" })
             }, 200 )
         }
@@ -64,20 +63,19 @@ class Spajanje extends React.Component{
                 count++
             }
         })
-        if(count === 5){
+        if(count === pojmovi.length){
             setTimeout( () => {
-                console.log("pobeda")
                 this.setState({ complete: true })
-            }, 500 )
+            }, 200 )
         }
     }
 
     render() {
-        //const poj = this.state.pojmovi
+        const {pojmovi, complete} = this.state
         return(
             <div className={"main"}>
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
-                    {this.state.pojmovi.map( (p, i) =>
+                    {pojmovi.map( (p, i) =>
                         <div key={i} className={"col-lg-2 col-md-2 col-sm-2"} style={{marginTop: "3%"}}>
                             <h1 style={{ color: p.color}}>{p.name}</h1>
                             <div onClick={this.handleClick}
@@ -98,11 +96,11 @@ class Spajanje extends React.Component{
                         </div>
                     )}
                 </div>
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
 
 
-                    {this.state.pojmovi.map( (p, i) =>
+                    {pojmovi.map( (p, i) =>
                         <div key={i} className={"col-lg-2 col-md-2 col-sm-2"} style={{marginTop: "6%"}}>
                             {p.found ? null : <img
                                 id={p.id}

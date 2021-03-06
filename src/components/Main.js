@@ -10,6 +10,26 @@ function Main() {
             <a href="/dz05"><img src={"./slides/dz05start.png"} alt="btn" className="main-button" style={{marginTop: "4%" ,left:"50%", width:"10%"}} /></a>
             <a href="/dz06"><img src={"./slides/dz06start.png"} alt="btn" className="main-button" style={{marginTop: "4%" ,left:"62%", width:"10%"}} /></a>
 
+            <a href="/dz07"><img src={"./slides/dz07start.png"} alt="btn" className="main-button" style={{marginTop: "14%" ,left:"2%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "14%" ,left:"14%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "14%" ,left:"26%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "14%" ,left:"38%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "14%" ,left:"50%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "14%" ,left:"62%", width:"10%"}} /></a>
+
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "24%" ,left:"2%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "24%" ,left:"14%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "24%" ,left:"26%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "24%" ,left:"38%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "24%" ,left:"50%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "24%" ,left:"62%", width:"10%"}} /></a>
+
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"2%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"14%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"26%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"38%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"50%", width:"10%"}} /></a>
+            <a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"62%", width:"10%"}} /></a>
         </div>
     )
 }

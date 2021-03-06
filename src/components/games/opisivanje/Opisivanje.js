@@ -1,6 +1,7 @@
 import React from 'react'
 
 import OpisDz06 from "./OpisDz06"
+import OpisDz07 from "./OpisDz07"
 
 class Opisivanje extends React.Component {
     state = {
@@ -13,6 +14,9 @@ class Opisivanje extends React.Component {
     componentDidMount() {
         if(this.props.slide === "dz06"){
             this.setState({ opis: OpisDz06 })
+        }
+        if(this.props.slide === "dz07"){
+            this.setState({ opis: OpisDz07 })
         }
     }
 

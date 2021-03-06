@@ -1,13 +1,18 @@
 import React from 'react'
 
 import RecMore from './RecMore'
-import RecSirena from "./RecSirena";
-import RecMotor from "./RecMotor";
+import RecSirena from "./RecSirena"
+import RecMotor from "./RecMotor"
+import RecMis from "./RecMis"
+import RecSator from "./RecSator"
+import RecUsi from "./RecUsi"
+import RecTasna from "./RecTasna"
+import RecSismis from "./RecSismis"
 
 class SlikaIRec extends React.Component {
     state = {
         rec: RecMore,
-        complete: false
+        complete: true
     }
 
     componentDidMount() {
@@ -19,6 +24,21 @@ class SlikaIRec extends React.Component {
         }
         if(this.props.slide === "motor"){
             this.setState({ rec: RecMotor })
+        }
+        if(this.props.slide === "mis"){
+            this.setState({ rec: RecMis })
+        }
+        if(this.props.slide === "sator"){
+            this.setState({ rec: RecSator })
+        }
+        if(this.props.slide === "usi"){
+            this.setState({ rec: RecUsi })
+        }
+        if(this.props.slide === "tasna"){
+            this.setState({ rec: RecTasna })
+        }
+        if(this.props.slide === "sismis"){
+            this.setState({ rec: RecTasna })
         }
 
     }
