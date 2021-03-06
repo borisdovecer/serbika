@@ -89,6 +89,23 @@ class Slova extends React.Component{
                 malo: "radno-32.png"
             })
         }
+        // DZ 05
+        if(this.props.slide === "j"){
+            this.setState({
+                image: bg1,
+                audio: { upper: "01 nase novo slovo je slovo U kazi U.mp3", lower:"02 ovo je nase malo slovo U kazi U.mp3", delay: 8000 },
+                veliko:"radno-21.png",
+                malo: "radno-22.png"
+            })
+        }
+        if(this.props.slide === "e"){
+            this.setState({
+                image: bg2,
+                audio: { upper: "12 nase novo slovo je slovo N kazi N.mp3", lower:"13 a ovo je nase malo slovo N kazi N.mp3", delay: 8000 },
+                veliko:"radno-13.png",
+                malo: "radno-14.png"
+            })
+        }
         // DZ 06
         if(this.props.slide === "r"){
             this.setState({

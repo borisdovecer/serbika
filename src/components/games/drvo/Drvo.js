@@ -12,6 +12,9 @@ import SlovaS from "./SlovaS";
 import SlovaU from "./SlovaU";
 import SlovaN from "./SlovaN";
 
+import SlovaJ from './SlovaJ'
+import SlovaE from './SlovaE'
+
 import SlovaR from "./SlovaR";
 
 import bg1 from './drvo.jpg'
@@ -165,6 +168,41 @@ class Drvo extends React.Component {
                 audio1: "14 pritisni svako veliko slovo N koje vidis na drvetu.mp3",
                 audio2: "15 pritisni svako malo slovo N koje vidis  na drvetu.mp3",
                 slova: SlovaN.sort(() => Math.random() - 0.5),
+                position: [
+                    { top: "5.5%", left: "47.2%" },
+                    { top: "11%", left: "37.2%" },
+                    { top: "11%", left: "57%" },
+                    { top: "20%", left: "32%" },
+                    { top: "20%", left: "42%" },
+                    { top: "20%", left: "52%" },
+                    { top: "20%", left: "62%" },
+                ]
+            })
+        }
+        // DZ 05
+        if(this.props.slide === "j"){
+            this.setState({
+                image: bg1,
+                audio1: "03 pritisni svako veliko slovo U koje vidis na drvetu.mp3",
+                audio2:"04 pritisni svako malo slovo U koje vidis na drvetu.mp3",
+                slova: SlovaJ.sort(() => Math.random() - 0.5),
+                position: [
+                    { top: "7%", left: "47.1%" },
+                    { top: "12%", left: "38%" },
+                    { top: "12%", left: "56%" },
+                    { top: "20%", left: "32%" },
+                    { top: "20%", left: "42.5%" },
+                    { top: "20%", left: "52%" },
+                    { top: "20%", left: "61%" },
+                ]
+            })
+        }
+        if(this.props.slide === "e"){
+            this.setState({
+                image: bg2,
+                audio1: "14 pritisni svako veliko slovo N koje vidis na drvetu.mp3",
+                audio2: "15 pritisni svako malo slovo N koje vidis  na drvetu.mp3",
+                slova: SlovaE.sort(() => Math.random() - 0.5),
                 position: [
                     { top: "5.5%", left: "47.2%" },
                     { top: "11%", left: "37.2%" },

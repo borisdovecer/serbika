@@ -1,9 +1,9 @@
 import React from 'react'
 
-//import ReciArr from "./ReciArr";
 import ReciTO from './ReciTO'
 import ReciSI from './ReciSI'
 import ReciUN from './ReciUN'
+import ReciJE from './ReciJE'
 import ReciR from './ReciR'
 import ReciR3 from './ReciR3'
 
@@ -29,6 +29,9 @@ class Reci extends React.Component{
         }
         if(this.props.slide === "un"){
             this.setState({ reci: ReciUN })
+        }
+        if(this.props.slide === "je"){
+            this.setState({ reci: ReciJE })
         }
         if(this.props.slide === "r"){
             this.setState({ reci: ReciR })

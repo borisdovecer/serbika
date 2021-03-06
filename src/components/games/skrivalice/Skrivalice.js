@@ -1,10 +1,13 @@
 import React from 'react'
 
 import SlovaA from './SlovaA'
-import SlovaM from "./SlovaM";
+import SlovaM from "./SlovaM"
+
+import SlovaJ from './SlovaJ'
+import SlovaE from './SlovaE'
 
 import SlovaI from './SlovaI'
-import SlovaS from "./SlovaS";
+import SlovaS from "./SlovaS"
 
 import bg1 from './skrivalice-bg-1.jpg'
 import bg2 from './skrivalice-bg-2.png'
@@ -15,6 +18,8 @@ import bg6 from './skrivalice-bg-4.jpg'
 import bg7 from './skrivalice-bg-40.jpg'
 import bg8 from './skrivalice-bg-41.jpg'
 import bg9 from './skrivalice-bg-6.jpg'
+import bg10 from './bg-more.png'
+import bg11 from './bg-suma.png'
 
 
 import PreloadImage from "react-preload-image";
@@ -58,6 +63,13 @@ class Skrivalice extends React.Component{
         }
         if(this.props.slide === "n"){
             this.setState({ image: bg8, audio:"18 nasa slova bas vole da se igraju zmurke pritisni svako slovo koje vidis.mp3", slovoImg: "radno-31.png", slova:SlovaS })
+        }
+        // DZ 05
+        if(this.props.slide === "j"){
+            this.setState({ image: bg10, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-21.png", slova:SlovaJ })
+        }
+        if(this.props.slide === "e"){
+            this.setState({ image: bg11, audio:"18 nasa slova bas vole da se igraju zmurke pritisni svako slovo koje vidis.mp3", slovoImg: "radno-13.png", slova:SlovaE })
         }
         // DZ 06
         if(this.props.slide === "r"){

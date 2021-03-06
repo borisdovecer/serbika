@@ -12,6 +12,9 @@ import KarteS from "./KarteS"
 import KarteU from "./KarteU"
 import KarteN from "./KarteN"
 
+import KarteJ from "./KarteJ"
+import KarteE from "./KarteE"
+
 import KarteR from "./KarteR"
 
 class Karte extends React.Component{
@@ -27,6 +30,7 @@ class Karte extends React.Component{
         s: "",
         u: "",
         n: "",
+        e: "",
         j: "",
         r: "",
         arr: [],
@@ -45,6 +49,8 @@ class Karte extends React.Component{
         let arrS = KarteS
         let arrU = KarteU
         let arrN = KarteN
+        let arrJ = KarteJ
+        let arrE = KarteE
         let arrR = KarteR
 
         // DZ 01
@@ -136,6 +142,33 @@ class Karte extends React.Component{
                 m: "karta-front-m.png"
             })
         }
+        // DZ 05
+        if(this.props.slide === "j"){
+            this.setState({
+                karte: arrJ.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-zuta.png",
+                j: "karta-front-j.png",
+                t: "karta-front-t.png",
+                o: "karta-front-o.png",
+                m: "karta-front-m.png",
+                a: "karta-front-a.png",
+                u: "karta-front-u.png"
+            })
+        }
+        if(this.props.slide === "e"){
+            this.setState({
+                karte: arrE.sort(() => Math.random() - 0.5),
+                audio: "17 opet igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-ljubicasta.png",
+                j: "karta-front-j.png",
+                e: "karta-front-e.png",
+                u: "karta-front-u.png",
+                n: "karta-front-n.png",
+                i: "karta-front-i.png",
+                s: "karta-front-s.png"
+            })
+        }
         // DZ 06
         if(this.props.slide === "r"){
             this.setState({
@@ -187,6 +220,9 @@ class Karte extends React.Component{
             }
             if(card[id].name === "j"){
                 card[id].image = this.state.j
+            }
+            if(card[id].name === "e"){
+                card[id].image = this.state.e
             }
             if(card[id].name === "r"){
                 card[id].image = this.state.r
@@ -263,7 +299,7 @@ class Karte extends React.Component{
                     autoPlay
                     src={"./audio/FENOMENALNO.mp3"}
                 /> : null}
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop: "35%"}} onClick={this.props.nextSlide}/> : null}
+                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop: "20%", right:"0%"}} onClick={this.props.nextSlide}/> : null}
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
                         {this.state.karte.map( (card, i) =>
                             <div key={i} className={"col-lg-3 col-md-3 col-sm-3"} style={{marginTop: "3%"}}>
