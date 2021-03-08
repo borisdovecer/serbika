@@ -1,14 +1,14 @@
-const Reci06 = [
+const Reci07 = [
     {
         id: 1,
         image: "leptir1.jpg",
         imgTop: "55vh",
         imgLeft: "50vw",
-        slova: ["С", "И",""],
-        full: ["С", "И","Р"],
+        slova: ["","","Ш","И","Р"],
+        full: ["Ш","Е","Ш","И","Р"],
         slovaTop: "3vh",
         slovaLeft: "3vw",
-        correct: ["Р"],
+        correct: ["Ш", "E"],
         color: "#f60031",
         found: false
     },
@@ -17,11 +17,11 @@ const Reci06 = [
         image: "leptir2.jpg",
         imgTop: "24vh",
         imgLeft: "24vw",
-        slova: ["Т", "О","Р","",""],
-        full: ["Т", "О","Р","T","A"],
+        slova: ["М","А","","Т","А"],
+        full: ["М","А","Ш","T","A"],
         slovaTop: "80vh",
         slovaLeft: "3vw",
-        correct: ["Т","А"],
+        correct: ["Ш"],
         color: "#f9a4df",
         found: false
     },
@@ -30,11 +30,11 @@ const Reci06 = [
         image: "leptir3.jpg",
         imgTop: "50vh",
         imgLeft: "12vw",
-        slova: ["M", "O","",""],
-        full: ["M", "O","Р","Е"],
+        slova: ["Н","O","",""],
+        full: ["Н","O","Ш","А"],
         slovaTop: "3vh",
         slovaLeft: "70vw",
-        correct: ["Р", "E"],
+        correct: ["Ш","А"],
         color: "#d62fb2",
         found: false
     },
@@ -45,12 +45,12 @@ const Reci06 = [
         imgLeft: "60vw",
         slovaTop: "80vh",
         slovaLeft: "70vw",
-        slova: ["J", "A","",""],
-        full: ["J", "A","J","E"],
-        correct: ["J","E"],
+        slova: ["","Т","А"],
+        full: ["Ш","Т","А"],
+        correct: ["Ш"],
         color: "#4472c1",
         found: false
     }
 ]
 
-export default Reci06
+export default Reci07

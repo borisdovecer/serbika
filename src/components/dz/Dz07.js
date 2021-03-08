@@ -46,13 +46,12 @@ class Dz07 extends React.Component {
                 { this.state.slide === 12 ? <SlikaIRec slide={"sator"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 13 ? <SlikaIRec slide={"usi"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 14 ? <SlikaIRec slide={"tasna"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 15 ? <SlikaIRec slide={"sismis"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 16 ? <Pravilna slide={"dz07"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 17 ? <Opisivanje slide={"dz07"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 18 ? <Dzak slide={"dz07"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 19 ? <Leptiri slide={"dz07"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 20 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 21 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 15 ? <Pravilna slide={"dz07"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 16 ? <Opisivanje slide={"dz07"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 17 ? <Dzak slide={"dz07"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 18 ? <Leptiri slide={"dz07"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 19 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Video end={this.backToMain}/> : null}
 
             </div>
         );

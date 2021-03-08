@@ -17,6 +17,7 @@ import SlovaE from './SlovaE'
 
 import SlovaR from "./SlovaR"
 import SlovaSH from "./SlovaSH"
+import SlovaP from "./SlovaP"
 
 import bg1 from './drvo.jpg'
 import bg2 from './drvo2.jpg'
@@ -240,6 +241,24 @@ class Drvo extends React.Component {
                 audio1: "03 pritisni svako veliko slovo U koje vidis na drvetu.mp3",
                 audio2:"04 pritisni svako malo slovo U koje vidis na drvetu.mp3",
                 slova: SlovaSH.sort(() => Math.random() - 0.5),
+                position: [
+                    { top: "6.5%", left: "41.3%" },
+                    { top: "11%", left: "33.6%" },
+                    { top: "6.9%", left: "50.4%" },
+                    { top: "20%", left: "30.3%" },
+                    { top: "22%", left: "40%" },
+                    { top: "22%", left: "54.7%" },
+                    { top: "12%", left: "59.6%" },
+                ]
+            })
+        }
+        // DZ 08
+        if(this.props.slide === "p"){
+            this.setState({
+                image: bg3,
+                audio1: "03 pritisni svako veliko slovo U koje vidis na drvetu.mp3",
+                audio2:"04 pritisni svako malo slovo U koje vidis na drvetu.mp3",
+                slova: SlovaP.sort(() => Math.random() - 0.5),
                 position: [
                     { top: "6.5%", left: "41.3%" },
                     { top: "11%", left: "33.6%" },

@@ -17,6 +17,7 @@ import KarteE from "./KarteE"
 
 import KarteR from "./KarteR"
 import KarteSH from "./KarteSH"
+import KarteP from "./KarteP"
 
 class Karte extends React.Component{
     state = {
@@ -35,6 +36,7 @@ class Karte extends React.Component{
         j: "",
         r: "",
         sh: "",
+        p: "",
         arr: [],
         err: false,
         sc: false,
@@ -55,6 +57,7 @@ class Karte extends React.Component{
         let arrE = KarteE
         let arrR = KarteR
         let arrSH= KarteSH
+        let arrP = KarteP
 
         // DZ 01
         if(this.props.slide === "a"){
@@ -200,6 +203,20 @@ class Karte extends React.Component{
                 t: "karta-front-t.png"
             })
         }
+        // DZ 08
+        if(this.props.slide === "p"){
+            this.setState({
+                karte: arrP.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                p: "karta-front-p.png",
+                sh: "karta-front-sh.png",
+                r: "karta-front-r.png",
+                i: "karta-front-i.png",
+                j: "karta-front-j.png",
+                n: "karta-front-n.png"
+            })
+        }
     }
 
     flip = (e) => {
@@ -246,6 +263,9 @@ class Karte extends React.Component{
             }
             if(card[id].name === "sh"){
                 card[id].image = this.state.sh
+            }
+            if(card[id].name === "p"){
+                card[id].image = this.state.p
             }
             this.compare()
         }

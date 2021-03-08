@@ -124,6 +124,15 @@ class Slova extends React.Component{
                 malo: "radno-60.png"
             })
         }
+        // DZ 08
+        if(this.props.slide === "p"){
+            this.setState({
+                image: bg3,
+                audio: { upper: "01 nase novo slovo je slovo R kazi R.mp3", lower:"02 ovo je nase malo slovo R kazi R.mp3", delay: 8000 },
+                veliko:"radno-37.png",
+                malo: "radno-38.png"
+            })
+        }
     }
 
     render() {

@@ -1,5 +1,6 @@
 import React from "react"
 import Reci06 from "./Reci06"
+import Reci07 from "./Reci07"
 
 class Leptiri extends React.Component {
     state = {
@@ -10,7 +11,13 @@ class Leptiri extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({ reci: Reci06 })
+        if(this.props.slide === "dz06"){
+            this.setState({ reci: Reci06 })
+        }
+        if(this.props.slide === "dz07"){
+            this.setState({ reci: Reci07 })
+        }
+
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -67,7 +74,7 @@ class Leptiri extends React.Component {
                                 name={"text"}
                                 style={{width: "70px", height:"70px", backgroundColor:x.color, margin:"5px", borderRadius:"25px", display:"inline-block"}}
                             >
-                                <h1 id={x.id} name={"text"} style={{position:"absolute", margin:"8px 24px"}}>{p}</h1>
+                                <h1 id={x.id} name={"text"} style={{position:"absolute", margin:"8px 22px"}}>{p}</h1>
                             </div>
                         )}
                     </div>

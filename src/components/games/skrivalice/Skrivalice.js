@@ -9,6 +9,9 @@ import SlovaE from './SlovaE'
 import SlovaI from './SlovaI'
 import SlovaS from "./SlovaS"
 
+import SlovaP from "./SlovaP"
+
+
 import bg1 from './skrivalice-bg-1.jpg'
 import bg2 from './skrivalice-bg-2.png'
 import bg3 from './bg-livada.png'
@@ -79,6 +82,10 @@ class Skrivalice extends React.Component{
         // DZ 07
         if(this.props.slide === "sh"){
             this.setState({ image: bg12, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-59.png", slova:SlovaI })
+        }
+        // DZ 08
+        if(this.props.slide === "p"){
+            this.setState({ image: bg12, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-37.png", slova:SlovaP })
         }
     }
 

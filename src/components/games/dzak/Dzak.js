@@ -1,11 +1,24 @@
 import React from "react"
 import Items06 from './Items06'
+import Items07 from "./Items07"
+
 import Draggable from 'react-draggable';
+
+
 class Dzak extends React.Component {
     state = {
-        items: Items06,
+        items: [],
         complete: true
 
+    }
+
+    componentDidMount() {
+        if(this.props.slide === "dz06"){
+            this.setState({ items: Items06 })
+        }
+        if(this.props.slide === "dz07"){
+            this.setState({ items: Items07  })
+        }
     }
 
     eventControl = (event, info) => {
@@ -14,10 +27,10 @@ class Dzak extends React.Component {
     }
 
     render() {
-        const {items} = this.state
+        const {items, complete} = this.state
         return(
             <div className={"main"}>
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
                     <div>
                         {items.map((item,i) =>
