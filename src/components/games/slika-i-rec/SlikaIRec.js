@@ -7,7 +7,11 @@ import RecMis from "./RecMis"
 import RecSator from "./RecSator"
 import RecUsi from "./RecUsi"
 import RecTasna from "./RecTasna"
-import RecSismis from "./RecSismis"
+import RecPut from "./RecPut"
+import RecPero from "./RecPero"
+import RecSapun from "./RecSapun"
+import RecPrase from "./RecPrase"
+import RecPapir from "./RecPapir"
 
 class SlikaIRec extends React.Component {
     state = {
@@ -37,9 +41,22 @@ class SlikaIRec extends React.Component {
         if(this.props.slide === "tasna"){
             this.setState({ rec: RecTasna })
         }
-        if(this.props.slide === "sismis"){
-            this.setState({ rec: RecTasna })
+        if(this.props.slide === "put"){
+            this.setState({ rec: RecPut })
         }
+        if(this.props.slide === "pero"){
+            this.setState({ rec: RecPero })
+        }
+        if(this.props.slide === "sapun"){
+            this.setState({ rec: RecSapun })
+        }
+        if(this.props.slide === "prase"){
+            this.setState({ rec: RecPrase })
+        }
+        if(this.props.slide === "papir"){
+            this.setState({ rec: RecPapir })
+        }
+
 
     }
 

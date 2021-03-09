@@ -44,14 +44,15 @@ class Dz07 extends React.Component {
                 { this.state.slide === 10 ? <Spajanje slide={"p"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 11 ? <SlikaIRec slide={"put"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 12 ? <SlikaIRec slide={"pero"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 13 ? <SlikaIRec slide={"prase"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 14 ? <SlikaIRec slide={"papir"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 15 ? <Pravilna slide={"dz08"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 16 ? <Opisivanje slide={"dz08"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 17 ? <Dzak slide={"dz08"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 18 ? <Leptiri slide={"dz08"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 19 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 20 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 13 ? <SlikaIRec slide={"sapun"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 14 ? <SlikaIRec slide={"prase"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 15 ? <SlikaIRec slide={"papir"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 16 ? <Pravilna slide={"dz08"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 17 ? <Opisivanje slide={"dz08"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 18 ? <Dzak slide={"dz08"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 19 ? <Leptiri slide={"dz08"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 21 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

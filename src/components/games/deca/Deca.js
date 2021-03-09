@@ -5,6 +5,7 @@ import Reci3 from "./Reci3"
 import Reci4 from "./Reci4"
 import ReciJE from './ReciJE'
 import ReciSh from './ReciSh'
+import ReciP from './ReciP'
 
 import bg1 from './decabg.jpg'
 import bg2 from './decabg2.jpg'
@@ -44,6 +45,9 @@ class Deca extends React.Component{
         }
         if(this.props.slide === "sh"){
             this.setState({ reci: ReciSh, image:bg3 })
+        }
+        if(this.props.slide === "p"){
+            this.setState({ reci: ReciP, image:bg3 })
         }
 
         let ani = this.state.animation
