@@ -12,10 +12,21 @@ import RecPero from "./RecPero"
 import RecSapun from "./RecSapun"
 import RecPrase from "./RecPrase"
 import RecPapir from "./RecPapir"
+import RecKisa from "./RecKisa"
+import RecPauk from "./RecPauk"
+import RecRaketa from "./RecRaketa"
+import RecKasika from "./RecKasika"
+import RecKamion from "./RecKamion"
 
 class SlikaIRec extends React.Component {
     state = {
-        rec: RecMore,
+        rec: {
+            id: 0,
+            image: "",
+            slova: [],
+            correct: "",
+            ponudjena: []
+        },
         complete: true
     }
 
@@ -55,6 +66,21 @@ class SlikaIRec extends React.Component {
         }
         if(this.props.slide === "papir"){
             this.setState({ rec: RecPapir })
+        }
+        if(this.props.slide === "kisa"){
+            this.setState({ rec: RecKisa })
+        }
+        if(this.props.slide === "pauk"){
+            this.setState({ rec: RecPauk })
+        }
+        if(this.props.slide === "raketa"){
+            this.setState({ rec: RecRaketa })
+        }
+        if(this.props.slide === "kasika"){
+            this.setState({ rec: RecKasika })
+        }
+        if(this.props.slide === "kamion"){
+            this.setState({ rec: RecKamion })
         }
 
 

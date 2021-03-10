@@ -8,6 +8,7 @@ import Dz05 from '../components/dz/Dz05'
 import Dz06 from '../components/dz/Dz06'
 import Dz07 from '../components/dz/Dz07'
 import Dz08 from "../components/dz/Dz08"
+import Dz09 from "../components/dz/Dz09"
 
 class Main extends React.Component {
     state = {
@@ -33,7 +34,7 @@ class Main extends React.Component {
 
                   <img src={"./slides/dz07start.png"} alt="btn" name={7} className="main-button" style={{marginTop: "14%" ,left:"2%", width:"10%"}} onClick={this.SelectDz} />
                   <img src={"./slides/dz08start.png"} alt="btn" name={8} className="main-button" style={{marginTop: "14%" ,left:"14%", width:"10%"}} onClick={this.SelectDz} />
-                  {/*<a href="/"><img src={"./slides/dz09start.png"} alt="btn" className="main-button" style={{marginTop: "14%" ,left:"26%", width:"10%"}} /></a>*/}
+                  <img src={"./slides/dz09start.png"} alt="btn" name={9} className="main-button" style={{marginTop: "14%" ,left:"26%", width:"10%"}} onClick={this.SelectDz} />
                   {/*<a href="/"><img src={"./slides/dz10start.png"} alt="btn" className="main-button" style={{marginTop: "14%" ,left:"38%", width:"10%"}} /></a>*/}
                   {/*<a href="/"><img src={"./slides/dz11start.png"} alt="btn" className="main-button" style={{marginTop: "14%" ,left:"50%", width:"10%"}} /></a>*/}
                   {/*<a href="/"><img src={"./slides/dz12start.png"} alt="btn" className="main-button" style={{marginTop: "14%" ,left:"62%", width:"10%"}} /></a>*/}
@@ -60,6 +61,7 @@ class Main extends React.Component {
               {dz === 6 ? <Dz06 /> : null }
               {dz === 7 ? <Dz07 /> : null }
               {dz === 8 ? <Dz08 /> : null }
+              {dz === 9 ? <Dz09 /> : null }
             </div>
         )
     }

@@ -2,6 +2,7 @@ import React from "react"
 import Reci06 from "./Reci06"
 import Reci07 from "./Reci07"
 import Reci08 from "./Reci08"
+import Reci09 from "./Reci09"
 
 class Leptiri extends React.Component {
     state = {
@@ -20,6 +21,9 @@ class Leptiri extends React.Component {
         }
         if(this.props.slide === "dz08"){
             this.setState({ reci: Reci08 })
+        }
+        if(this.props.slide === "dz09"){
+            this.setState({ reci: Reci09 })
         }
     }
 

@@ -20,7 +20,7 @@ import '../../App.css';
 import '../../bootstrap.css'
 
 
-class Dz07 extends React.Component {
+class Dz08 extends React.Component {
     state = {
         slide: 1
     };
@@ -58,4 +58,4 @@ class Dz07 extends React.Component {
     }
 }
 
-export default Dz07;
+export default Dz08;

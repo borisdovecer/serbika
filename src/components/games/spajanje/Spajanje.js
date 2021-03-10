@@ -2,6 +2,7 @@ import React from 'react'
 import PojmoviR from "./PojmoviR"
 import PojmoviSh from './PojmoviSh'
 import PojmoviP from "./PojmoviP"
+import PojmoviK from "./PojmoviK"
 
 class Spajanje extends React.Component{
     state = {
@@ -21,6 +22,9 @@ class Spajanje extends React.Component{
         }
         if(this.props.slide === "p"){
             this.setState({ pojmovi: PojmoviP })
+        }
+        if(this.props.slide === "k"){
+            this.setState({ pojmovi: PojmoviK })
         }
     }
 
