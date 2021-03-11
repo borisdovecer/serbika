@@ -19,6 +19,8 @@ import KarteR from "./KarteR"
 import KarteSH from "./KarteSH"
 import KarteP from "./KarteP"
 import KarteK from "./KarteK"
+import KarteL from "./KarteL"
+import KarteLJ from "./KarteLJ"
 
 class Karte extends React.Component{
     state = {
@@ -39,6 +41,8 @@ class Karte extends React.Component{
         sh: "",
         p: "",
         k: "",
+        l: "",
+        lj: "",
         arr: [],
         err: false,
         sc: false,
@@ -61,6 +65,8 @@ class Karte extends React.Component{
         let arrSH= KarteSH
         let arrP = KarteP
         let arrK = KarteK
+        let arrL = KarteL
+        let arrLJ = KarteLJ
 
         // DZ 01
         if(this.props.slide === "a"){
@@ -234,6 +240,34 @@ class Karte extends React.Component{
                 n: "karta-front-n.png"
             })
         }
+        // DZ 10
+        if(this.props.slide === "l"){
+            this.setState({
+                karte: arrL.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                p: "karta-front-p.png",
+                sh: "karta-front-sh.png",
+                k: "karta-front-k.png",
+                l: "karta-front-l.png",
+                r: "karta-front-r.png",
+                e: "karta-front-e.png"
+            })
+        }
+        // DZ 11
+        if(this.props.slide === "lj"){
+            this.setState({
+                karte: arrLJ.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                p: "karta-front-p.png",
+                sh: "karta-front-sh.png",
+                k: "karta-front-k.png",
+                l: "karta-front-l.png",
+                r: "karta-front-r.png",
+                lj: "karta-front-lj.png"
+            })
+        }
     }
 
     flip = (e) => {
@@ -286,6 +320,12 @@ class Karte extends React.Component{
             }
             if(card[id].name === "k"){
                 card[id].image = this.state.k
+            }
+            if(card[id].name === "l"){
+                card[id].image = this.state.l
+            }
+            if(card[id].name === "lj"){
+                card[id].image = this.state.lj
             }
             this.compare()
         }

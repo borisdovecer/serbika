@@ -3,6 +3,8 @@ import Items06 from './Items06'
 import Items07 from "./Items07"
 import Items08 from "./Items08"
 import Items09 from "./Items09"
+import Items10 from "./Items10"
+import Items11 from "./Items11"
 
 import Draggable from 'react-draggable';
 
@@ -25,6 +27,12 @@ class Dzak extends React.Component {
         }
         if(this.props.slide === "dz09"){
             this.setState({ items: Items09  })
+        }
+        if(this.props.slide === "dz10"){
+            this.setState({ items: Items10  })
+        }
+        if(this.props.slide === "dz11"){
+            this.setState({ items: Items11  })
         }
     }
 

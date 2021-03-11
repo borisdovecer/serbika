@@ -17,6 +17,16 @@ import RecPauk from "./RecPauk"
 import RecRaketa from "./RecRaketa"
 import RecKasika from "./RecKasika"
 import RecKamion from "./RecKamion"
+import RecSal from "./SlikaSal"
+import RecLutka from "./RacLutka"
+import RecPalma from "./RecPalma"
+import RecPajp from "./RecPajp"
+import RecPoklon from "./RecPoklon"
+import RecLjut from "./RecLjut"
+import RecPolje from "./RecPolje"
+import RecKosulja from "./RecKosulja"
+import RecLjiljan from "./RecLjiljan"
+
 
 class SlikaIRec extends React.Component {
     state = {
@@ -82,7 +92,33 @@ class SlikaIRec extends React.Component {
         if(this.props.slide === "kamion"){
             this.setState({ rec: RecKamion })
         }
-
+        if(this.props.slide === "sal"){
+            this.setState({ rec: RecSal })
+        }
+        if(this.props.slide === "pajp"){
+            this.setState({ rec: RecPajp })
+        }
+        if(this.props.slide === "lutka"){
+            this.setState({ rec: RecLutka })
+        }
+        if(this.props.slide === "palma"){
+            this.setState({ rec: RecPalma })
+        }
+        if(this.props.slide === "poklon"){
+            this.setState({ rec: RecPoklon })
+        }
+        if(this.props.slide === "ljut"){
+            this.setState({ rec: RecLjut })
+        }
+        if(this.props.slide === "polje"){
+            this.setState({ rec: RecPolje })
+        }
+        if(this.props.slide === "kosulja"){
+            this.setState({ rec: RecKosulja })
+        }
+        if(this.props.slide === "ljiljan"){
+            this.setState({ rec: RecLjiljan })
+        }
 
     }
 

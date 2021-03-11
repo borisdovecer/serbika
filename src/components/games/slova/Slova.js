@@ -143,6 +143,33 @@ class Slova extends React.Component{
                 malo: "radno-24.png"
             })
         }
+        // DZ 10
+        if(this.props.slide === "l"){
+            this.setState({
+                image: bg4,
+                audio: { upper: "01 nase novo slovo je slovo R kazi R.mp3", lower:"02 ovo je nase malo slovo R kazi R.mp3", delay: 8000 },
+                veliko:"radno-25.png",
+                malo: "radno-26.png"
+            })
+        }
+        // DZ 11
+        if(this.props.slide === "lj"){
+            this.setState({
+                image: bg4,
+                audio: { upper: "01 nase novo slovo je slovo R kazi R.mp3", lower:"02 ovo je nase malo slovo R kazi R.mp3", delay: 8000 },
+                veliko:"radno-27.png",
+                malo: "radno-28.png"
+            })
+        }
+        // DZ 12
+        if(this.props.slide === "b"){
+            this.setState({
+                image: bg4,
+                audio: { upper: "01 nase novo slovo je slovo R kazi R.mp3", lower:"02 ovo je nase malo slovo R kazi R.mp3", delay: 8000 },
+                veliko:"radno-03.png",
+                malo: "radno-04.png"
+            })
+        }
     }
 
     render() {

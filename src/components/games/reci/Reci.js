@@ -12,6 +12,9 @@ import ReciP from './ReciP'
 import ReciP3 from './ReciP3'
 import ReciK from './ReciK'
 import ReciK3 from './ReciK3'
+import ReciL from './ReciL'
+import ReciL3 from './ReciL3'
+import ReciLJ3 from "./ReciLJ3"
 
 import Delay from "react-delay-render";
 
@@ -62,6 +65,15 @@ class Reci extends React.Component{
         }
         if(this.props.slide === "k3"){
             this.setState({ reci: ReciK3, image:bg2 })
+        }
+        if(this.props.slide === "l"){
+            this.setState({ reci: ReciL })
+        }
+        if(this.props.slide === "l3"){
+            this.setState({ reci: ReciL3, image:bg2 })
+        }
+        if(this.props.slide === "lj3"){
+            this.setState({ reci: ReciLJ3, image:bg2 })
         }
 
     }

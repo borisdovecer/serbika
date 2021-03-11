@@ -26,6 +26,7 @@ import bg11 from './bg-suma.png'
 import bg12 from './bg-bara.png'
 import bg13 from "./bg-zivotinjce.png"
 import bg14 from './bg-vasar.png'
+import bg15 from './bg-cirkus.png'
 
 
 import PreloadImage from "react-preload-image";
@@ -92,6 +93,14 @@ class Skrivalice extends React.Component{
         // DZ 09
         if(this.props.slide === "k"){
             this.setState({ image: bg14, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-23.png", slova:SlovaP })
+        }
+        // DZ 10
+        if(this.props.slide === "l"){
+            this.setState({ image: bg10, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-25.png", slova:SlovaP })
+        }
+        // DZ 11
+        if(this.props.slide === "lj"){
+            this.setState({ image: bg15, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-27.png", slova:SlovaP })
         }
     }
 
