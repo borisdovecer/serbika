@@ -15,6 +15,7 @@ import Pravilna from "../games/pravilna-slova/Pravilna"
 import Opisivanje from "../games/opisivanje/Opisivanje"
 import Dzak from "../games/dzak/Dzak"
 import Leptiri from "../games/leptiri/Leptiri"
+import Spirala from "../games/spirala/Spirala"
 
 import '../../App.css';
 import '../../bootstrap.css'
@@ -22,7 +23,7 @@ import '../../bootstrap.css'
 
 class Dz07 extends React.Component {
     state = {
-        slide: 1
+        slide: 0
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )
@@ -32,6 +33,7 @@ class Dz07 extends React.Component {
     render() {
         return (
             <div style={{width: "100%"}} >
+                { this.state.slide === 0 ? <Spirala slide={"sh"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 1 ? <Main slide={"main"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 2 ? <Slova slide={"sh"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"sh"} nextSlide={this.nextSlide}/> : null}
