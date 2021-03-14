@@ -1,8 +1,8 @@
-const SlovaSh = [
+const SlovaK = [
     {
         id: 1,
-        name: "i",
-        image: "radno-19.png",
+        name: "t",
+        image: "radno-43.png",
         color: "#fd0001",
         order: 1,
         found: false,
@@ -29,9 +29,9 @@ const SlovaSh = [
     },
     {
         id: 4,
-        name: "m",
+        name: "i",
         order: 2,
-        image: "radno-29.png",
+        image: "radno-19.png",
         color: "#fd0001",
         found: false,
         top: "40.5%",
@@ -39,8 +39,9 @@ const SlovaSh = [
     },
     {
         id: 5,
-        name: "a",
-        image: "radno-02.png",
+        name: "k",
+        order: 3,
+        image: "radno-23.png",
         color: "#fd0001",
         found: false,
         top: "40.5%",
@@ -49,8 +50,7 @@ const SlovaSh = [
     {
         id: 6,
         name: "a",
-        order: 3,
-        image: "radno-01.png",
+        image: "radno-02.png",
         color: "#fd0001",
         found: false,
         top: "39.5%",
@@ -59,7 +59,8 @@ const SlovaSh = [
     {
         id: 7,
         name: "a",
-        image: "radno-02.png",
+        order: 4,
+        image: "radno-01.png",
         color: "#fd0001",
         found: false,
         top: "37%",
@@ -67,9 +68,8 @@ const SlovaSh = [
     },
     {
         id: 8,
-        name: "m",
-        order: 4,
-        image: "radno-29.png",
+        name: "a",
+        image: "radno-02.png",
         color: "#fd0001",
         found: false,
         top: "32.5%",
@@ -77,8 +77,9 @@ const SlovaSh = [
     },
     {
         id: 9,
-        name: "a",
-        image: "radno-02.png",
+        name: "t",
+        order: 5,
+        image: "radno-43.png",
         color: "#fd0001",
         found: false,
         top: "27.5%",
@@ -87,7 +88,8 @@ const SlovaSh = [
     {
         id: 10,
         name: "a",
-        image: "radno-02.png",
+        order: 6,
+        image: "radno-01.png",
         color: "#fd0001",
         found: false,
         top: "22.5%",
@@ -113,8 +115,9 @@ const SlovaSh = [
     },
     {
         id: 13,
-        name: "a",
-        image: "radno-02.png",
+        name: "k",
+        order: 7,
+        image: "radno-23.png",
         color: "#fd0001",
         found: false,
         top: "7.5%",
@@ -122,9 +125,8 @@ const SlovaSh = [
     },
     {
         id: 14,
-        name: "m",
-        order: 5,
-        image: "radno-29.png",
+        name: "a",
+        image: "radno-02.png",
         color: "#fd0001",
         found: false,
         top: "5.5%",
@@ -133,7 +135,8 @@ const SlovaSh = [
     {
         id: 15,
         name: "a",
-        image: "radno-02.png",
+        order: 8,
+        image: "radno-01.png",
         color: "#fd0001",
         found: false,
         top: "5%",
@@ -186,8 +189,9 @@ const SlovaSh = [
     },
     {
         id: 21,
-        name: "a",
-        image: "radno-02.png",
+        name: "t",
+        order: 9,
+        image: "radno-43.png",
         color: "#fd0001",
         found: false,
         top: "18.5%",
@@ -196,8 +200,7 @@ const SlovaSh = [
     {
         id: 22,
         name: "a",
-        order: 6,
-        image: "radno-01.png",
+        image: "radno-02.png",
         color: "#fd0001",
         found: false,
         top: "24%",
@@ -205,8 +208,9 @@ const SlovaSh = [
     },
     {
         id: 23,
-        name: "a",
-        image: "radno-02.png",
+        name: "o",
+        order: 10,
+        image: "radno-35.png",
         color: "#fd0001",
         found: false,
         top: "29.5%",
@@ -223,9 +227,8 @@ const SlovaSh = [
     },
     {
         id: 25,
-        name: "sh",
-        order: 7,
-        image: "radno-59.png",
+        name: "a",
+        image: "radno-02.png",
         color: "#fd0001",
         found: false,
         top: "33%",
@@ -233,8 +236,9 @@ const SlovaSh = [
     },
     {
         id: 26,
-        name: "a",
-        image: "radno-02.png",
+        name: "j",
+        order: 11,
+        image: "radno-21.png",
         color: "#fd0001",
         found: false,
         top: "33%",
@@ -278,8 +282,9 @@ const SlovaSh = [
     },
     {
         id: 31,
-        name: "a",
-        image: "radno-02.png",
+        name: "e",
+        order: 12,
+        image: "radno-13.png",
         color: "#fd0001",
         found: false,
         top: "19.5%",
@@ -305,8 +310,9 @@ const SlovaSh = [
     },
     {
         id: 34,
-        name: "a",
-        image: "radno-02.png",
+        name: "s",
+        order: 13,
+        image: "radno-41.png",
         color: "#fd0001",
         found: false,
         top: "12%",
@@ -314,9 +320,8 @@ const SlovaSh = [
     },
     {
         id: 35,
-        name: "n",
-        order: 8,
-        image: "radno-31.png",
+        name: "a",
+        image: "radno-02.png",
         color: "#ec7b0f",
         found: false,
         top: "12.3%",
@@ -343,7 +348,8 @@ const SlovaSh = [
     {
         id: 38,
         name: "a",
-        image: "radno-02.png",
+        order: 14,
+        image: "radno-01.png",
         color: "#fd0001",
         found: false,
         top: "24.3%",
@@ -378,9 +384,9 @@ const SlovaSh = [
     },
     {
         id: 41,
-        name: "u",
-        order: 9,
-        image: "radno-47.png",
+        name: "t",
+        order: 15,
+        image: "radno-43.png",
         color: "#fd0001",
         found: false,
         top: "19.3%",
@@ -390,4 +396,4 @@ const SlovaSh = [
 
 ]
 
-export default SlovaSh
+export default SlovaK

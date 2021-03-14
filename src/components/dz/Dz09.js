@@ -15,6 +15,7 @@ import Pravilna from "../games/pravilna-slova/Pravilna"
 import Opisivanje from "../games/opisivanje/Opisivanje"
 import Dzak from "../games/dzak/Dzak"
 import Leptiri from "../games/leptiri/Leptiri"
+import Spirala from "../games/spirala/Spirala"
 
 import '../../App.css';
 import '../../bootstrap.css'
@@ -51,8 +52,9 @@ class Dz09 extends React.Component {
                 { this.state.slide === 17 ? <Opisivanje slide={"dz09"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 18 ? <Dzak slide={"dz09"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 19 ? <Leptiri slide={"dz09"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 20 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 21 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 20 ? <Spirala slide={"k"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 21 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 22 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

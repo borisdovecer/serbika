@@ -23,7 +23,7 @@ import '../../bootstrap.css'
 
 class Dz07 extends React.Component {
     state = {
-        slide: 0
+        slide: 1
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )
@@ -33,7 +33,6 @@ class Dz07 extends React.Component {
     render() {
         return (
             <div style={{width: "100%"}} >
-                { this.state.slide === 0 ? <Spirala slide={"sh"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 1 ? <Main slide={"main"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 2 ? <Slova slide={"sh"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"sh"} nextSlide={this.nextSlide}/> : null}
@@ -52,8 +51,9 @@ class Dz07 extends React.Component {
                 { this.state.slide === 16 ? <Opisivanje slide={"dz07"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 17 ? <Dzak slide={"dz07"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 18 ? <Leptiri slide={"dz07"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 19 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 20 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 19 ? <Spirala slide={"sh"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 21 ? <Video end={this.backToMain}/> : null}
 
             </div>
         );

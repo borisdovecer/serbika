@@ -15,10 +15,10 @@ import Pravilna from "../games/pravilna-slova/Pravilna"
 import Opisivanje from "../games/opisivanje/Opisivanje"
 import Dzak from "../games/dzak/Dzak"
 import Leptiri from "../games/leptiri/Leptiri"
+import Spirala from "../games/spirala/Spirala"
 
 import '../../App.css';
 import '../../bootstrap.css'
-
 
 class Dz11 extends React.Component {
     state = {
@@ -49,8 +49,9 @@ class Dz11 extends React.Component {
                 { this.state.slide === 15 ? <Opisivanje slide={"dz11"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 16 ? <Dzak slide={"dz11"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 17 ? <Leptiri slide={"dz11"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 18 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 19 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 18 ? <Spirala slide={"lj"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 19 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }
