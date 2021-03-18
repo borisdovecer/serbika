@@ -17,6 +17,8 @@ import Dzak from "../games/dzak/Dzak"
 import Leptiri from "../games/leptiri/Leptiri"
 import Spirala from "../games/spirala/Spirala"
 
+import Povezivanje from "../games/povezivanje/Povezivanje"
+
 import '../../App.css';
 import '../../bootstrap.css'
 
@@ -53,8 +55,9 @@ class Dz08 extends React.Component {
                 { this.state.slide === 18 ? <Dzak slide={"dz08"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 19 ? <Leptiri slide={"dz08"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 20 ? <Spirala slide={"p"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 21 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 22 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 21 ? <Povezivanje slide={"p"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 22 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 23 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }
