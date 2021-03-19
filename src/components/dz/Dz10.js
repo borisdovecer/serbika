@@ -19,11 +19,12 @@ import Spirala from "../games/spirala/Spirala"
 
 import '../../App.css';
 import '../../bootstrap.css'
+import Slagalica from "../games/slagalica/Slagalica"
 
 
 class Dz10 extends React.Component {
     state = {
-        slide: 1
+        slide: 0
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )
@@ -33,6 +34,7 @@ class Dz10 extends React.Component {
     render() {
         return (
             <div style={{width: "100%"}} >
+                { this.state.slide === 0 ? <Slagalica slide={"l"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 1 ? <Main slide={"main"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 2 ? <Slova slide={"l"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"l"} nextSlide={this.nextSlide}/> : null}
