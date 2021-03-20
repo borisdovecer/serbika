@@ -5,15 +5,25 @@ import SlovaDz06 from "./SlovaDz06";
 class Pravilna extends React.Component {
     state = {
         slova: SlovaDz06,
+        arr: [],
         complete: false
     }
 
     handleClick = (e) => {
         let fake = e.target.attributes.class.value
-      //  let {slova} = this.state
+        let name = e.target.attributes.name.value
+        let {arr} = this.state
 
-        if(fake === "fake"){
-            console.log("ovaj je fake!")
+        if(fake !== "fake"){
+            arr.push(name)
+            this.setState({arr})
+            this.complete()
+        }
+    }
+
+    complete = () => {
+        const {arr} = this.state
+        if(arr.length >= 5) {
             this.setState({complete: true})
         }
     }
@@ -23,9 +33,10 @@ class Pravilna extends React.Component {
         return(
             <div className={"main"}>
                 {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
-                <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
+                <div className={'container'}>
+                    <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
                     {slova.map((p,i) =>
-                        <div style={{width: "15%", height:"300px" }}>
+                        <div style={{width: "20%", height:"300px" }}>
                             <img
                                 style={{width:"100%"}}
                                 onClick={this.handleClick}
@@ -38,6 +49,7 @@ class Pravilna extends React.Component {
                         </div>
                     )}
 
+                </div>
                 </div>
             </div>
         )

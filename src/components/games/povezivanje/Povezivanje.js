@@ -1,6 +1,7 @@
 import React from 'react'
-import LineTo from 'react-lineto';
+import LineTo from 'react-lineto'
 import PojmoviP from "./PojmoviP"
+import PojmoviL from "./PojmoviL"
 
 
 class Povezivanje extends React.Component {
@@ -12,12 +13,16 @@ class Povezivanje extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({pojmovi: PojmoviP.sort(() => Math.random() - 0.5)})
+        if(this.props.slide === "p") {
+            this.setState({pojmovi: PojmoviP.sort(() => Math.random() - 0.5)})
+        }
+        if(this.props.slide === "l") {
+            this.setState({pojmovi: PojmoviL.sort(() => Math.random() - 0.5)})
+        }
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         this.compare()
-
     }
 
     handleClick = (e) => {
@@ -58,22 +63,20 @@ class Povezivanje extends React.Component {
                 arr.push(true)
             }
         })
-
         if(arr.length === this.state.pojmovi.length){
             this.setState({ complete: true })
         }
     }
 
     render() {
-        const {pojmovi} = this.state
+        const {pojmovi, complete} = this.state
         return (
             <div className={"main text-center"} >
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop: "20%"}} onClick={this.props.nextSlide}/> : null}
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop: "20%"}} onClick={this.props.nextSlide}/> : null}
 
                 {pojmovi.map((p, i) =>
                     <div>
                         {p.found ?  <LineTo from={p.name} to={p.id} /> : null}
-
                         <img src={"./slides/" + p.image }
                              key={i}
                              id={p.id}
@@ -83,7 +86,6 @@ class Povezivanje extends React.Component {
                              style={{width:"10%", position:"absolute", left:p.left, marginTop:p.top  }}
                              onClick={this.handleClick}
                         />
-
                     </div>
                 )}
                 <div style={{paddingTop: "5%"}}>
@@ -98,7 +100,6 @@ class Povezivanje extends React.Component {
                         </h1>
                     )}
                 </div>
-
             </div>
         )
     }

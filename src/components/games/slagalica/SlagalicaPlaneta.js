@@ -101,6 +101,13 @@ const SlagalicaPlaneta = {
             image: "radno-59.png",
             top: "55%",
             left: "72%"
+        },
+        {
+            id: 10,
+            name: "i",
+            image: "radno-19.png",
+            top: "55%",
+            left: "72%"
         }
     ]
 

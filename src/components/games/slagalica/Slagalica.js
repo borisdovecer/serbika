@@ -3,7 +3,6 @@ import SlagalicaL from "./SlagalicaL"
 import SlagalicaPlaneta from './SlagalicaPlaneta'
 
 import { DragDropContext, Draggable, Droppable  } from 'react-beautiful-dnd'
-
 // fake data generator
 const getItems = count =>
     Array.from({ length: count }, (v, k) => k).map(k => ({
@@ -78,6 +77,7 @@ class Slagalica extends React.Component {
     onDragEnd = (result) => {
         let {slagalica, arr} = this.state
         // dropped outside the list
+
         if (!result.destination) {
             return;
         }
@@ -91,6 +91,7 @@ class Slagalica extends React.Component {
                 return;
             }
         } )
+
 
         const slag = reorder(
             slagalica.ponudjena,

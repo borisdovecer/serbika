@@ -4,7 +4,7 @@ import PojmoviSh from "./PojmoviSh"
 class Pojmovi extends React.Component {
     state = {
         pojmovi: PojmoviSh,
-        complete : false
+        complete : true
     }
 
     componentDidMount() {
