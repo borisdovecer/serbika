@@ -1,5 +1,7 @@
 import React from 'react'
 import SlagalicaL from "./SlagalicaL"
+import SlagalicaPlaneta from './SlagalicaPlaneta'
+
 import { DragDropContext, Draggable, Droppable  } from 'react-beautiful-dnd'
 
 // fake data generator
@@ -25,31 +27,37 @@ const getItemStyle = (isDragging, draggableStyle) => ({
     userSelect: "none",
     padding: grid * 2,
     margin: `0 0 ${grid}px 0`,
+    width: "30%",
+
 
     // change background colour if dragging
-    background: isDragging ? "lightgreen" : "grey",
+   // background: isDragging ? "lightgreen" : "grey",
 
     // styles we need to apply on draggables
     ...draggableStyle
 });
 
 const getListStyle = isDraggingOver => ({
-    background: isDraggingOver ? "lightblue" : "lightgrey",
+  //  background: isDraggingOver ? "lightblue" : "lightgrey",
     padding: grid,
-    width: 250
+    width: 500,
+    height: 500
 });
 
 
 class Slagalica extends React.Component {
     state = {
-        items: getItems(10),
         slagalica: SlagalicaL,
+        arr: [],
         complete: false
     }
 
     componentDidMount() {
+        if(this.props.slide === 'planeta'){
+            this.setState({ slagalica: SlagalicaPlaneta})
+        }
         if(this.props.slide === 'l'){
-            this.setState({ slagalica: SlagalicaL })
+            this.setState({ slagalica: SlagalicaL})
         }
     }
 
@@ -65,40 +73,46 @@ class Slagalica extends React.Component {
         /*...*/
     };
     onDragUpdate = () => {
-        /*...*/
+
     };
     onDragEnd = (result) => {
-        let {slagalica} = this.state
+        let {slagalica, arr} = this.state
         // dropped outside the list
         if (!result.destination) {
             return;
         }
+        slagalica.word.forEach(s => {
+            if(result.destination.droppableId ===  "droppable"+s.name && result.draggableId === "item-"+s.name){
+                s.found = true
+                slagalica.ponudjena.splice(result.source.index, 1)
+                arr.push(s.id)
+                this.setState({slagalica, arr})
+            }else{
+                return;
+            }
+        } )
 
+        const slag = reorder(
+            slagalica.ponudjena,
+            result.source.index,
+            result.destination.index
+        );
 
-        if(result.destination.index ===  0){
-            console.log(result)
+        slagalica.ponudjena = slag
+        this.setState({
+            slagalica
+        });
 
-            slagalica.word[result.source.index].found = true
-            this.setState({slagalica})
+        if(this.state.arr.length === slagalica.word.length){
+            this.setState({complete: true})
         }
-
-
-        // const slag = reorder(
-        //     slagalica.ponudjena,
-        //     result.source.index,
-        //     result.destination.index
-        // );
-        //
-        // slagalica.ponudjena = slag
-        // this.setState({
-        //     slagalica
-        // });
     }
 
     render() {
         let {slagalica} = this.state
         return(
             <div className={'main text-center'}>
+                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
                 <DragDropContext onDragEnd={this.onDragEnd}>
                     <img
                         src={"./slides/" + slagalica.image}
@@ -113,33 +127,34 @@ class Slagalica extends React.Component {
                                 style={getListStyle(snapshot.isDraggingOver)}
                             >
                                 {this.state.slagalica.ponudjena.map((item, index) => (
-                                    <Draggable key={item.id} draggableId={"item-"+item.id} index={index}>
-                                        {(provided, snapshot) => (
-                                            <div
-                                                key={item.id}
-                                                ref={provided.innerRef}
-                                                {...provided.draggableProps}
-                                                {...provided.dragHandleProps}
-                                                style={getItemStyle(
-                                                    snapshot.isDragging,
-                                                    provided.draggableProps.style
-                                                )}
-                                            >
-                                                    <img
-                                                        src={"./slides/" + item.image}
-                                                        alt={"A"}
-                                                        style={{width:"30%"}}
-                                                    />
-                                            </div>
-                                        )}
+                                    <div style={{display:"inline-block"}} >
+                                    <Draggable key={item.id} draggableId={"item-"+item.name} index={index} >
+                                {(provided, snapshot) => (
+                                    <div
+                                    key={item.id}
+                                    ref={provided.innerRef}
+                                {...provided.draggableProps}
+                                {...provided.dragHandleProps}
+                                    className={"slagalica-ponudjena"}
+                                    >
+                                    <img
+                                    src={"./slides/" + item.image}
+                                    alt={"A"}
+                                    style={{width:"80%"}}
+                                    />
+                                    </div>
+                                    )}
                                     </Draggable>
-                                ))}
+                                    </div>
+
+                                    ))
+                                }
                                 {provided.placeholder}
                             </div>
                         )}
                     </Droppable>
                     {slagalica.word.map((s, i) =>
-                    <Droppable droppableId={"droppable"+s.id }
+                    <Droppable droppableId={"droppable"+s.name }
                                key={i}
                                index={s.id}
                     >
@@ -156,11 +171,14 @@ class Slagalica extends React.Component {
                                         alt={"A"}
                                         style={{width:"100%", position:"absolute", left:"0px"}}
                                     /> :  null}
+                                    {provided.placeholder}
                                 </div>
+
                             )}
 
                     </Droppable>
                     )}
+
 
 
 

@@ -44,22 +44,22 @@ const SlagalicaL = {
         },
         {
             id: 4,
-            name: "l",
-            image: "radno-25.png",
+            name: "m",
+            image: "radno-29.png",
             top: "10%",
             left: "75%"
         },
         {
             id: 5,
-            name: "u",
-            image: "radno-47.png",
+            name: "a",
+            image: "radno-01.png",
             top: "34%",
             left: "78%"
         },
         {
             id: 6,
-            name: "k",
-            image: "radno-23.png",
+            name: "sh",
+            image: "radno-59.png",
             top: "55%",
             left: "72%"
         }

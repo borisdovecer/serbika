@@ -24,7 +24,7 @@ import Slagalica from "../games/slagalica/Slagalica"
 
 class Dz10 extends React.Component {
     state = {
-        slide: 0
+        slide: 1
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )
@@ -34,7 +34,6 @@ class Dz10 extends React.Component {
     render() {
         return (
             <div style={{width: "100%"}} >
-                { this.state.slide === 0 ? <Slagalica slide={"l"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 1 ? <Main slide={"main"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 2 ? <Slova slide={"l"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"l"} nextSlide={this.nextSlide}/> : null}
@@ -55,8 +54,10 @@ class Dz10 extends React.Component {
                 { this.state.slide === 18 ? <Dzak slide={"dz10"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 19 ? <Leptiri slide={"dz10"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 20 ? <Spirala slide={"l"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 21 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 22 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 21 ? <Slagalica slide={"l"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 22 ? <Slagalica slide={"planeta"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 23 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 24 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }
