@@ -174,16 +174,9 @@ class Slagalica extends React.Component {
                                     /> :  null}
                                     {provided.placeholder}
                                 </div>
-
                             )}
-
                     </Droppable>
                     )}
-
-
-
-
-
 
                     {/*{slagalica.ponudjena.map((s, i) =>*/}
                 {/*    <img*/}

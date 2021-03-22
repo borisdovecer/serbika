@@ -12,7 +12,7 @@ const SlovaLj = [
     {
         id: 2,
         name: "x",
-        image: "radno-02.png",
+        image: "radno-07-black.png",
         color: "#fd0001",
         found: false,
         top: "41%",
@@ -21,7 +21,7 @@ const SlovaLj = [
     {
         id: 3,
         name: "x",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "41%",
@@ -60,7 +60,7 @@ const SlovaLj = [
     {
         id: 7,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-03-black.png",
         color: "#fd0001",
         found: false,
         top: "37%",
@@ -79,7 +79,7 @@ const SlovaLj = [
     {
         id: 9,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-02-black.png",
         color: "#fd0001",
         found: false,
         top: "27.5%",
@@ -88,7 +88,7 @@ const SlovaLj = [
     {
         id: 10,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "22.5%",
@@ -107,7 +107,7 @@ const SlovaLj = [
     {
         id: 12,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-10-black.png",
         color: "#fd0001",
         found: false,
         top: "10.5%",
@@ -116,7 +116,7 @@ const SlovaLj = [
     {
         id: 13,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "7.5%",
@@ -125,7 +125,7 @@ const SlovaLj = [
     {
         id: 14,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-09-black.png",
         color: "#fd0001",
         found: false,
         top: "5.5%",
@@ -144,7 +144,7 @@ const SlovaLj = [
     {
         id: 16,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-08-black.png",
         color: "#fd0001",
         found: false,
         top: "5%",
@@ -153,7 +153,7 @@ const SlovaLj = [
     {
         id: 17,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-07-black.png",
         color: "#fd0001",
         found: false,
         top: "5%",
@@ -172,7 +172,7 @@ const SlovaLj = [
     {
         id: 19,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-06-black.png",
         color: "#fd0001",
         found: false,
         top: "8%",
@@ -181,7 +181,7 @@ const SlovaLj = [
     {
         id: 20,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-05-black.png",
         color: "#fd0001",
         found: false,
         top: "13.5%",
@@ -210,7 +210,7 @@ const SlovaLj = [
     {
         id: 23,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-04-black.png",
         color: "#fd0001",
         found: false,
         top: "29.5%",
@@ -219,7 +219,7 @@ const SlovaLj = [
     {
         id: 24,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-03-black.png",
         color: "#fd0001",
         found: false,
         top: "33%",
@@ -238,7 +238,7 @@ const SlovaLj = [
     {
         id: 26,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-02-black.png",
         color: "#fd0001",
         found: false,
         top: "33%",
@@ -257,7 +257,7 @@ const SlovaLj = [
     {
         id: 28,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "32.5%",
@@ -266,7 +266,7 @@ const SlovaLj = [
     {
         id: 29,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "29.5%",
@@ -275,7 +275,7 @@ const SlovaLj = [
     {
         id: 30,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-10-black.png",
         color: "#fd0001",
         found: false,
         top: "24.5%",
@@ -284,7 +284,7 @@ const SlovaLj = [
     {
         id: 31,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-09-black.png",
         color: "#fd0001",
         found: false,
         top: "19.5%",
@@ -293,7 +293,7 @@ const SlovaLj = [
     {
         id: 32,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-08-black.png",
         color: "#fd0001",
         found: false,
         top: "14.5%",
@@ -302,7 +302,7 @@ const SlovaLj = [
     {
         id: 33,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-07-black.png",
         color: "#fd0001",
         found: false,
         top: "12%",
@@ -311,7 +311,7 @@ const SlovaLj = [
     {
         id: 34,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-06-black.png",
         color: "#fd0001",
         found: false,
         top: "12%",
@@ -330,7 +330,7 @@ const SlovaLj = [
     {
         id: 36,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-05-black.png",
         color: "#fd0001",
         found: false,
         top: "14%",
@@ -339,7 +339,7 @@ const SlovaLj = [
     {
         id: 37,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-04-black.png",
         color: "#fd0001",
         found: false,
         top: "19.3%",
@@ -348,7 +348,7 @@ const SlovaLj = [
     {
         id: 38,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-03-black.png",
         color: "#fd0001",
         found: false,
         top: "24.3%",
@@ -367,7 +367,7 @@ const SlovaLj = [
     {
         id: 40,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-02-black.png",
         color: "#fd0001",
         found: false,
         top: "26.3%",
@@ -376,7 +376,7 @@ const SlovaLj = [
     {
         id: 41,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "24.3%",

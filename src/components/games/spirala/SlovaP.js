@@ -12,7 +12,7 @@ const SlovaP = [
     {
         id: 2,
         name: "x",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "41%",
@@ -21,7 +21,7 @@ const SlovaP = [
     {
         id: 3,
         name: "x",
-        image: "radno-02.png",
+        image: "radno-02-black.png",
         color: "#fd0001",
         found: false,
         top: "41%",
@@ -50,7 +50,7 @@ const SlovaP = [
     {
         id: 6,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-07-black.png",
         color: "#fd0001",
         found: false,
         top: "39.5%",
@@ -59,7 +59,7 @@ const SlovaP = [
     {
         id: 7,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "37%",
@@ -68,7 +68,7 @@ const SlovaP = [
     {
         id: 8,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-04-black.png",
         color: "#fd0001",
         found: false,
         top: "32.5%",
@@ -97,7 +97,7 @@ const SlovaP = [
     {
         id: 11,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "16.5%",
@@ -116,7 +116,7 @@ const SlovaP = [
     {
         id: 13,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-02-black.png",
         color: "#fd0001",
         found: false,
         top: "7.5%",
@@ -135,7 +135,7 @@ const SlovaP = [
     {
         id: 15,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-03-black.png",
         color: "#fd0001",
         found: false,
         top: "5%",
@@ -144,7 +144,7 @@ const SlovaP = [
     {
         id: 16,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-04-black.png",
         color: "#fd0001",
         found: false,
         top: "5%",
@@ -153,7 +153,7 @@ const SlovaP = [
     {
         id: 17,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-02-black.png",
         color: "#fd0001",
         found: false,
         top: "5%",
@@ -172,7 +172,7 @@ const SlovaP = [
     {
         id: 19,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-03-black.png",
         color: "#fd0001",
         found: false,
         top: "8%",
@@ -181,7 +181,7 @@ const SlovaP = [
     {
         id: 20,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-06-black.png",
         color: "#fd0001",
         found: false,
         top: "13.5%",
@@ -190,7 +190,7 @@ const SlovaP = [
     {
         id: 21,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "18.5%",
@@ -199,7 +199,7 @@ const SlovaP = [
     {
         id: 22,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-02-black.png",
         color: "#fd0001",
         found: false,
         top: "24%",
@@ -218,7 +218,7 @@ const SlovaP = [
     {
         id: 24,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-04-black.png",
         color: "#fd0001",
         found: false,
         top: "33%",
@@ -237,7 +237,7 @@ const SlovaP = [
     {
         id: 26,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-02-black.png",
         color: "#fd0001",
         found: false,
         top: "33%",
@@ -246,7 +246,7 @@ const SlovaP = [
     {
         id: 27,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-03-black.png",
         color: "#fd0001",
         found: false,
         top: "33%",
@@ -255,7 +255,7 @@ const SlovaP = [
     {
         id: 28,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "32.5%",
@@ -264,7 +264,7 @@ const SlovaP = [
     {
         id: 29,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-04-black.png",
         color: "#fd0001",
         found: false,
         top: "29.5%",
@@ -283,7 +283,7 @@ const SlovaP = [
     {
         id: 31,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-02-black.png",
         color: "#fd0001",
         found: false,
         top: "19.5%",
@@ -292,7 +292,7 @@ const SlovaP = [
     {
         id: 32,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-06-black.png",
         color: "#fd0001",
         found: false,
         top: "14.5%",
@@ -301,7 +301,7 @@ const SlovaP = [
     {
         id: 33,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-03-black.png",
         color: "#fd0001",
         found: false,
         top: "12%",
@@ -320,7 +320,7 @@ const SlovaP = [
     {
         id: 35,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-07-black.png",
         color: "#ec7b0f",
         found: false,
         top: "12.3%",
@@ -329,7 +329,7 @@ const SlovaP = [
     {
         id: 36,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-04-black.png",
         color: "#fd0001",
         found: false,
         top: "14%",
@@ -338,7 +338,7 @@ const SlovaP = [
     {
         id: 37,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-05-black.png",
         color: "#fd0001",
         found: false,
         top: "19.3%",
@@ -347,7 +347,7 @@ const SlovaP = [
     {
         id: 38,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-07-black.png",
         color: "#fd0001",
         found: false,
         top: "24.3%",
@@ -356,7 +356,7 @@ const SlovaP = [
     {
         id: 39,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "26.3%",
@@ -364,7 +364,7 @@ const SlovaP = [
     },
     {
         id: 40,
-        name: "a",
+        name: "m",
         order: 13,
         image: "radno-29.png",
         color: "#fd0001",
@@ -375,7 +375,7 @@ const SlovaP = [
     {
         id: 41,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-04-black.png",
         color: "#fd0001",
         found: false,
         top: "24.3%",
@@ -384,7 +384,7 @@ const SlovaP = [
     {
         id: 41,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-06-black.png",
         color: "#fd0001",
         found: false,
         top: "19.3%",

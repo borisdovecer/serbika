@@ -1,8 +1,8 @@
 import React from 'react'
 import PreloadImage from "react-preload-image";
+
 import SlovaSh from "./SlovaSh"
 import RecenicaSh from "./RecenicaSh"
-
 import SlovaP from "./SlovaP"
 import RecenicaP from "./RecenicaP"
 import SlovaK from "./SlovaK"

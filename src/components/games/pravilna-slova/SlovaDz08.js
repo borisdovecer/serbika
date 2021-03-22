@@ -1,58 +1,58 @@
-const SlovaDz06 = [
+const SlovaDz08 = [
     {
         id: 1,
-        name: "r",
-        image: "radno-39.png",
-        fake: false,
+        name: "p",
+        image: "radno-37.png",
+        fake: true,
         found: false
     },
     {
         id: 2,
-        name: "i",
-        image: "radno-19.png",
+        name: "sh",
+        image: "radno-59.png",
         fake: true,
         found: false
     },
     {
         id: 3,
-        name: "n",
-        image: "radno-31.png",
-        fake: false,
+        name: "r",
+        image: "radno-39.png",
+        fake: true,
         found: false
     },
     {
         id: 4,
-        name: "m",
-        image: "radno-29.png",
+        name: "j",
+        image: "radno-21.png",
         fake: false,
         found: false
     },
     {
         id: 5,
-        name: "j",
-        image: "radno-21.png",
-        fake: true,
+        name: "i",
+        image: "radno-19.png",
+        fake: false,
         found: false
     },
     {
         id: 6,
         name: "i",
         image: "radno-19.png",
-        fake: false,
+        fake: true,
         found: false
     },
     {
         id: 7,
         name: "u",
         image: "radno-47.png",
-        fake: true,
+        fake: false,
         found: false
     },
     {
         id: 8,
-        name: "a",
-        image: "radno-01.png",
-        fake: true,
+        name: "p",
+        image: "radno-37.png",
+        fake: false,
         found: false
     },
     {
@@ -64,11 +64,11 @@ const SlovaDz06 = [
     },
     {
         id: 10,
-        name: "u",
-        image: "radno-47.png",
+        name: "sh",
+        image: "radno-59.png",
         fake: false,
         found: false
     },
 ]
 
-export default SlovaDz06
+export default SlovaDz08

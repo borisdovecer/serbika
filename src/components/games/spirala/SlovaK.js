@@ -12,7 +12,7 @@ const SlovaK = [
     {
         id: 2,
         name: "x",
-        image: "radno-02.png",
+        image: "radno-07-black.png",
         color: "#fd0001",
         found: false,
         top: "41%",
@@ -21,7 +21,7 @@ const SlovaK = [
     {
         id: 3,
         name: "x",
-        image: "radno-02.png",
+        image: "radno-08-black.png",
         color: "#fd0001",
         found: false,
         top: "41%",
@@ -50,7 +50,7 @@ const SlovaK = [
     {
         id: 6,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-06-black.png",
         color: "#fd0001",
         found: false,
         top: "39.5%",
@@ -69,7 +69,7 @@ const SlovaK = [
     {
         id: 8,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-06-black.png",
         color: "#fd0001",
         found: false,
         top: "32.5%",
@@ -98,7 +98,7 @@ const SlovaK = [
     {
         id: 11,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-09-black.png",
         color: "#fd0001",
         found: false,
         top: "16.5%",
@@ -107,7 +107,7 @@ const SlovaK = [
     {
         id: 12,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-08-black.png",
         color: "#fd0001",
         found: false,
         top: "10.5%",
@@ -126,7 +126,7 @@ const SlovaK = [
     {
         id: 14,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "5.5%",
@@ -145,7 +145,7 @@ const SlovaK = [
     {
         id: 16,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "5%",
@@ -154,7 +154,7 @@ const SlovaK = [
     {
         id: 17,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-10-black.png",
         color: "#fd0001",
         found: false,
         top: "5%",
@@ -163,7 +163,7 @@ const SlovaK = [
     {
         id: 18,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-05-black.png",
         color: "#fd0001",
         found: false,
         top: "5%",
@@ -172,7 +172,7 @@ const SlovaK = [
     {
         id: 19,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-03-black.png",
         color: "#fd0001",
         found: false,
         top: "8%",
@@ -181,7 +181,7 @@ const SlovaK = [
     {
         id: 20,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-07-black.png",
         color: "#fd0001",
         found: false,
         top: "13.5%",
@@ -200,7 +200,7 @@ const SlovaK = [
     {
         id: 22,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-07-black.png",
         color: "#fd0001",
         found: false,
         top: "24%",
@@ -219,7 +219,7 @@ const SlovaK = [
     {
         id: 24,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-04-black.png",
         color: "#fd0001",
         found: false,
         top: "33%",
@@ -228,7 +228,7 @@ const SlovaK = [
     {
         id: 25,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-05-black.png",
         color: "#fd0001",
         found: false,
         top: "33%",
@@ -247,7 +247,7 @@ const SlovaK = [
     {
         id: 27,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-09-black.png",
         color: "#fd0001",
         found: false,
         top: "33%",
@@ -256,7 +256,7 @@ const SlovaK = [
     {
         id: 28,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-08-black.png",
         color: "#fd0001",
         found: false,
         top: "32.5%",
@@ -265,7 +265,7 @@ const SlovaK = [
     {
         id: 29,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "29.5%",
@@ -274,7 +274,7 @@ const SlovaK = [
     {
         id: 30,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-10-black.png",
         color: "#fd0001",
         found: false,
         top: "24.5%",
@@ -293,7 +293,7 @@ const SlovaK = [
     {
         id: 32,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-01-black.png",
         color: "#fd0001",
         found: false,
         top: "14.5%",
@@ -302,7 +302,7 @@ const SlovaK = [
     {
         id: 33,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-10-black.png",
         color: "#fd0001",
         found: false,
         top: "12%",
@@ -321,7 +321,7 @@ const SlovaK = [
     {
         id: 35,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-03-black.png",
         color: "#ec7b0f",
         found: false,
         top: "12.3%",
@@ -330,7 +330,7 @@ const SlovaK = [
     {
         id: 36,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-04-black.png",
         color: "#fd0001",
         found: false,
         top: "14%",
@@ -339,7 +339,7 @@ const SlovaK = [
     {
         id: 37,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-06-black.png",
         color: "#fd0001",
         found: false,
         top: "19.3%",
@@ -358,7 +358,7 @@ const SlovaK = [
     {
         id: 39,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-07-black.png",
         color: "#fd0001",
         found: false,
         top: "26.3%",
@@ -367,7 +367,7 @@ const SlovaK = [
     {
         id: 40,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-08-black.png",
         color: "#fd0001",
         found: false,
         top: "26.3%",
@@ -376,7 +376,7 @@ const SlovaK = [
     {
         id: 41,
         name: "a",
-        image: "radno-02.png",
+        image: "radno-06-black.png",
         color: "#fd0001",
         found: false,
         top: "24.3%",
