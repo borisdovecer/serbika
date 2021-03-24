@@ -1,8 +1,8 @@
-const PojmoviL = [
+const PojmoviK = [
     {
         id: 1,
-        name: "ЛОПТА",
-        image: "slika-lopta.jpg",
+        name: "КАКТУС",
+        image: "slika-kaktus.jpg",
         color: "#ff0000",
         top: "3%",
         left: "10%",
@@ -10,17 +10,17 @@ const PojmoviL = [
     },
     {
         id: 2,
-        name: "СЛОН",
-        image: "slika-slon.jpg",
+        name: "КОКОС",
+        image: "slika-kokos.jpg",
         color: "#08ff00",
-        top: "15%",
+        top: "19%",
         left: "10%",
         found: false
     },
     {
         id: 3,
-        name: "ЛИЈА",
-        image: "slika-lija.jpg",
+        name: "ПАТИКЕ",
+        image: "slika-patike.png",
         color: "#0040ff",
         top: "26%",
         left: "10%",
@@ -37,8 +37,8 @@ const PojmoviL = [
     },
     {
         id: 5,
-        name: "ЛИМУН",
-        image: "slika-limun.png",
+        name: "КАПУТ",
+        image: "slika-kaput.jpg",
         color: "#78c310",
         top: "3%",
         left: "70%",
@@ -46,8 +46,8 @@ const PojmoviL = [
     },
     {
         id: 6,
-        name: "ПИЛЕ",
-        image: "slika-pile.png",
+        name: "ЈАЈЕ",
+        image: "slika-jaje.png",
         color: "#dd83ff",
         top: "15%",
         left: "70%",
@@ -55,8 +55,8 @@ const PojmoviL = [
     },
     {
         id: 7,
-        name: "ПАЛМА",
-        image: "sp-palma.png",
+        name: "РИС",
+        image: "sp-ris.png",
         color: "#ff9800",
         top: "28%",
         left: "70%",
@@ -64,8 +64,8 @@ const PojmoviL = [
     },
     {
         id: 8,
-        name: "РУКА",
-        image: "slika-ruka.png",
+        name: "САТ",
+        image: "slika-sat.jpg",
         color: "#00ffb0",
         top: "40%",
         left: "70%",
@@ -74,4 +74,4 @@ const PojmoviL = [
 
 ]
 
-export default PojmoviL
+export default PojmoviK

@@ -2,7 +2,7 @@ const PojmoviSh  = [
     {
         poj: [
             {
-                name: "sismis",
+                name: "sh",
                 image: "sp-sismis.png",
                 top: "20%",
                 left: "1%",
@@ -10,7 +10,7 @@ const PojmoviSh  = [
 
             },
             {
-                name: "reket",
+                name: "r",
                 image: "slika-reket.png",
                 top: "20%",
                 left: "30%",

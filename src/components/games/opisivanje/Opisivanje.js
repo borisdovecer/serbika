@@ -12,7 +12,7 @@ class Opisivanje extends React.Component {
         opis: OpisDz06,
         selected: "",
         guessed: "",
-        complete: false
+        complete: true
     }
 
     componentDidMount() {

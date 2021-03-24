@@ -11,7 +11,7 @@ class Spajanje extends React.Component{
         pojmovi: [],
         selected: "",
         guessed: "",
-        complete: false
+        complete: true
 
     }
 

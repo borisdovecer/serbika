@@ -1,7 +1,10 @@
 import React from 'react'
 import LineTo from 'react-lineto'
 import PojmoviP from "./PojmoviP"
+import PojmoviK from "./PojmoviK"
 import PojmoviL from "./PojmoviL"
+import PojmoviLj from "./PojmoviLj"
+
 
 
 class Povezivanje extends React.Component {
@@ -16,8 +19,14 @@ class Povezivanje extends React.Component {
         if(this.props.slide === "p") {
             this.setState({pojmovi: PojmoviP.sort(() => Math.random() - 0.5)})
         }
+        if(this.props.slide === "k") {
+            this.setState({pojmovi: PojmoviK.sort(() => Math.random() - 0.5)})
+        }
         if(this.props.slide === "l") {
             this.setState({pojmovi: PojmoviL.sort(() => Math.random() - 0.5)})
+        }
+        if(this.props.slide === "lj") {
+            this.setState({pojmovi: PojmoviLj.sort(() => Math.random() - 0.5)})
         }
     }
 
@@ -47,7 +56,7 @@ class Povezivanje extends React.Component {
                     }
                 })
                 this.complete()
-                this.setState({pojmovi:pojmovi, selected: "", guessed: "" })
+                this.setState({pojmovi, selected: "", guessed: "" })
             }, 200 )
         }else if( guessed.length >0 ){
             setTimeout( () => {

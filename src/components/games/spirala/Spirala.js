@@ -20,7 +20,7 @@ class Spirala extends React.Component {
         recenica: RecenicaSh,
         image: bg,
         order: 1,
-        complete : false
+        complete : true
     }
 
     componentDidMount() {

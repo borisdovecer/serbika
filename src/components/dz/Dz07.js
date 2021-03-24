@@ -24,7 +24,7 @@ import '../../bootstrap.css'
 
 class Dz07 extends React.Component {
     state = {
-        slide: 1
+        slide: 20
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )

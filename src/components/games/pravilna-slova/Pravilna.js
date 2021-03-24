@@ -12,7 +12,7 @@ class Pravilna extends React.Component {
     state = {
         slova: [],
         arr: [],
-        complete: false
+        complete: true
     }
 
     componentDidMount() {
@@ -66,10 +66,10 @@ class Pravilna extends React.Component {
     }
 
     render() {
-        const {slova} = this.state
+        const {slova, complete} = this.state
         return(
             <div className={"main"}>
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
                 <div className={'container'}>
                     <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
                     {slova.map((p,i) =>

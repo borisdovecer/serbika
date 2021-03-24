@@ -20,7 +20,7 @@ const PojmoviP = [
     {
         id: 3,
         name: "ШЕШИР",
-        image: "slika-kapa.png",
+        image: "slika-sesir.png",
         color: "#0040ff",
         top: "26%",
         left: "10%",
@@ -38,7 +38,7 @@ const PojmoviP = [
     {
         id: 5,
         name: "ПЕТАО",
-        image: "slika-kokoska.png",
+        image: "slika-petao.jpg",
         color: "#78c310",
         top: "3%",
         left: "70%",
@@ -65,7 +65,7 @@ const PojmoviP = [
     {
         id: 8,
         name: "АУТО",
-        image: "slika-kamion.jpg",
+        image: "slika-kola.jpg",
         color: "#00ffb0",
         top: "40%",
         left: "70%",

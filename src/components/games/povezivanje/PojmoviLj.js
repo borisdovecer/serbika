@@ -1,8 +1,8 @@
-const PojmoviL = [
+const PojmoviLj = [
     {
         id: 1,
-        name: "ЛОПТА",
-        image: "slika-lopta.jpg",
+        name: "ПОЉЕ",
+        image: "slika-polje.jpg",
         color: "#ff0000",
         top: "3%",
         left: "10%",
@@ -10,8 +10,8 @@ const PojmoviL = [
     },
     {
         id: 2,
-        name: "СЛОН",
-        image: "slika-slon.jpg",
+        name: "ЉУЉАШКА",
+        image: "slika-ljuljaska.png",
         color: "#08ff00",
         top: "15%",
         left: "10%",
@@ -19,8 +19,8 @@ const PojmoviL = [
     },
     {
         id: 3,
-        name: "ЛИЈА",
-        image: "slika-lija.jpg",
+        name: "КАПА",
+        image: "slika-kapa.png",
         color: "#0040ff",
         top: "26%",
         left: "10%",
@@ -28,8 +28,8 @@ const PojmoviL = [
     },
     {
         id: 4,
-        name: "РАК",
-        image: "slika-rak.jpg",
+        name: "ПАСУЉ",
+        image: "slika-pasulj.png",
         color: "#bb00ff",
         top: "40%",
         left: "10%",
@@ -37,8 +37,8 @@ const PojmoviL = [
     },
     {
         id: 5,
-        name: "ЛИМУН",
-        image: "slika-limun.png",
+        name: "КАПУТ",
+        image: "slika-kaput.jpg",
         color: "#78c310",
         top: "3%",
         left: "70%",
@@ -46,8 +46,8 @@ const PojmoviL = [
     },
     {
         id: 6,
-        name: "ПИЛЕ",
-        image: "slika-pile.png",
+        name: "КОШУЉА",
+        image: "slika-kosulja.jpg",
         color: "#dd83ff",
         top: "15%",
         left: "70%",
@@ -55,8 +55,8 @@ const PojmoviL = [
     },
     {
         id: 7,
-        name: "ПАЛМА",
-        image: "sp-palma.png",
+        name: "КОКОШКА",
+        image: "slika-kokoska.png",
         color: "#ff9800",
         top: "28%",
         left: "70%",
@@ -64,8 +64,8 @@ const PojmoviL = [
     },
     {
         id: 8,
-        name: "РУКА",
-        image: "slika-ruka.png",
+        name: "ЉУСКА",
+        image: "slika-ljuska.png",
         color: "#00ffb0",
         top: "40%",
         left: "70%",
@@ -74,4 +74,4 @@ const PojmoviL = [
 
 ]
 
-export default PojmoviL
+export default PojmoviLj
