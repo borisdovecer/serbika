@@ -2,7 +2,8 @@ const PojmoviSh  = [
     {
         poj: [
             {
-                name: "sh",
+                name: "sh1",
+                order: 0,
                 image: "sp-sismis.png",
                 top: "20%",
                 left: "1%",
@@ -10,21 +11,24 @@ const PojmoviSh  = [
 
             },
             {
-                name: "r",
+                name: "r1",
+                order: 0,
                 image: "slika-reket.png",
                 top: "20%",
                 left: "30%",
                 found: false
             },
             {
-                name: "sh",
+                name: "sh1",
+                order: 0,
                 image: "radno-59.png",
                 top:"2%",
                 left: "65%",
                 found: false
             },
             {
-                name: "r",
+                name: "r1",
+                order: 0,
                 image: "radno-39.png",
                 top:"50%",
                 left: "65%",
@@ -35,7 +39,8 @@ const PojmoviSh  = [
     {
         poj: [
             {
-                name: "jaje",
+                name: "j2",
+                order: 1,
                 image: "slika-jaje.png",
                 top: "20%",
                 left: "1%",
@@ -43,21 +48,24 @@ const PojmoviSh  = [
 
             },
             {
-                name: "sesir",
-                image: "slika-kapa.png",
+                name: "sh2",
+                order: 1,
+                image: "slika-sesir.png",
                 top: "20%",
                 left: "30%",
                 found: false
             },
             {
-                name: "sh",
+                name: "sh2",
+                order: 1,
                 image: "radno-59.png",
                 top:"2%",
                 left: "65%",
                 found: false
             },
             {
-                name: "r",
+                name: "j2",
+                order: 1,
                 image: "radno-21.png",
                 top:"50%",
                 left: "65%",
@@ -68,7 +76,8 @@ const PojmoviSh  = [
     {
         poj: [
             {
-                name: "motor",
+                name: "m3",
+                order: 2,
                 image: "slika-motor.png",
                 top: "20%",
                 left: "1%",
@@ -76,21 +85,24 @@ const PojmoviSh  = [
 
             },
             {
-                name: "sator",
+                name: "sh3",
+                order: 2,
                 image: "slika-sator.jpg",
                 top: "20%",
                 left: "30%",
                 found: false
             },
             {
-                name: "sh",
+                name: "sh3",
+                order: 2,
                 image: "radno-59.png",
                 top:"2%",
                 left: "65%",
                 found: false
             },
             {
-                name: "r",
+                name: "m3",
+                order: 2,
                 image: "radno-29.png",
                 top:"50%",
                 left: "65%",
@@ -101,7 +113,8 @@ const PojmoviSh  = [
     {
         poj: [
             {
-                name: "torta",
+                name: "t4",
+                order: 3,
                 image: "slika-torta-slatka.png",
                 top: "20%",
                 left: "1%",
@@ -109,21 +122,24 @@ const PojmoviSh  = [
 
             },
             {
-                name: "sesir",
+                name: "sh4",
+                order: 3,
                 image: "sp-serpa.png",
                 top: "20%",
                 left: "30%",
                 found: false
             },
             {
-                name: "sh",
+                name: "sh4",
+                order: 3,
                 image: "radno-59.png",
                 top:"2%",
                 left: "65%",
                 found: false
             },
             {
-                name: "r",
+                name: "t4",
+                order: 3,
                 image: "radno-43.png",
                 top:"50%",
                 left: "65%",
