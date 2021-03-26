@@ -1,4 +1,5 @@
 import React from 'react'
+import PreloadImage from "react-preload-image";
 
 import SlovaA from "./SlovaA"
 import SlovaM from "./SlovaM"
@@ -21,12 +22,15 @@ import SlovaP from "./SlovaP"
 import SlovaK from "./SlovaK"
 import SlovaL from "./SlovaL"
 import SlovaLJ from "./SlovaLJ"
+import SlovaB from "./SlovaB"
+
+import SlovaF from "./SlovaF"
+import SlovaH from "./SlovaH"
 
 import bg1 from './drvo.jpg'
 import bg2 from './drvo2.jpg'
 import bg3 from './drvo3.png'
-
-import PreloadImage from "react-preload-image";
+import SlovaZh from "./SlovaZh";
 
 class Drvo extends React.Component {
     state = {
@@ -316,6 +320,79 @@ class Drvo extends React.Component {
                 audio1: "03 pritisni svako veliko slovo U koje vidis na drvetu.mp3",
                 audio2:"04 pritisni svako malo slovo U koje vidis na drvetu.mp3",
                 slova: SlovaLJ.sort(() => Math.random() - 0.5),
+                position: [
+                    { top: "6.5%", left: "41.3%" },
+                    { top: "11%", left: "33.6%" },
+                    { top: "6.9%", left: "50.4%" },
+                    { top: "20%", left: "30.3%" },
+                    { top: "22%", left: "40%" },
+                    { top: "22%", left: "54.7%" },
+                    { top: "12%", left: "59.6%" },
+                ]
+            })
+        }
+        // DZ 12
+        if(this.props.slide === "b"){
+            this.setState({
+                image: bg3,
+                audio1: "03 pritisni svako veliko slovo B koje vidis na drvetu.mp3",
+                audio2:"04 pritisni svako malo slovo B koje vidis na drvetu.mp3",
+                slova: SlovaB.sort(() => Math.random() - 0.5),
+                position: [
+                    { top: "6.5%", left: "41.3%" },
+                    { top: "11%", left: "33.6%" },
+                    { top: "6.9%", left: "50.4%" },
+                    { top: "20%", left: "30.3%" },
+                    { top: "22%", left: "40%" },
+                    { top: "22%", left: "54.7%" },
+                    { top: "12%", left: "59.6%" },
+                ]
+            })
+        }
+
+        // DZ 18
+        if(this.props.slide === "h"){
+            this.setState({
+                image: bg3,
+                audio1: "03 pritisni svako veliko slovo B koje vidis na drvetu.mp3",
+                audio2:"04 pritisni svako malo slovo B koje vidis na drvetu.mp3",
+                slova: SlovaH.sort(() => Math.random() - 0.5),
+                position: [
+                    { top: "6.5%", left: "41.3%" },
+                    { top: "11%", left: "33.6%" },
+                    { top: "6.9%", left: "50.4%" },
+                    { top: "20%", left: "30.3%" },
+                    { top: "22%", left: "40%" },
+                    { top: "22%", left: "54.7%" },
+                    { top: "12%", left: "59.6%" },
+                ]
+            })
+        }
+        // DZ 19
+        if(this.props.slide === "f"){
+            this.setState({
+                image: bg3,
+                audio1: "03 pritisni svako veliko slovo B koje vidis na drvetu.mp3",
+                audio2:"04 pritisni svako malo slovo B koje vidis na drvetu.mp3",
+                slova: SlovaF.sort(() => Math.random() - 0.5),
+                position: [
+                    { top: "6.5%", left: "41.3%" },
+                    { top: "11%", left: "33.6%" },
+                    { top: "6.9%", left: "50.4%" },
+                    { top: "20%", left: "30.3%" },
+                    { top: "22%", left: "40%" },
+                    { top: "22%", left: "54.7%" },
+                    { top: "12%", left: "59.6%" },
+                ]
+            })
+        }
+        // DZ 19
+        if(this.props.slide === "zh"){
+            this.setState({
+                image: bg3,
+                audio1: "03 pritisni svako veliko slovo B koje vidis na drvetu.mp3",
+                audio2:"04 pritisni svako malo slovo B koje vidis na drvetu.mp3",
+                slova: SlovaZh.sort(() => Math.random() - 0.5),
                 position: [
                     { top: "6.5%", left: "41.3%" },
                     { top: "11%", left: "33.6%" },

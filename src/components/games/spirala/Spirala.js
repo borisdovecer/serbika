@@ -13,6 +13,8 @@ import SlovaLj from "./SlovaLj"
 import RecenicaLj from "./RecenicaLj"
 
 import bg from './bg-spirala.jpg'
+import SlovaB from "./SlovaB";
+import RecenicaB from "./RecenicaB";
 
 class Spirala extends React.Component {
     state = {
@@ -44,6 +46,10 @@ class Spirala extends React.Component {
         if(this.props.slide === "lj"){
             this.setState({ slova: SlovaLj, recenica: RecenicaLj })
         }
+        // DZ 12
+        if(this.props.slide === "b"){
+            this.setState({ slova: SlovaB, recenica: RecenicaB })
+        }
     }
 
     handleClick = (e) => {
@@ -71,8 +77,8 @@ class Spirala extends React.Component {
                 {this.state.recenica.map( (slovo, i) =>
                     <div key={i}
                          style={{
-                             width:"100px",
-                             height:"100px",
+                             width:"4.5vw",
+                             height:"4.5vw",
                              position:"absolute",
                              border: "5px solid",
                              borderColor: slovo.color,

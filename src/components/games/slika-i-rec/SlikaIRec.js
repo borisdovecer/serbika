@@ -26,7 +26,12 @@ import RecLjut from "./RecLjut"
 import RecPolje from "./RecPolje"
 import RecKosulja from "./RecKosulja"
 import RecLjiljan from "./RecLjiljan"
-
+import RecBik from './RecBik'
+import RecBure from "./RecBure"
+import RecBalon from "./RecBalon";
+import RecJabuka from "./RecJabuka";
+import RecNebo from "./RecNebo";
+import RecTabla from "./RecTabla";
 
 class SlikaIRec extends React.Component {
     state = {
@@ -119,7 +124,24 @@ class SlikaIRec extends React.Component {
         if(this.props.slide === "ljiljan"){
             this.setState({ rec: RecLjiljan })
         }
-
+        if(this.props.slide === "bik"){
+            this.setState({ rec: RecBik })
+        }
+        if(this.props.slide === "bure"){
+            this.setState({ rec: RecBure })
+        }
+        if(this.props.slide === "balon"){
+            this.setState({ rec: RecBalon })
+        }
+        if(this.props.slide === "jabuka"){
+            this.setState({ rec: RecJabuka })
+        }
+        if(this.props.slide === "nebo"){
+            this.setState({ rec: RecNebo })
+        }
+        if(this.props.slide === "tabla"){
+            this.setState({ rec: RecTabla })
+        }
     }
 
     handleClick = (e) => {

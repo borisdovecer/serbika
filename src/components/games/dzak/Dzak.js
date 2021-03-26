@@ -6,13 +6,14 @@ import Items08 from "./Items08"
 import Items09 from "./Items09"
 import Items10 from "./Items10"
 import Items11 from "./Items11"
+import Items12 from "./Items12";
 
 class Dzak extends React.Component {
     state = {
         items: [],
         arr: [],
         letter: "",
-        complete: false
+        complete: true
     }
 
     componentDidMount() {
@@ -33,6 +34,9 @@ class Dzak extends React.Component {
         }
         if(this.props.slide === "dz11"){
             this.setState({ items: Items11, letter: "radno-27.png" })
+        }
+        if(this.props.slide === "dz12"){
+            this.setState({ items: Items12, letter: "radno-03.png" })
         }
     }
 

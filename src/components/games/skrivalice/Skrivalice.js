@@ -27,6 +27,8 @@ import bg12 from './bg-bara.png'
 import bg13 from "./bg-zivotinjce.png"
 import bg14 from './bg-vasar.png'
 import bg15 from './bg-cirkus.png'
+import bg16 from './bg-soba.jpg'
+import bg17 from './bg-kamin.jpg'
 
 
 import PreloadImage from "react-preload-image";
@@ -101,6 +103,23 @@ class Skrivalice extends React.Component{
         // DZ 11
         if(this.props.slide === "lj"){
             this.setState({ image: bg15, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-27.png", slova:SlovaP })
+        }
+        // DZ 12
+        if(this.props.slide === "b"){
+            this.setState({ image: bg10, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-03.png", slova:SlovaP })
+        }
+
+        // DZ 18
+        if(this.props.slide === "h"){
+            this.setState({ image: bg16, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-51.png", slova:SlovaP })
+        }
+        // DZ 19
+        if(this.props.slide === "f"){
+            this.setState({ image: bg17, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-49.png", slova:SlovaP })
+        }
+        // DZ 20
+        if(this.props.slide === "zh"){
+            this.setState({ image: bg9, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-15.png", slova:SlovaP })
         }
     }
 

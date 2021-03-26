@@ -15,12 +15,12 @@ import Pravilna from "../games/pravilna-slova/Pravilna"
 import Opisivanje from "../games/opisivanje/Opisivanje"
 import Dzak from "../games/dzak/Dzak"
 import Leptiri from "../games/leptiri/Leptiri"
-
-import '../../App.css';
-import '../../bootstrap.css'
 import Spirala from "../games/spirala/Spirala";
 import Povezivanje from "../games/povezivanje/Povezivanje";
 import Slagalica from "../games/slagalica/Slagalica";
+
+import '../../App.css';
+import '../../bootstrap.css'
 
 
 class Dz18 extends React.Component {

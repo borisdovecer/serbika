@@ -3,6 +3,10 @@ import SlagalicaL from "./SlagalicaL"
 import SlagalicaPlaneta from './SlagalicaPlaneta'
 
 import { DragDropContext, Draggable, Droppable  } from 'react-beautiful-dnd'
+import SlagalicaNebo from "./SlagalicaNebo";
+import SlagalicaRiba from "./SlagalicaRiba";
+import SlagalicaBalerina from "./SlagalicaBalerina";
+import SlagalicaJabuka from "./SlagalicaJabuka";
 // fake data generator
 const getItems = count =>
     Array.from({ length: count }, (v, k) => k).map(k => ({
@@ -48,7 +52,7 @@ class Slagalica extends React.Component {
     state = {
         slagalica: SlagalicaL,
         arr: [],
-        complete: false
+        complete: true
     }
 
     componentDidMount() {
@@ -57,6 +61,18 @@ class Slagalica extends React.Component {
         }
         if(this.props.slide === 'l'){
             this.setState({ slagalica: SlagalicaL})
+        }
+        if(this.props.slide === 'nebo'){
+            this.setState({ slagalica: SlagalicaNebo})
+        }
+        if(this.props.slide === 'riba'){
+            this.setState({ slagalica: SlagalicaRiba})
+        }
+        if(this.props.slide === 'balerina'){
+            this.setState({ slagalica: SlagalicaBalerina})
+        }
+        if(this.props.slide === 'jabuka'){
+            this.setState({ slagalica: SlagalicaJabuka})
         }
     }
 
@@ -127,7 +143,7 @@ class Slagalica extends React.Component {
                                 ref={provided.innerRef}
                                 style={getListStyle(snapshot.isDraggingOver)}
                             >
-                                {this.state.slagalica.ponudjena.map((item, index) => (
+                                {slagalica.ponudjena.map((item, index) => (
                                     <div style={{display:"inline-block"}} >
                                     <Draggable key={item.id} draggableId={"item-"+item.name} index={index} >
                                 {(provided, snapshot) => (

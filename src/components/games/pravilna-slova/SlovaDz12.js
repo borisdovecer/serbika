@@ -30,7 +30,7 @@ const SlovaDz12 = [
     {
         id: 5,
         name: "l",
-        image: "radno-21.png",
+        image: "radno-25.png",
         fake: false,
         found: false
     },

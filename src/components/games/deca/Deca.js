@@ -9,11 +9,15 @@ import ReciP from './ReciP'
 import ReciK from './ReciK'
 import ReciL from './ReciL'
 import ReciLJ from "./ReciLJ"
+import ReciB from "./ReciB"
 
 import bg1 from './decabg.jpg'
 import bg2 from './decabg2.jpg'
 import bg3 from './decabg3.jpg'
 import PreloadImage from "react-preload-image";
+import ReciZh from "./ReciZh";
+import ReciF from "./ReciF";
+import ReciH from "./ReciH";
 
 class Deca extends React.Component{
     state = {
@@ -60,6 +64,18 @@ class Deca extends React.Component{
         }
         if(this.props.slide === "lj"){
             this.setState({ reci: ReciLJ, image:bg3 })
+        }
+        if(this.props.slide === "b"){
+            this.setState({ reci: ReciB, image:bg3 })
+        }
+        if(this.props.slide === "h"){
+            this.setState({ reci: ReciH, image:bg3 })
+        }
+        if(this.props.slide === "f"){
+            this.setState({ reci: ReciF, image:bg3 })
+        }
+        if(this.props.slide === "zh"){
+            this.setState({ reci: ReciZh, image:bg3 })
         }
 
         let ani = this.state.animation

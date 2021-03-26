@@ -15,6 +15,7 @@ import ReciK3 from './ReciK3'
 import ReciL from './ReciL'
 import ReciL3 from './ReciL3'
 import ReciLJ3 from "./ReciLJ3"
+import ReciB3 from "./ReciB3"
 
 import Delay from "react-delay-render";
 
@@ -75,7 +76,9 @@ class Reci extends React.Component{
         if(this.props.slide === "lj3"){
             this.setState({ reci: ReciLJ3, image:bg2 })
         }
-
+        if(this.props.slide === "b3"){
+            this.setState({ reci: ReciB3, image:bg2 })
+        }
     }
 
     handleClick = (e) => {

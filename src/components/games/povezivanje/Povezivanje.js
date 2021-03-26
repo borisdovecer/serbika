@@ -4,6 +4,7 @@ import PojmoviP from "./PojmoviP"
 import PojmoviK from "./PojmoviK"
 import PojmoviL from "./PojmoviL"
 import PojmoviLj from "./PojmoviLj"
+import PojmoviB from "./PojmoviB";
 
 
 
@@ -12,7 +13,7 @@ class Povezivanje extends React.Component {
         pojmovi: PojmoviP,
         selected: "",
         guessed: "",
-        complete: false
+        complete: true
     }
 
     componentDidMount() {
@@ -28,6 +29,10 @@ class Povezivanje extends React.Component {
         if(this.props.slide === "lj") {
             this.setState({pojmovi: PojmoviLj.sort(() => Math.random() - 0.5)})
         }
+        if(this.props.slide === "b") {
+            this.setState({pojmovi: PojmoviB.sort(() => Math.random() - 0.5)})
+        }
+
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {

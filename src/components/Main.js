@@ -54,7 +54,7 @@ class Main extends React.Component {
                   <img src={"./slides/play.png"} alt="btn" name={18} className="main-button" style={{marginTop: "24%" ,left:"62%", width:"10%"}} onClick={this.SelectDz} />
 
                   <img src={"./slides/play.png"} alt="btn" name={19} className="main-button" style={{marginTop: "34%" ,left:"2%", width:"10%"}} onClick={this.SelectDz} />
-                  <img src={"./slides/play.png"} alt="btn" name={12} className="main-button" style={{marginTop: "34%" ,left:"14%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/play.png"} alt="btn" name={20} className="main-button" style={{marginTop: "34%" ,left:"14%", width:"10%"}} onClick={this.SelectDz} />
                   {/*< href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"26%", width:"10%"}} /></a>*/}
                   {/*<a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"38%", width:"10%"}} /></a>*/}
                   {/*<a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"50%", width:"10%"}} /></a>*/}
