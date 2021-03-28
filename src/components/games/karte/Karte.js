@@ -22,6 +22,14 @@ import KarteK from "./KarteK"
 import KarteL from "./KarteL"
 import KarteLJ from "./KarteLJ"
 import KarteB from "./KarteB"
+import KarteH from "./KarteH"
+import KarteF from "./KarteF"
+import KarteZh from "./KarteZh"
+import KarteV from "./KarteV"
+import KarteZ from "./KarteZ"
+import KarteD from "./KarteD"
+import KarteG from "./KarteG"
+import KarteCh from "./KarteCh"
 
 class Karte extends React.Component{
     state = {
@@ -45,6 +53,14 @@ class Karte extends React.Component{
         l: "",
         lj: "",
         b: "",
+        h: "",
+        f: "",
+        zh:"",
+        v:"",
+        z:"",
+        d:"",
+        g:"",
+        ch:"",
         arr: [],
         err: false,
         sc: false,
@@ -285,6 +301,118 @@ class Karte extends React.Component{
                 lj: "karta-front-lj.png"
             })
         }
+        // DZ 13
+        if(this.props.slide === "v"){
+            this.setState({
+                karte: KarteV.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                v: "karta-front-v.png",
+                b: "karta-front-b.png",
+                k: "karta-front-k.png",
+                l: "karta-front-l.png",
+                r: "karta-front-r.png",
+                lj: "karta-front-lj.png"
+            })
+        }
+        // DZ 14
+        if(this.props.slide === "z"){
+            this.setState({
+                karte: KarteZ.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                z: "karta-front-z.png",
+                b: "karta-front-b.png",
+                k: "karta-front-k.png",
+                l: "karta-front-l.png",
+                v: "karta-front-v.png",
+                lj: "karta-front-lj.png"
+            })
+        }
+        // DZ 15
+        if(this.props.slide === "d"){
+            this.setState({
+                karte: KarteD.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                d: "karta-front-d.png",
+                b: "karta-front-b.png",
+                z: "karta-front-z.png",
+                v: "karta-front-v.png",
+                l: "karta-front-l.png",
+                lj: "karta-front-lj.png"
+            })
+        }
+        // DZ 16
+        if(this.props.slide === "g"){
+            this.setState({
+                karte: KarteG.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                g: "karta-front-g.png",
+                b: "karta-front-b.png",
+                z: "karta-front-z.png",
+                v: "karta-front-v.png",
+                l: "karta-front-l.png",
+                lj: "karta-front-lj.png"
+            })
+        }
+        // DZ 17
+        if(this.props.slide === "ch"){
+            this.setState({
+                karte: KarteCh.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                ch: "karta-front-ch.png",
+                b: "karta-front-b.png",
+                z: "karta-front-z.png",
+                v: "karta-front-v.png",
+                g: "karta-front-g.png",
+                lj: "karta-front-lj.png"
+            })
+        }
+        // DZ 18
+        if(this.props.slide === "h"){
+            this.setState({
+                karte: KarteH.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                h: "karta-front-h.png",
+                b: "karta-front-b.png",
+                ch: "karta-front-ch.png",
+                v: "karta-front-v.png",
+                g: "karta-front-g.png",
+                z: "karta-front-z.png"
+            })
+        }
+        // DZ 19
+        if(this.props.slide === "f"){
+            this.setState({
+                karte: KarteF.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                h: "karta-front-h.png",
+                b: "karta-front-b.png",
+                ch: "karta-front-ch.png",
+                z: "karta-front-z.png",
+                g: "karta-front-g.png",
+                f: "karta-front-f.png"
+            })
+        }
+        // DZ 20
+        if(this.props.slide === "zh"){
+            this.setState({
+                karte: KarteZh.sort(() => Math.random() - 0.5),
+                audio: "06 sada cemo da igramo igru memorije pronadji dva ista slova.mp3",
+                back:"karta-back-pink.png",
+                h: "karta-front-h.png",
+                zh: "karta-front-zh.png",
+                ch: "karta-front-ch.png",
+                f: "karta-front-f.png",
+                g: "karta-front-g.png",
+                z: "karta-front-z.png"
+            })
+        }
     }
 
     flip = (e) => {
@@ -346,6 +474,33 @@ class Karte extends React.Component{
             }
             if(card[id].name === "b"){
                 card[id].image = this.state.b
+            }
+            if(card[id].name === "v"){
+                card[id].image = this.state.v
+            }
+            if(card[id].name === "z"){
+                card[id].image = this.state.z
+            }
+            if(card[id].name === "d"){
+                card[id].image = this.state.d
+            }
+            if(card[id].name === "d"){
+                card[id].image = this.state.d
+            }
+            if(card[id].name === "g"){
+                card[id].image = this.state.g
+            }
+            if(card[id].name === "ch"){
+                card[id].image = this.state.ch
+            }
+            if(card[id].name === "h"){
+                card[id].image = this.state.h
+            }
+            if(card[id].name === "f"){
+                card[id].image = this.state.f
+            }
+            if(card[id].name === "zh"){
+                card[id].image = this.state.zh
             }
             this.compare()
         }

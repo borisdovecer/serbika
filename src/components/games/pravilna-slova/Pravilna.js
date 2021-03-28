@@ -7,6 +7,13 @@ import SlovaDz09 from "./SlovaDz09"
 import SlovaDz10 from "./SlovaDz10"
 import SlovaDz11 from "./SlovaDz11"
 import SlovaDz12 from "./SlovaDz12"
+import SlovaDz13 from "./SlovaDz13";
+import SlovaDz14 from "./SlovaDz14";
+import SlovaDz15 from "./SlovaDz15";
+import SlovaDz16 from "./SlovaDz16";
+import SlovaDz17 from "./SlovaDz17";
+import SlovaDz19 from "./SlovaDz19";
+import SlovaDz20 from "./SlovaDz20";
 
 class Pravilna extends React.Component {
     state = {
@@ -36,6 +43,27 @@ class Pravilna extends React.Component {
         }
         if(this.props.slide === 'dz12'){
             this.setState({slova: SlovaDz12})
+        }
+        if(this.props.slide === 'dz13'){
+            this.setState({slova: SlovaDz13})
+        }
+        if(this.props.slide === 'dz14'){
+            this.setState({slova: SlovaDz14})
+        }
+        if(this.props.slide === 'dz15'){
+            this.setState({slova: SlovaDz15})
+        }
+        if(this.props.slide === 'dz16'){
+            this.setState({slova: SlovaDz16})
+        }
+        if(this.props.slide === 'dz17'){
+            this.setState({slova: SlovaDz17})
+        }
+        if(this.props.slide === 'dz19'){
+            this.setState({slova: SlovaDz19})
+        }
+        if(this.props.slide === 'dz20'){
+            this.setState({slova: SlovaDz20})
         }
     }
 

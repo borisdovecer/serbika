@@ -20,7 +20,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/games/deca" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Desktop/zadatak" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -76,7 +76,10 @@
       <workItem from="1616154556905" duration="57377000" />
       <workItem from="1616537545504" duration="16826000" />
       <workItem from="1616621333810" duration="10093000" />
-      <workItem from="1616686358286" duration="18073000" />
+      <workItem from="1616686358286" duration="18567000" />
+      <workItem from="1616764598190" duration="41000" />
+      <workItem from="1616878872381" duration="12252000" />
+      <workItem from="1616965472025" duration="9923000" />
     </task>
     <servers />
   </component>
