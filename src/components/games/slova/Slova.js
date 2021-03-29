@@ -170,7 +170,51 @@ class Slova extends React.Component{
                 malo: "radno-04.png"
             })
         }
-
+        // DZ 13
+        if(this.props.slide === "v"){
+            this.setState({
+                image: bg4,
+                audio: { upper: "01 nase novo slovo je slovo R kazi R.mp3", lower:"02 ovo je nase malo slovo R kazi R.mp3", delay: 8000 },
+                veliko:"radno-05.png",
+                malo: "radno-06.png"
+            })
+        }
+        // DZ 14
+        if(this.props.slide === "z"){
+            this.setState({
+                image: bg4,
+                audio: { upper: "01 nase novo slovo je slovo R kazi R.mp3", lower:"02 ovo je nase malo slovo R kazi R.mp3", delay: 8000 },
+                veliko:"radno-17.png",
+                malo: "radno-18.png"
+            })
+        }
+        // DZ 15
+        if(this.props.slide === "d"){
+            this.setState({
+                image: bg4,
+                audio: { upper: "01 nase novo slovo je slovo R kazi R.mp3", lower:"02 ovo je nase malo slovo R kazi R.mp3", delay: 8000 },
+                veliko:"radno-09.png",
+                malo: "radno-10.png"
+            })
+        }
+        // DZ 16
+        if(this.props.slide === "g"){
+            this.setState({
+                image: bg4,
+                audio: { upper: "01 nase novo slovo je slovo R kazi R.mp3", lower:"02 ovo je nase malo slovo R kazi R.mp3", delay: 8000 },
+                veliko:"radno-07.png",
+                malo: "radno-08.png"
+            })
+        }
+        // DZ 17
+        if(this.props.slide === "ch"){
+            this.setState({
+                image: bg4,
+                audio: { upper: "01 nase novo slovo je slovo R kazi R.mp3", lower:"02 ovo je nase malo slovo R kazi R.mp3", delay: 8000 },
+                veliko:"radno-55.png",
+                malo: "radno-56.png"
+            })
+        }
         // DZ 18
         if(this.props.slide === "h"){
             this.setState({

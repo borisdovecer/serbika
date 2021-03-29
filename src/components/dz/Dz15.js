@@ -50,10 +50,10 @@ class Dz15 extends React.Component {
                 { this.state.slide === 13 ? <SlikaIRec slide={"drvo"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 14 ? <SlikaIRec slide={"doktor"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 15 ? <SlikaIRec slide={"zvezda"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 16 ? <Pravilna slide={"dz14"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 17 ? <Opisivanje slide={"dz14"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 18 ? <Dzak slide={"dz14"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 19 ? <Leptiri slide={"dz14"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 16 ? <Pravilna slide={"dz15"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 17 ? <Opisivanje slide={"dz15"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 18 ? <Dzak slide={"dz15"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 19 ? <Leptiri slide={"dz15"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 20 ? <Spirala slide={"d"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 21 ? <Povezivanje slide={"d"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 22 ? <Slagalica slide={"dva"} nextSlide={this.nextSlide}/> : null}

@@ -15,6 +15,22 @@ import RecenicaLj from "./RecenicaLj"
 import bg from './bg-spirala.jpg'
 import SlovaB from "./SlovaB";
 import RecenicaB from "./RecenicaB";
+import SlovaV from "./SlovaV";
+import RecenicaV from "./RecenicaV";
+import SlovaZ from "./SlovaZ";
+import RecenicaZ from "./RecenicaZ";
+import SlovaD from "./SlovaD";
+import RecenicaD from "./RecenicaD";
+import SlovaG from "./SlovaG";
+import RecenicaG from "./RecenicaG";
+import SlovaCh from "./SlovaCh";
+import RecenicaCh from "./RecenicaCh";
+import SlovaF from "./SlovaF";
+import RecenicaF from "./RecenicaF";
+import SlovaZh from "./SlovaZh";
+import RecenicaZh from "./RecenicaZh";
+import RecenicaH from "./RecenicaH";
+import SlovaH from "./SlovaH";
 
 class Spirala extends React.Component {
     state = {
@@ -50,6 +66,38 @@ class Spirala extends React.Component {
         if(this.props.slide === "b"){
             this.setState({ slova: SlovaB, recenica: RecenicaB })
         }
+        // DZ 13
+        if(this.props.slide === "v"){
+            this.setState({ slova: SlovaV, recenica: RecenicaV })
+        }
+        // DZ 14
+        if(this.props.slide === "z"){
+            this.setState({ slova: SlovaZ, recenica: RecenicaZ })
+        }
+        // DZ 15
+        if(this.props.slide === "d"){
+            this.setState({ slova: SlovaD, recenica: RecenicaD })
+        }
+        // DZ 16
+        if(this.props.slide === "g"){
+            this.setState({ slova: SlovaG, recenica: RecenicaG })
+        }
+        // DZ 17
+        if(this.props.slide === "ch"){
+            this.setState({ slova: SlovaCh, recenica: RecenicaCh })
+        }
+        // DZ 18
+        if(this.props.slide === "h"){
+            this.setState({ slova: SlovaH, recenica: RecenicaH })
+        }
+        // DZ 19
+        if(this.props.slide === "f"){
+            this.setState({ slova: SlovaF, recenica: RecenicaF })
+        }
+        // DZ 20
+        if(this.props.slide === "zh"){
+            this.setState({ slova: SlovaZh, recenica: RecenicaZh })
+        }
     }
 
     handleClick = (e) => {
@@ -72,7 +120,7 @@ class Spirala extends React.Component {
         let {order} = this.state
         return(
             <div className={'main'} style={{textAlign:"center"}}>
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
+                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop:"17.7%", right:"26%"}} onClick={this.props.nextSlide}/> : null}
 
                 {this.state.recenica.map( (slovo, i) =>
                     <div key={i}

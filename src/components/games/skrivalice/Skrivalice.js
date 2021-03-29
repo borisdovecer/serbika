@@ -29,6 +29,11 @@ import bg14 from './bg-vasar.png'
 import bg15 from './bg-cirkus.png'
 import bg16 from './bg-soba.jpg'
 import bg17 from './bg-kamin.jpg'
+import bgZivotinjice from './bg-zivotinjce2.jpg'
+import bgGrad from './bg-neon-grad.jpg'
+import bgDino from './bg-dino.jpg'
+import bgVozic from './bg-vozic.jpg'
+import bgFarma from './bg-farma.jpg'
 
 
 import PreloadImage from "react-preload-image";
@@ -108,7 +113,26 @@ class Skrivalice extends React.Component{
         if(this.props.slide === "b"){
             this.setState({ image: bg10, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-03.png", slova:SlovaP })
         }
-
+        // DZ 13
+        if(this.props.slide === "v"){
+            this.setState({ image: bgZivotinjice, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-05.png", slova:SlovaP })
+        }
+        // DZ 14
+        if(this.props.slide === "z"){
+            this.setState({ image: bgVozic, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-17.png", slova:SlovaP })
+        }
+        // DZ 15
+        if(this.props.slide === "d"){
+            this.setState({ image: bgDino, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-09.png", slova:SlovaP })
+        }
+        // DZ 16
+        if(this.props.slide === "g"){
+            this.setState({ image: bgGrad, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-07.png", slova:SlovaP })
+        }
+        // DZ 17
+        if(this.props.slide === "ch"){
+            this.setState({ image: bgFarma, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-55.png", slova:SlovaP })
+        }
         // DZ 18
         if(this.props.slide === "h"){
             this.setState({ image: bg16, audio:"07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3", slovoImg: "radno-51.png", slova:SlovaP })

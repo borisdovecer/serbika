@@ -22,7 +22,7 @@ const SlovaV = [
         id: 3,
         name: "s",
         order: 2,
-        image: "radno-39.png",
+        image: "radno-41.png",
         color: "#fd0001",
         found: false,
         top: "41%",

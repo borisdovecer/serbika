@@ -121,7 +121,7 @@ class Dzak extends React.Component {
                                                     <img
                                                         src={"./slides/" + item.image}
                                                         alt={"A"}
-                                                        style={{width:"70%"}}
+                                                        style={{width:"60%"}}
                                                     />
                                                 </div>
                                             )}

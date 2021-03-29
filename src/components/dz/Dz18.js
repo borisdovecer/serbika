@@ -45,19 +45,20 @@ class Dz18 extends React.Component {
                 { this.state.slide === 8 ? <Deca slide={"h"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 9 ? <Spajanje slide={"h"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 10 ? <SlikaIRec slide={"hor"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 11 ? <SlikaIRec slide={"dah"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 12 ? <SlikaIRec slide={"orah"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 13 ? <SlikaIRec slide={"hotdog"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 14 ? <Pravilna slide={"dz18"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 15 ? <Opisivanje slide={"dz18"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 16 ? <Dzak slide={"dz18"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 17 ? <Leptiri slide={"dz18"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 18 ? <Spirala slide={"h"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 19 ? <Povezivanje slide={"h"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 22 ? <Slagalica slide={"shah"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 23 ? <Slagalica slide={"osmeh"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 18 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 19 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 11 ? <SlikaIRec slide={"orah"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 12 ? <SlikaIRec slide={"hotdog"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 13 ? <SlikaIRec slide={"hokej"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 14 ? <SlikaIRec slide={"haljina"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 15 ? <Pravilna slide={"dz18"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 16 ? <Opisivanje slide={"dz18"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 17 ? <Dzak slide={"dz18"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 18 ? <Leptiri slide={"dz18"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 19 ? <Spirala slide={"h"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Povezivanje slide={"h"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 21 ? <Slagalica slide={"shah"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 22 ? <Slagalica slide={"osmeh"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 23 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 24 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

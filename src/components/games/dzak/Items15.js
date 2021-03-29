@@ -15,9 +15,9 @@ const Items15 = [
     },
     {
         id: 3,
-        name: "azdaja",
-        image: "slika-azdaja.png",
-        in: "red",
+        name: "zmaj",
+        image: "slika-zmaj.png",
+        in: "yellow",
         found: false
     },
     {

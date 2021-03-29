@@ -14,6 +14,7 @@ import SlovaDz16 from "./SlovaDz16";
 import SlovaDz17 from "./SlovaDz17";
 import SlovaDz19 from "./SlovaDz19";
 import SlovaDz20 from "./SlovaDz20";
+import SlovaDz18 from "./SlovaDz18";
 
 class Pravilna extends React.Component {
     state = {
@@ -58,6 +59,9 @@ class Pravilna extends React.Component {
         }
         if(this.props.slide === 'dz17'){
             this.setState({slova: SlovaDz17})
+        }
+        if(this.props.slide === 'dz18'){
+            this.setState({slova: SlovaDz18})
         }
         if(this.props.slide === 'dz19'){
             this.setState({slova: SlovaDz19})

@@ -16,14 +16,14 @@ const Items13 = [
     {
         id: 3,
         name: "sljiva",
-        image: "slika-slijva.png",
+        image: "slika-sljiva.png",
         in: "red",
         found: false
     },
     {
         id: 4,
         name: "liska",
-        image: "slika-liska.png",
+        image: "slika-list.png",
         in: "yellow",
         found: false
     },

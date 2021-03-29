@@ -18,6 +18,11 @@ import PreloadImage from "react-preload-image";
 import ReciZh from "./ReciZh";
 import ReciF from "./ReciF";
 import ReciH from "./ReciH";
+import ReciV from "./ReciV";
+import ReciZ from "./ReciZ";
+import ReciD from "./ReciD";
+import ReciG from "./ReciG";
+import ReciCh from "./ReciCh";
 
 class Deca extends React.Component{
     state = {
@@ -67,6 +72,21 @@ class Deca extends React.Component{
         }
         if(this.props.slide === "b"){
             this.setState({ reci: ReciB, image:bg3 })
+        }
+        if(this.props.slide === "v"){
+            this.setState({ reci: ReciV, image:bg3 })
+        }
+        if(this.props.slide === "z"){
+            this.setState({ reci: ReciZ, image:bg3 })
+        }
+        if(this.props.slide === "d"){
+            this.setState({ reci: ReciD, image:bg3 })
+        }
+        if(this.props.slide === "g"){
+            this.setState({ reci: ReciG, image:bg3 })
+        }
+        if(this.props.slide === "ch"){
+            this.setState({ reci: ReciCh, image:bg3 })
         }
         if(this.props.slide === "h"){
             this.setState({ reci: ReciH, image:bg3 })

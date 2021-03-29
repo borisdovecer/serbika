@@ -48,16 +48,17 @@ class Dz20 extends React.Component {
                 { this.state.slide === 11 ? <SlikaIRec slide={"zaba"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 12 ? <SlikaIRec slide={"mreza"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 13 ? <SlikaIRec slide={"plaza"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 14 ? <Pravilna slide={"dz20"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 15 ? <Opisivanje slide={"dz20"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 16 ? <Dzak slide={"dz20"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 17 ? <Leptiri slide={"dz20"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 18 ? <Spirala slide={"zh"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 19 ? <Povezivanje slide={"zh"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 22 ? <Slagalica slide={"jez"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 23 ? <Slagalica slide={"raza"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 18 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 19 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 14 ? <SlikaIRec slide={"zmurke"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 15 ? <Pravilna slide={"dz20"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 16 ? <Opisivanje slide={"dz20"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 17 ? <Dzak slide={"dz20"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 18 ? <Leptiri slide={"dz20"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 19 ? <Spirala slide={"zh"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Povezivanje slide={"zh"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 21 ? <Slagalica slide={"jez"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 22 ? <Slagalica slide={"raza"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 23 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 24 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

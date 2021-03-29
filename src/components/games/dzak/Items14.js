@@ -23,7 +23,7 @@ const Items14 = [
     {
         id: 4,
         name: "kasika",
-        image: "slika-kasina.png",
+        image: "slika-kasika.png",
         in: "yellow",
         found: false
     },

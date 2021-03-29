@@ -50,15 +50,15 @@ class Main extends React.Component {
                   <img src={"./slides/dz11start.png"} alt="btn" name={11} className="main-button" style={{marginTop: "14%" ,left:"50%", width:"10%"}} onClick={this.SelectDz} />
                   <img src={"./slides/dz12start.png"} alt="btn" name={12} className="main-button" style={{marginTop: "14%" ,left:"62%", width:"10%"}} onClick={this.SelectDz} />
 
-                  <img src={"./slides/play.png"} alt="btn" name={13} className="main-button" style={{marginTop: "24%" ,left:"2%", width:"10%"}} onClick={this.SelectDz} />
-                  <img src={"./slides/play.png"} alt="btn" name={14} className="main-button" style={{marginTop: "24%" ,left:"14%", width:"10%"}} onClick={this.SelectDz} />
-                  <img src={"./slides/play.png"} alt="btn" name={15} className="main-button" style={{marginTop: "24%" ,left:"26%", width:"10%"}} onClick={this.SelectDz} />
-                  <img src={"./slides/play.png"} alt="btn" name={16} className="main-button" style={{marginTop: "24%" ,left:"38%", width:"10%"}} onClick={this.SelectDz} />
-                  <img src={"./slides/play.png"} alt="btn" name={17} className="main-button" style={{marginTop: "24%" ,left:"50%", width:"10%"}} onClick={this.SelectDz} />
-                  <img src={"./slides/play.png"} alt="btn" name={18} className="main-button" style={{marginTop: "24%" ,left:"62%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/dz13start.png"} alt="btn" name={13} className="main-button" style={{marginTop: "24%" ,left:"2%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/dz14start.png"} alt="btn" name={14} className="main-button" style={{marginTop: "24%" ,left:"14%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/dz15start.png"} alt="btn" name={15} className="main-button" style={{marginTop: "24%" ,left:"26%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/dz16start.png"} alt="btn" name={16} className="main-button" style={{marginTop: "24%" ,left:"38%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/dz17start.png"} alt="btn" name={17} className="main-button" style={{marginTop: "24%" ,left:"50%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/dz18start.png"} alt="btn" name={18} className="main-button" style={{marginTop: "24%" ,left:"62%", width:"10%"}} onClick={this.SelectDz} />
 
-                  <img src={"./slides/play.png"} alt="btn" name={19} className="main-button" style={{marginTop: "34%" ,left:"2%", width:"10%"}} onClick={this.SelectDz} />
-                  <img src={"./slides/play.png"} alt="btn" name={20} className="main-button" style={{marginTop: "34%" ,left:"14%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/dz19start.png"} alt="btn" name={19} className="main-button" style={{marginTop: "34%" ,left:"2%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/dz20start.png"} alt="btn" name={20} className="main-button" style={{marginTop: "34%" ,left:"14%", width:"10%"}} onClick={this.SelectDz} />
                   {/*< href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"26%", width:"10%"}} /></a>*/}
                   {/*<a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"38%", width:"10%"}} /></a>*/}
                   {/*<a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"50%", width:"10%"}} /></a>*/}
