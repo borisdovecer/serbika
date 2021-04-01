@@ -1,8 +1,8 @@
 import React from 'react'
+import { DragDropContext, Draggable, Droppable  } from 'react-beautiful-dnd'
+
 import SlagalicaL from "./SlagalicaL"
 import SlagalicaPlaneta from './SlagalicaPlaneta'
-
-import { DragDropContext, Draggable, Droppable  } from 'react-beautiful-dnd'
 import SlagalicaNebo from "./SlagalicaNebo";
 import SlagalicaRiba from "./SlagalicaRiba";
 import SlagalicaBalerina from "./SlagalicaBalerina";
@@ -35,14 +35,21 @@ import SlagalicaCesalj from "./SlagalicaCesalj";
 import SlagalicaPevac from "./SlagalicaPevac";
 import SlagalicaCasa from "./SlagalicaCasa";
 import SlagalicaCips from "./SlagalicaCips";
-// fake data generator
-// const getItems = count =>
-//     Array.from({ length: count }, (v, k) => k).map(k => ({
-//         id: `item-${k}`,
-//         content: `item ${k}`
-//     }));
+import SlagalicaSah from "./SlagalicaSah";
+import SlagalicaOsmeh from "./SlagalicaOsmeh";
+import SlagalicaHleb from "./SlagalicaHleb";
+import SlagalicaHrcak from "./SlagalicaHrcak";
+import SlagalicaSef from "./SlagalicaSef";
+import SlagalicaSofa from "./SlagalicaSofa";
+import SlagalicaFlasa from "./SlagalicaFlasa";
+import SlagalicaMafin from "./SlagalicaMafin";
+import SlagalicaHemijska from "./SlagalicaHemijska";
+import SlagalicaMikrofon from "./SlagalicaMikrofon";
+import SlagalicaZirafa from "./SlagalicaZirafa";
+import SlagalicaZvaka from "./SlagalicaZvaka";
+import SlagalicaRaza from "./SlagalicaRaza";
+import SlagalicaJez from "./SlagalicaJez";
 
-// a little function to help us with reordering the result
 const reorder = (list, startIndex, endIndex) => {
     const result = Array.from(list);
     const [removed] = result.splice(startIndex, 1);
@@ -53,23 +60,7 @@ const reorder = (list, startIndex, endIndex) => {
 
 const grid = 8;
 
-// const getItemStyle = (isDragging, draggableStyle) => ({
-//     // some basic styles to make the items look a bit nicer
-//     userSelect: "none",
-//     padding: grid * 2,
-//     margin: `0 0 ${grid}px 0`,
-//     width: "30%",
-//
-//
-//     // change background colour if dragging
-//    // background: isDragging ? "lightgreen" : "grey",
-//
-//     // styles we need to apply on draggables
-//     ...draggableStyle
-// });
-
 const getListStyle = isDraggingOver => ({
-  //  background: isDraggingOver ? "lightblue" : "lightgrey",
     padding: grid,
     width: 500,
     height: 500
@@ -194,11 +185,55 @@ class Slagalica extends React.Component {
         if(this.props.slide === 'cips'){
             this.setState({ slagalica: SlagalicaCips})
         }
+        // DZ18
+        if(this.props.slide === 'shah'){
+            this.setState({ slagalica: SlagalicaSah})
+        }
+        if(this.props.slide === 'osmeh'){
+            this.setState({ slagalica: SlagalicaOsmeh})
+        }
+        if(this.props.slide === 'hleb'){
+            this.setState({ slagalica: SlagalicaHleb})
+        }
+        if(this.props.slide === 'hrcak'){
+            this.setState({ slagalica: SlagalicaHrcak})
+        }
+        if(this.props.slide === 'hemijska'){
+            this.setState({ slagalica: SlagalicaHemijska })
+        }
+        // DZ19
+        if(this.props.slide === 'sef'){
+            this.setState({ slagalica: SlagalicaSef})
+        }
+        if(this.props.slide === 'sofa'){
+            this.setState({ slagalica: SlagalicaSofa})
+        }
+        if(this.props.slide === 'flasa'){
+            this.setState({ slagalica: SlagalicaFlasa})
+        }
+        if(this.props.slide === 'mafin'){
+            this.setState({ slagalica: SlagalicaMafin })
+        }
+        if(this.props.slide === 'mikrofon'){
+            this.setState({ slagalica: SlagalicaMikrofon })
+        }
+        // DZ20
+        if(this.props.slide === 'jez'){
+            this.setState({ slagalica: SlagalicaJez})
+        }
+        if(this.props.slide === 'raza'){
+            this.setState({ slagalica: SlagalicaRaza})
+        }
+        if(this.props.slide === 'zvaka'){
+            this.setState({ slagalica: SlagalicaZvaka})
+        }
+        if(this.props.slide === 'zirafa'){
+            this.setState({ slagalica: SlagalicaZirafa })
+        }
     }
 
     onDragEnd = (result) => {
         let {slagalica, arr} = this.state
-        // dropped outside the list
 
         if (!result.destination) {
             return;
@@ -213,7 +248,6 @@ class Slagalica extends React.Component {
                 return;
             }
         } )
-
 
         const slag = reorder(
             slagalica.ponudjena,

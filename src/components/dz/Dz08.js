@@ -21,11 +21,12 @@ import Povezivanje from "../games/povezivanje/Povezivanje"
 
 import '../../App.css';
 import '../../bootstrap.css'
+import Pojmovi from "../games/pojmovi/Pojmovi";
 
 
 class Dz08 extends React.Component {
     state = {
-        slide: 1
+        slide: 21
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )
@@ -55,9 +56,10 @@ class Dz08 extends React.Component {
                 { this.state.slide === 18 ? <Dzak slide={"dz08"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 19 ? <Leptiri slide={"dz08"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 20 ? <Spirala slide={"p"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 21 ? <Povezivanje slide={"p"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 22 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 23 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 21 ? <Pojmovi slide={"p"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 22 ? <Povezivanje slide={"p"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 23 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 24 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

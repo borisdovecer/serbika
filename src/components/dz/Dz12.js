@@ -21,6 +21,7 @@ import '../../bootstrap.css'
 import Spirala from "../games/spirala/Spirala";
 import Povezivanje from "../games/povezivanje/Povezivanje";
 import Slagalica from "../games/slagalica/Slagalica";
+import Pojmovi from "../games/pojmovi/Pojmovi";
 
 
 class Dz12 extends React.Component {
@@ -55,13 +56,14 @@ class Dz12 extends React.Component {
                 { this.state.slide === 18 ? <Dzak slide={"dz12"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 19 ? <Leptiri slide={"dz12"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 20 ? <Spirala slide={"b"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 21 ? <Povezivanje slide={"b"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 22 ? <Slagalica slide={"nebo"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 23 ? <Slagalica slide={"riba"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 24 ? <Slagalica slide={"balerina"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 25 ? <Slagalica slide={"jabuka"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 26 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 27 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 21 ? <Pojmovi slide={"b"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 22 ? <Povezivanje slide={"b"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 23 ? <Slagalica slide={"nebo"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 24 ? <Slagalica slide={"riba"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 25 ? <Slagalica slide={"balerina"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 26 ? <Slagalica slide={"jabuka"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 27 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 28 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

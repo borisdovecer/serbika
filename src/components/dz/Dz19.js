@@ -60,7 +60,7 @@ class Dz19 extends React.Component {
                 { this.state.slide === 23 ? <Slagalica slide={"sofa"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 24 ? <Slagalica slide={"flasa"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 25 ? <Slagalica slide={"mafin"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 26 ? <Slagalica slide={"hemijska"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 26 ? <Slagalica slide={"mikrofon"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 27 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 28 ? <Video end={this.backToMain}/> : null}
             </div>
