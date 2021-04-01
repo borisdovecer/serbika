@@ -7,12 +7,40 @@ import SlagalicaNebo from "./SlagalicaNebo";
 import SlagalicaRiba from "./SlagalicaRiba";
 import SlagalicaBalerina from "./SlagalicaBalerina";
 import SlagalicaJabuka from "./SlagalicaJabuka";
+import SlagalicaLjut from "./SlagalicaLjut";
+import SlagalicaSolja from "./SlagalicaSolja";
+import SlagalicaSkoljka from "./SlagalicaSkoljka";
+import SlagalicaSova from "./SlagalicaSova";
+import SlagalicaOlovka from "./SlagalicaOlovka";
+import SlagalicaMravi from "./SlagalicaMravi";
+import SlagalicaKlovn from "./SlagalicaKlovn";
+import SlagalicaSljiva from "./SlagalicaSljiva";
+import SlagalicaZmaj from "./SlagalicaZmaj";
+import SlagalicaAzbuka from "./SlagalicaAzbuka";
+import SlagalicaZastava from "./SlagalicaZastava";
+import SlagalicaPuzle from "./SlagalicaPuzle";
+import SlagalicaMuzika from "./SlagalicaMuzika";
+import SlagalicaDva from "./SlagalicaDva";
+import SlagalicaBadem from "./SlagalicaBadem";
+import SlagalicaMedalja from "./SlagalicaMedalja";
+import SlagalicaPanda from "./SlagalicaPanda";
+import SlagalicaDevet from "./SlagalicaDevet";
+import SlagalicaGol from "./SlagalicaGol";
+import SlagalicaGlava from "./SlagalicaGlava";
+import SlagalicaGrana from "./SlagalicaGrana";
+import SlagalicaDugme from "./SlagalicaDugme";
+import SlagalicaDuga from "./SlagalicaDuga";
+import SlagalicaCep from "./SlagalicaCep";
+import SlagalicaCesalj from "./SlagalicaCesalj";
+import SlagalicaPevac from "./SlagalicaPevac";
+import SlagalicaCasa from "./SlagalicaCasa";
+import SlagalicaCips from "./SlagalicaCips";
 // fake data generator
-const getItems = count =>
-    Array.from({ length: count }, (v, k) => k).map(k => ({
-        id: `item-${k}`,
-        content: `item ${k}`
-    }));
+// const getItems = count =>
+//     Array.from({ length: count }, (v, k) => k).map(k => ({
+//         id: `item-${k}`,
+//         content: `item ${k}`
+//     }));
 
 // a little function to help us with reordering the result
 const reorder = (list, startIndex, endIndex) => {
@@ -25,20 +53,20 @@ const reorder = (list, startIndex, endIndex) => {
 
 const grid = 8;
 
-const getItemStyle = (isDragging, draggableStyle) => ({
-    // some basic styles to make the items look a bit nicer
-    userSelect: "none",
-    padding: grid * 2,
-    margin: `0 0 ${grid}px 0`,
-    width: "30%",
-
-
-    // change background colour if dragging
-   // background: isDragging ? "lightgreen" : "grey",
-
-    // styles we need to apply on draggables
-    ...draggableStyle
-});
+// const getItemStyle = (isDragging, draggableStyle) => ({
+//     // some basic styles to make the items look a bit nicer
+//     userSelect: "none",
+//     padding: grid * 2,
+//     margin: `0 0 ${grid}px 0`,
+//     width: "30%",
+//
+//
+//     // change background colour if dragging
+//    // background: isDragging ? "lightgreen" : "grey",
+//
+//     // styles we need to apply on draggables
+//     ...draggableStyle
+// });
 
 const getListStyle = isDraggingOver => ({
   //  background: isDraggingOver ? "lightblue" : "lightgrey",
@@ -56,12 +84,24 @@ class Slagalica extends React.Component {
     }
 
     componentDidMount() {
+        // DZ10
         if(this.props.slide === 'planeta'){
             this.setState({ slagalica: SlagalicaPlaneta})
         }
         if(this.props.slide === 'l'){
             this.setState({ slagalica: SlagalicaL})
         }
+        // DZ11
+        if(this.props.slide === 'ljut'){
+            this.setState({ slagalica: SlagalicaLjut})
+        }
+        if(this.props.slide === 'solja'){
+            this.setState({ slagalica: SlagalicaSolja})
+        }
+        if(this.props.slide === 'skoljka'){
+            this.setState({ slagalica: SlagalicaSkoljka})
+        }
+        // DZ12
         if(this.props.slide === 'nebo'){
             this.setState({ slagalica: SlagalicaNebo})
         }
@@ -74,22 +114,88 @@ class Slagalica extends React.Component {
         if(this.props.slide === 'jabuka'){
             this.setState({ slagalica: SlagalicaJabuka})
         }
+        // DZ13
+        if(this.props.slide === 'sova'){
+            this.setState({ slagalica: SlagalicaSova})
+        }
+        if(this.props.slide === 'olovka'){
+            this.setState({ slagalica: SlagalicaOlovka})
+        }
+        if(this.props.slide === 'mravi'){
+            this.setState({ slagalica: SlagalicaMravi})
+        }
+        if(this.props.slide === 'klovn'){
+            this.setState({ slagalica: SlagalicaKlovn})
+        }
+        if(this.props.slide === 'sljiva'){
+            this.setState({ slagalica: SlagalicaSljiva})
+        }
+        // DZ14
+        if(this.props.slide === 'zmaj'){
+            this.setState({ slagalica: SlagalicaZmaj})
+        }
+        if(this.props.slide === 'azbuka'){
+            this.setState({ slagalica: SlagalicaAzbuka})
+        }
+        if(this.props.slide === 'zastava'){
+            this.setState({ slagalica: SlagalicaZastava})
+        }
+        if(this.props.slide === 'puzle'){
+            this.setState({ slagalica: SlagalicaPuzle})
+        }
+        if(this.props.slide === 'muzika'){
+            this.setState({ slagalica: SlagalicaMuzika})
+        }
+        // DZ15
+        if(this.props.slide === 'dva'){
+            this.setState({ slagalica: SlagalicaDva})
+        }
+        if(this.props.slide === 'badem'){
+            this.setState({ slagalica: SlagalicaBadem})
+        }
+        if(this.props.slide === 'medalja'){
+            this.setState({ slagalica: SlagalicaMedalja})
+        }
+        if(this.props.slide === 'panda'){
+            this.setState({ slagalica: SlagalicaPanda})
+        }
+        if(this.props.slide === 'devet'){
+            this.setState({ slagalica: SlagalicaDevet})
+        }
+        // DZ16
+        if(this.props.slide === 'gol'){
+            this.setState({ slagalica: SlagalicaGol})
+        }
+        if(this.props.slide === 'glava'){
+            this.setState({ slagalica: SlagalicaGlava})
+        }
+        if(this.props.slide === 'grana'){
+            this.setState({ slagalica: SlagalicaGrana})
+        }
+        if(this.props.slide === 'dugme'){
+            this.setState({ slagalica: SlagalicaDugme})
+        }
+        if(this.props.slide === 'duga'){
+            this.setState({ slagalica: SlagalicaDuga})
+        }
+        // DZ17
+        if(this.props.slide === 'cep'){
+            this.setState({ slagalica: SlagalicaCep})
+        }
+        if(this.props.slide === 'cesalj'){
+            this.setState({ slagalica: SlagalicaCesalj})
+        }
+        if(this.props.slide === 'pevac'){
+            this.setState({ slagalica: SlagalicaPevac})
+        }
+        if(this.props.slide === 'casa'){
+            this.setState({ slagalica: SlagalicaCasa})
+        }
+        if(this.props.slide === 'cips'){
+            this.setState({ slagalica: SlagalicaCips})
+        }
     }
 
-    onBeforeCapture = () => {
-        /*...*/
-    };
-
-    onBeforeDragStart = () => {
-        /*...*/
-    };
-
-    onDragStart = () => {
-        /*...*/
-    };
-    onDragUpdate = () => {
-
-    };
     onDragEnd = (result) => {
         let {slagalica, arr} = this.state
         // dropped outside the list
@@ -143,7 +249,7 @@ class Slagalica extends React.Component {
                                 ref={provided.innerRef}
                                 style={getListStyle(snapshot.isDraggingOver)}
                             >
-                                {slagalica.ponudjena.map((item, index) => (
+                                {slagalica?.ponudjena.map((item, index) => (
                                     <div style={{display:"inline-block"}} >
                                     <Draggable key={item.id} draggableId={"item-"+item.name} index={index} >
                                 {(provided, snapshot) => (

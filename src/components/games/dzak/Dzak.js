@@ -21,7 +21,7 @@ class Dzak extends React.Component {
         items: [],
         arr: [],
         letter: "",
-        complete: true
+        complete: false
     }
 
     componentDidMount() {
@@ -108,7 +108,7 @@ class Dzak extends React.Component {
                                 ref={provided.innerRef}
                             >
                                 {items.map((item, index) => (
-                                    <div style={{display:"inline-block"}} >
+                                    <div style={{display:"inline-block", width:"20%"}} >
                                         <Draggable key={item.id} draggableId={"item-"+item.name} index={index} >
                                             {(provided, snapshot) => (
                                                 <div
@@ -121,7 +121,7 @@ class Dzak extends React.Component {
                                                     <img
                                                         src={"./slides/" + item.image}
                                                         alt={"A"}
-                                                        style={{width:"60%"}}
+                                                        style={{width:"80%"}}
                                                     />
                                                 </div>
                                             )}

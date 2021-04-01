@@ -2,7 +2,7 @@ const PojmoviSh  = [
     {
         poj: [
             {
-                name: "sh1",
+                name: "p",
                 order: 0,
                 image: "sp-sismis.png",
                 top: "20%",
@@ -11,7 +11,7 @@ const PojmoviSh  = [
 
             },
             {
-                name: "r1",
+                name: "s",
                 order: 0,
                 image: "slika-reket.png",
                 top: "20%",
@@ -19,7 +19,7 @@ const PojmoviSh  = [
                 found: false
             },
             {
-                name: "sh1",
+                name: "p",
                 order: 0,
                 image: "radno-59.png",
                 top:"2%",
@@ -27,7 +27,7 @@ const PojmoviSh  = [
                 found: false
             },
             {
-                name: "r1",
+                name: "s",
                 order: 0,
                 image: "radno-39.png",
                 top:"50%",

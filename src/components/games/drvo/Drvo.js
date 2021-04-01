@@ -576,6 +576,7 @@ class Drvo extends React.Component {
                         backgroundRepeat: 'no-repeat'
                     }}
                     src={this.state.image}
+
                 />
 
                 {this.state.lowerComplete ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}

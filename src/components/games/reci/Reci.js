@@ -22,6 +22,14 @@ import Delay from "react-delay-render";
 import bg1 from './balonihd.jpg'
 import bg2 from './vockice.jpg'
 import PreloadImage from "react-preload-image";
+import ReciV3 from "./ReciV3";
+import ReciZ3 from "./ReciZ";
+import ReciD3 from "./ReciD";
+import ReciG from "./ReciG";
+import ReciCh3 from "./ReciCh";
+import ReciH3 from "./ReciH3";
+import ReciF3 from "./ReciF";
+import ReciZh3 from "./ReciZh";
 
 class Reci extends React.Component{
     state = {
@@ -78,6 +86,30 @@ class Reci extends React.Component{
         }
         if(this.props.slide === "b3"){
             this.setState({ reci: ReciB3, image:bg2 })
+        }
+        if(this.props.slide === "v3"){
+            this.setState({ reci: ReciV3, image:bg2 })
+        }
+        if(this.props.slide === "z3"){
+            this.setState({ reci: ReciZ3, image:bg2 })
+        }
+        if(this.props.slide === "d3"){
+            this.setState({ reci: ReciD3, image:bg2 })
+        }
+        if(this.props.slide === "g3"){
+            this.setState({ reci: ReciG, image:bg2 })
+        }
+        if(this.props.slide === "ch3"){
+            this.setState({ reci: ReciCh3, image:bg2 })
+        }
+        if(this.props.slide === "h3"){
+            this.setState({ reci: ReciH3, image:bg2 })
+        }
+        if(this.props.slide === "f3"){
+            this.setState({ reci: ReciF3, image:bg2 })
+        }
+        if(this.props.slide === "zh3"){
+            this.setState({ reci: ReciZh3, image:bg2 })
         }
     }
 

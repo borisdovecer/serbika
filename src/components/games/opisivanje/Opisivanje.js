@@ -7,6 +7,14 @@ import OpisDz09 from "./OpisDz09"
 import OpisDz10 from "./OpisDz10"
 import OpisDz11 from "./OpisDz11"
 import OpisDz12 from "./OpisDz12";
+import OpisDz13 from "./OpisDz13";
+import OpisDz14 from "./OpisDz14";
+import OpisDz15 from "./OpisDz15";
+import OpisDz16 from "./OpisDz16";
+import OpisDz17 from "./OpisDz17";
+import OpisDz19 from "./OpisDz19";
+import OpisDz18 from "./OpisDz18";
+import OpisDz20 from "./OpisDz20";
 
 class Opisivanje extends React.Component {
     state = {
@@ -37,6 +45,30 @@ class Opisivanje extends React.Component {
         }
         if(this.props.slide === "dz12"){
             this.setState({ opis: OpisDz12 })
+        }
+        if(this.props.slide === "dz13"){
+            this.setState({ opis: OpisDz13 })
+        }
+        if(this.props.slide === "dz14"){
+            this.setState({ opis: OpisDz14 })
+        }
+        if(this.props.slide === "dz15"){
+            this.setState({ opis: OpisDz15 })
+        }
+        if(this.props.slide === "dz16"){
+            this.setState({ opis: OpisDz16 })
+        }
+        if(this.props.slide === "dz17"){
+            this.setState({ opis: OpisDz17 })
+        }
+        if(this.props.slide === "dz18"){
+            this.setState({ opis: OpisDz18 })
+        }
+        if(this.props.slide === "dz19"){
+            this.setState({ opis: OpisDz19 })
+        }
+        if(this.props.slide === "dz20"){
+            this.setState({ opis: OpisDz20 })
         }
     }
 
@@ -93,10 +125,9 @@ class Opisivanje extends React.Component {
     }
 
     render() {
-        const {opis, guessed, selected} = this.state
+        const {opis} = this.state
         return(
             <div className={'main'}>
-
                 {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
                 <div className="row justify-content-center "  style={{marginLeft: 0, marginRight: 0}} >
                     {opis.map((p,i) =>
@@ -111,7 +142,7 @@ class Opisivanje extends React.Component {
                                 >
                                      {p.found ?
                                     <img
-                                        style={{width:"100%"}}
+                                        style={{width:"80%", position:"relative", top:"5%", left:"10%"}}
                                         id={p.id}
                                         row="upper"
                                         alt={'card'}
@@ -138,8 +169,6 @@ class Opisivanje extends React.Component {
                         </div>
                     )}
                 </div>
-                <h2>{selected}</h2>
-                <h2>{guessed}</h2>
             </div>
         )
     }

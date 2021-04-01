@@ -24,7 +24,7 @@ const Items16 = [
         id: 4,
         name: "duga",
         image: "slika-duga.png",
-        in: "yellow",
+        in: "red",
         found: false
     },
     {

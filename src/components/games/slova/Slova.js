@@ -266,7 +266,7 @@ class Slova extends React.Component{
                         backgroundColor: '#222222'
                     }}
                     src={this.state.image}
-                    duration={"1500ms"}
+                    duration={"1000ms"}
                 />
                 <DelayedBtn />
                 <DelayedVeliko />

@@ -2,7 +2,7 @@ const OpisDz12 = [
     {
         id: 1,
         text: "Снешко је бео.",
-        image: "slika-snesko.jpg",
+        image: "slika-snesko.png",
         found: false
     },
     {

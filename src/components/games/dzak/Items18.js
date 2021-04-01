@@ -2,7 +2,7 @@ const Items18 = [
     {
         id: 1,
         name: "hiena",
-        image: "slika-hiena.png",
+        image: "slika-hijena.png",
         in: "red",
         found: false
     },

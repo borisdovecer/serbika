@@ -34,7 +34,7 @@ const Reci19 = [
         full:  ["Ф","А","Б","Р","И","К","А"],
         correct: ["Ф","А"],
         slovaTop: "3vh",
-        slovaLeft: "70vw",
+        slovaLeft: "62vw",
         color: "#fdd6cc",
         found: false
     },

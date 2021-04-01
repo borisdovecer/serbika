@@ -40,7 +40,6 @@ class Pojmovi extends React.Component {
         let { pojmovi, selected, guessed } = this.state
 
         if(selected && guessed && selected.name === guessed.name){
-            console.log(this.state)
             setTimeout( () => {
                 pojmovi[o].poj.forEach( function (p){
                     if(p.name === selected.name && p.order === o){

@@ -25,7 +25,7 @@ const RecenicaD = [
     },
     {
         name: "i",
-        image: "radno-01.png",
+        image: "radno-19.png",
         color: "#d14438",
         top: "10%",
         left: "19%",

@@ -34,7 +34,7 @@ const Reci16 = [
         full:  ["Ј","Е","Д","Н","О","Р","О","Г"],
         correct: ["О","Г"],
         slovaTop: "3vh",
-        slovaLeft: "70vw",
+        slovaLeft: "58vw",
         color: "#fdd6cc",
         found: false
     },

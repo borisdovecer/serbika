@@ -31,7 +31,7 @@ const PojmoviH = [
         id: 5,
         name: "Хеликоптер",
         color: "#ffe200",
-        image: "slika-helkopter.png",
+        image: "slika-helikopter.png",
         found: false
     }
 ]

@@ -57,6 +57,9 @@ class Dz20 extends React.Component {
                 { this.state.slide === 20 ? <Povezivanje slide={"zh"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 21 ? <Slagalica slide={"jez"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 22 ? <Slagalica slide={"raza"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 21 ? <Slagalica slide={"zvaka"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 21 ? <Slagalica slide={"azdaja"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 21 ? <Slagalica slide={"zirafa"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 23 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 24 ? <Video end={this.backToMain}/> : null}
             </div>

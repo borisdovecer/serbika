@@ -57,8 +57,11 @@ class Dz18 extends React.Component {
                 { this.state.slide === 20 ? <Povezivanje slide={"h"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 21 ? <Slagalica slide={"shah"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 22 ? <Slagalica slide={"osmeh"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 23 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 24 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 23 ? <Slagalica slide={"hleb"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 24 ? <Slagalica slide={"lilihip"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 25 ? <Slagalica slide={"hrcak"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 26 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 27 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }
