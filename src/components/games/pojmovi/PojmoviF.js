@@ -124,7 +124,7 @@ const PojmoviF  = [
             {
                 name: "ch4",
                 order: 3,
-                image: "slika-cesma.jpg",
+                image: "slika-cesma.png",
                 top: "20%",
                 left: "30%",
                 found: false

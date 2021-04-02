@@ -4,7 +4,7 @@ const PojmoviV  = [
             {
                 name: "t",
                 order: 0,
-                image: "slika-helihopter.png",
+                image: "slika-helikopter.png",
                 top: "20%",
                 left: "1%",
                 found: false
@@ -124,7 +124,7 @@ const PojmoviV  = [
             {
                 name: "v4",
                 order: 3,
-                image: "slika-vuk.jpg",
+                image: "slika-vuk.png",
                 top: "20%",
                 left: "30%",
                 found: false

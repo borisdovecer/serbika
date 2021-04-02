@@ -4,7 +4,7 @@ const PojmoviD  = [
             {
                 name: "d",
                 order: 0,
-                image: "slika-sladoled.ong",
+                image: "slika-sladoled.png",
                 top: "20%",
                 left: "1%",
                 found: false
@@ -13,7 +13,7 @@ const PojmoviD  = [
             {
                 name: "b",
                 order: 0,
-                image: "slika-bonbone.png",
+                image: "slika-bombone.png",
                 top: "20%",
                 left: "30%",
                 found: false
@@ -41,7 +41,7 @@ const PojmoviD  = [
             {
                 name: "d2",
                 order: 1,
-                image: "slika-jedan.jpg",
+                image: "slika-jedan.png",
                 top: "20%",
                 left: "1%",
                 found: false
@@ -50,7 +50,7 @@ const PojmoviD  = [
             {
                 name: "r2",
                 order: 1,
-                image: "slika-tri.jpg",
+                image: "slika-tri.png",
                 top: "20%",
                 left: "30%",
                 found: false
@@ -87,7 +87,7 @@ const PojmoviD  = [
             {
                 name: "z3",
                 order: 2,
-                image: "slika-zvono.jpg",
+                image: "slika-zvono.png",
                 top: "20%",
                 left: "30%",
                 found: false

@@ -121,6 +121,13 @@ const SlagalicaHemijska = {
             image: "radno-25.png",
             top: "55%",
             left: "72%"
+        },
+        {
+            id: 11,
+            name: "f",
+            image: "radno-49.png",
+            top: "55%",
+            left: "72%"
         }
     ]
 

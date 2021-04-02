@@ -4,7 +4,7 @@ const PojmoviCh  = [
             {
                 name: "ch",
                 order: 0,
-                image: "slika-cokolada.jpg",
+                image: "slika-cokolada.png",
                 top: "20%",
                 left: "1%",
                 found: false
@@ -13,7 +13,7 @@ const PojmoviCh  = [
             {
                 name: "g",
                 order: 0,
-                image: "slika-jagoda.jpg",
+                image: "slika-jagoda.png",
                 top: "20%",
                 left: "30%",
                 found: false
@@ -50,7 +50,7 @@ const PojmoviCh  = [
             {
                 name: "r2",
                 order: 1,
-                image: "slika-dabar.jpg",
+                image: "slika-dabar.png",
                 top: "20%",
                 left: "30%",
                 found: false

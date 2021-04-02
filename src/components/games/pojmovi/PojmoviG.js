@@ -50,7 +50,7 @@ const PojmoviG  = [
             {
                 name: "k2",
                 order: 1,
-                image: "slika-kokoska.jpg",
+                image: "slika-kokoska.png",
                 top: "20%",
                 left: "30%",
                 found: false
@@ -78,7 +78,7 @@ const PojmoviG  = [
             {
                 name: "g3",
                 order: 2,
-                image: "slika-hotdog.jpg",
+                image: "slika-hotdog.png",
                 top: "20%",
                 left: "1%",
                 found: false
@@ -87,7 +87,7 @@ const PojmoviG  = [
             {
                 name: "b3",
                 order: 2,
-                image: "slika-hleb.ong",
+                image: "slika-hleb.png",
                 top: "20%",
                 left: "30%",
                 found: false

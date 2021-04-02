@@ -4,7 +4,7 @@ const PojmoviZ  = [
             {
                 name: "z",
                 order: 0,
-                image: "slika-zmija.jpg",
+                image: "slika-zmija.png",
                 top: "20%",
                 left: "1%",
                 found: false
@@ -13,7 +13,7 @@ const PojmoviZ  = [
             {
                 name: "v",
                 order: 0,
-                image: "slika-lav.jpg",
+                image: "slika-lav.png",
                 top: "20%",
                 left: "30%",
                 found: false
@@ -87,7 +87,7 @@ const PojmoviZ  = [
             {
                 name: "k3",
                 order: 2,
-                image: "slika-kisobran.jpg",
+                image: "slika-kisobran.png",
                 top: "20%",
                 left: "30%",
                 found: false

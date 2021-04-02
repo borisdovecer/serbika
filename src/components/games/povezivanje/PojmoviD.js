@@ -29,7 +29,7 @@ const PojmoviD = [
     {
         id: 4,
         name: "Дабар",
-        image: "slika-dabar.jpg",
+        image: "slika-dabar.png",
         color: "#bb00ff",
         top: "38%",
         left: "10%",

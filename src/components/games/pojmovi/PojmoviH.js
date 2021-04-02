@@ -13,7 +13,7 @@ const PojmoviH  = [
             {
                 name: "p",
                 order: 0,
-                image: "slika-cipele.jpg",
+                image: "slika-cipele.png",
                 top: "20%",
                 left: "30%",
                 found: false
@@ -124,7 +124,7 @@ const PojmoviH  = [
             {
                 name: "s4",
                 order: 3,
-                image: "slika-sirena.jpg",
+                image: "slika-sirena.png",
                 top: "20%",
                 left: "30%",
                 found: false

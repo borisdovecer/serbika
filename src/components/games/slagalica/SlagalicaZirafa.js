@@ -94,6 +94,13 @@ const SlagalicaZirafa = {
             image: "radno-35.png",
             top: "55%",
             left: "72%"
+        },
+        {
+            id: 10,
+            name: "h",
+            image: "radno-51.png",
+            top: "55%",
+            left: "72%"
         }
     ]
 

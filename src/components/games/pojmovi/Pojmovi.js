@@ -49,12 +49,12 @@ class Pojmovi extends React.Component {
             this.setState({ pojmovi: PojmoviB })
         }
         // DZ 13
-        if(this.props.slide === "z"){
-            this.setState({ pojmovi: PojmoviZ })
-        }
-        // DZ 14
         if(this.props.slide === "v"){
             this.setState({ pojmovi: PojmoviV })
+        }
+        // DZ 14
+        if(this.props.slide === "z"){
+            this.setState({ pojmovi: PojmoviZ })
         }
         // DZ 15
         if(this.props.slide === "d"){
