@@ -39,7 +39,7 @@ const PojmoviL  = [
     {
         poj: [
             {
-                name: "p",
+                name: "p2",
                 order: 1,
                 image: "slika-panda.png",
                 top: "20%",
@@ -48,7 +48,7 @@ const PojmoviL  = [
 
             },
             {
-                name: "l",
+                name: "l2",
                 order: 1,
                 image: "slika-delfin.png",
                 top: "20%",
@@ -56,7 +56,7 @@ const PojmoviL  = [
                 found: false
             },
             {
-                name: "l",
+                name: "l2",
                 order: 1,
                 image: "radno-25.png",
                 top:"2%",
@@ -64,7 +64,7 @@ const PojmoviL  = [
                 found: false
             },
             {
-                name: "p",
+                name: "p2",
                 order: 1,
                 image: "radno-37.png",
                 top:"50%",
@@ -76,7 +76,7 @@ const PojmoviL  = [
     {
         poj: [
             {
-                name: "t",
+                name: "t3",
                 order: 2,
                 image: "slika-patike.png",
                 top: "20%",
@@ -85,7 +85,7 @@ const PojmoviL  = [
 
             },
             {
-                name: "l",
+                name: "l3",
                 order: 2,
                 image: "slika-cipele.png",
                 top: "20%",
@@ -93,7 +93,7 @@ const PojmoviL  = [
                 found: false
             },
             {
-                name: "t",
+                name: "t3",
                 order: 2,
                 image: "radno-43.png",
                 top:"2%",
@@ -101,7 +101,7 @@ const PojmoviL  = [
                 found: false
             },
             {
-                name: "l",
+                name: "l3",
                 order: 2,
                 image: "radno-25.png",
                 top:"50%",
@@ -113,7 +113,7 @@ const PojmoviL  = [
     {
         poj: [
             {
-                name: "r",
+                name: "r4",
                 order: 3,
                 image: "slika-krava.png",
                 top: "20%",
@@ -122,15 +122,15 @@ const PojmoviL  = [
 
             },
             {
-                name: "l",
+                name: "l4",
                 order: 3,
-                image: "slika-flamingo.jpg",
+                image: "slika-flamingo.png",
                 top: "20%",
                 left: "30%",
                 found: false
             },
             {
-                name: "r",
+                name: "r4",
                 order: 3,
                 image: "radno-39.png",
                 top:"2%",
@@ -138,7 +138,7 @@ const PojmoviL  = [
                 found: false
             },
             {
-                name: "l",
+                name: "l4",
                 order: 3,
                 image: "radno-25.png",
                 top:"50%",

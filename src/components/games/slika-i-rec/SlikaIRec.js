@@ -357,7 +357,7 @@ class SlikaIRec extends React.Component {
                                 style={{width:"100%"}}
                                 onClick={this.handleClick}
                                 key={i}
-                                alt={'card'}
+                                alt={'slika'}
                                 name={p}
                                 src={"./slides/" + p }
                             />

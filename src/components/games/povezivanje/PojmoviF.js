@@ -2,7 +2,7 @@ const PojmoviF = [
     {
         id: 1,
         name: "Облак",
-        image: "slika-oblak.jpg",
+        image: "slika-oblak.png",
         color: "#ff0000",
         top: "2%",
         left: "10%",
@@ -47,7 +47,7 @@ const PojmoviF = [
     {
         id: 6,
         name: "Хокеј",
-        image: "slika-hokej.jpg",
+        image: "slika-hokejas.png",
         color: "#dd83ff",
         top: "15%",
         left: "70%",
@@ -65,7 +65,7 @@ const PojmoviF = [
     {
         id: 8,
         name: "Фен",
-        image: "slika-fen.jpg",
+        image: "slika-fen.png",
         color: "#00ffb0",
         top: "40%",
         left: "70%",

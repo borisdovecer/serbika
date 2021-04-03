@@ -11,7 +11,7 @@ const PojmoviB = [
     {
         id: 2,
         name: "БАКА",
-        image: "slika-baka.jpg",
+        image: "slika-baba.png",
         color: "#08ff00",
         top: "14%",
         left: "10%",
@@ -29,7 +29,7 @@ const PojmoviB = [
     {
         id: 4,
         name: "БУРЕ",
-        image: "slika-bure.jpg",
+        image: "slika-bure.png",
         color: "#bb00ff",
         top: "38%",
         left: "10%",
@@ -47,7 +47,7 @@ const PojmoviB = [
     {
         id: 6,
         name: "ОБЛАК",
-        image: "slika-oblak.jpg",
+        image: "slika-oblak.png",
         color: "#dd83ff",
         top: "15%",
         left: "70%",
@@ -56,7 +56,7 @@ const PojmoviB = [
     {
         id: 7,
         name: "КИШОБРАН",
-        image: "slika-kisobran.jpg",
+        image: "slika-kisobran.png",
         color: "#ff9800",
         top: "28%",
         left: "70%",

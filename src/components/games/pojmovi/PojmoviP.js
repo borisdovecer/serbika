@@ -39,7 +39,7 @@ const PojmoviP  = [
     {
         poj: [
             {
-                name: "p",
+                name: "p2",
                 order: 1,
                 image: "slika-pcela.png",
                 top: "20%",
@@ -48,7 +48,7 @@ const PojmoviP  = [
 
             },
             {
-                name: "t",
+                name: "t2",
                 order: 1,
                 image: "slika-torta-slatka.png",
                 top: "20%",
@@ -56,7 +56,7 @@ const PojmoviP  = [
                 found: false
             },
             {
-                name: "t",
+                name: "t2",
                 order: 1,
                 image: "radno-43.png",
                 top:"2%",
@@ -64,7 +64,7 @@ const PojmoviP  = [
                 found: false
             },
             {
-                name: "p",
+                name: "p2",
                 order: 1,
                 image: "radno-37.png",
                 top:"50%",
@@ -76,7 +76,7 @@ const PojmoviP  = [
     {
         poj: [
             {
-                name: "p",
+                name: "p3",
                 order: 2,
                 image: "slika-krompir.png",
                 top: "20%",
@@ -85,7 +85,7 @@ const PojmoviP  = [
 
             },
             {
-                name: "k",
+                name: "k3",
                 order: 2,
                 image: "slika-kruska.png",
                 top: "20%",
@@ -93,7 +93,7 @@ const PojmoviP  = [
                 found: false
             },
             {
-                name: "k",
+                name: "k3",
                 order: 2,
                 image: "radno-23.png",
                 top:"2%",
@@ -101,7 +101,7 @@ const PojmoviP  = [
                 found: false
             },
             {
-                name: "p",
+                name: "p3",
                 order: 2,
                 image: "radno-37.png",
                 top:"50%",
@@ -113,7 +113,7 @@ const PojmoviP  = [
     {
         poj: [
             {
-                name: "sh",
+                name: "p4",
                 order: 3,
                 image: "slika-cipele.png",
                 top: "20%",
@@ -122,7 +122,7 @@ const PojmoviP  = [
 
             },
             {
-                name: "r",
+                name: "r4",
                 order: 3,
                 image: "slika-rukavice.png",
                 top: "20%",
@@ -130,7 +130,7 @@ const PojmoviP  = [
                 found: false
             },
             {
-                name: "r",
+                name: "r4",
                 order: 3,
                 image: "radno-39.png",
                 top:"2%",
@@ -138,7 +138,7 @@ const PojmoviP  = [
                 found: false
             },
             {
-                name: "p",
+                name: "p4",
                 order: 3,
                 image: "radno-37.png",
                 top:"50%",

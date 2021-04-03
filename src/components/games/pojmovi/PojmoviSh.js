@@ -87,7 +87,7 @@ const PojmoviSh  = [
             {
                 name: "sh3",
                 order: 2,
-                image: "slika-sator.jpg",
+                image: "slika-sator.png",
                 top: "20%",
                 left: "30%",
                 found: false

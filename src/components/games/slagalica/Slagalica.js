@@ -50,13 +50,13 @@ import SlagalicaZvaka from "./SlagalicaZvaka";
 import SlagalicaRaza from "./SlagalicaRaza";
 import SlagalicaJez from "./SlagalicaJez";
 
-const reorder = (list, startIndex, endIndex) => {
-    const result = Array.from(list);
-    const [removed] = result.splice(startIndex, 1);
-    result.splice(endIndex, 0, removed);
-
-    return result;
-};
+// const reorder = (list, startIndex, endIndex) => {
+//     const result = Array.from(list);
+//     const [removed] = result.splice(startIndex, 1);
+//     result.splice(endIndex, 0, removed);
+//
+//     return result;
+// };
 
 const grid = 8;
 
@@ -69,7 +69,7 @@ const getListStyle = isDraggingOver => ({
 
 class Slagalica extends React.Component {
     state = {
-        slagalica: SlagalicaL,
+        slagalica: {word:[], ponudjena:[]},
         arr: [],
         complete: true
     }
@@ -248,21 +248,21 @@ class Slagalica extends React.Component {
                 return;
             }
         } )
-
-        const slag = reorder(
-            slagalica.ponudjena,
-            result.source.index,
-            result.destination.index
-        );
-
-        slagalica.ponudjena = slag
-        this.setState({
-            slagalica
-        });
-
-        if(this.state.arr.length === slagalica.word.length){
-            this.setState({complete: true})
-        }
+        //
+        // const slag = reorder(
+        //     slagalica.ponudjena,
+        //     result.source.index,
+        //     result.destination.index
+        // );
+        //
+        // slagalica.ponudjena = slag
+        // this.setState({
+        //     slagalica
+        // });
+        //
+        // if(this.state.arr.length === slagalica.word.length){
+        //     this.setState({complete: true})
+        // }
     }
 
     render() {

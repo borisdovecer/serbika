@@ -2,7 +2,7 @@ const PojmoviCh = [
     {
         id: 1,
         name: "Чесма",
-        image: "slika-cesma.jpg",
+        image: "slika-cesma.png",
         color: "#ff0000",
         top: "2%",
         left: "10%",

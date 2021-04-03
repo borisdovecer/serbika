@@ -47,7 +47,7 @@ const PojmoviZh = [
     {
         id: 6,
         name: "Ружа",
-        image: "slika-ruza.jpg",
+        image: "slika-ruza.png",
         color: "#dd83ff",
         top: "15%",
         left: "70%",
@@ -65,7 +65,7 @@ const PojmoviZh = [
     {
         id: 8,
         name: "Хаљина",
-        image: "slika-haljina.jpg",
+        image: "slika-haljina.png",
         color: "#00ffb0",
         top: "40%",
         left: "70%",

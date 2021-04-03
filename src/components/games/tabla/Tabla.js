@@ -1,8 +1,8 @@
 import React from 'react'
 import CanvasDraw from "react-canvas-draw"
 
-import bg1 from './bg-tabla-a.png'
-import bg2 from './bg-tabla-m.png'
+import bg1 from './bg-tabla-a.jpg'
+import bg2 from './bg-tabla-m.jpg'
 import PreloadImage from "react-preload-image";
 
 class Tabla extends React.Component{
@@ -59,6 +59,8 @@ class Tabla extends React.Component{
                         backgroundColor: '#222222'
                     }}
                     src={this.state.image}
+                    duration={"1000ms"}
+                    lazy={true}
                 />
                 <CanvasDraw
                     ref={canvasDraw => (this.saveableCanvas = canvasDraw)}

@@ -13,7 +13,7 @@ const PojmoviLj  = [
             {
                 name: "l",
                 order: 0,
-                image: "slika-lutka.png",
+                image: "slika-lutka.jpg",
                 top: "20%",
                 left: "30%",
                 found: false
@@ -78,7 +78,7 @@ const PojmoviLj  = [
             {
                 name: "lj3",
                 order: 2,
-                image: "slika-skoljke.png",
+                image: "slika-skoljka.png",
                 top: "20%",
                 left: "1%",
                 found: false
@@ -124,7 +124,7 @@ const PojmoviLj  = [
             {
                 name: "t4",
                 order: 3,
-                image: "slika-cetka.jpg",
+                image: "slika-cetka.png",
                 top: "20%",
                 left: "30%",
                 found: false

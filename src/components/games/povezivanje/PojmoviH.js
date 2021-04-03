@@ -11,7 +11,7 @@ const PojmoviH = [
     {
         id: 2,
         name: "Хармоника",
-        image: "slika-harmonika.jpg",
+        image: "slika-harmonika.png",
         color: "#08ff00",
         top: "14%",
         left: "10%",

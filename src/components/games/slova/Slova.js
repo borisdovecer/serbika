@@ -1,10 +1,10 @@
 import React from 'react'
 import Delay from 'react-delay-render'
 
-import bg1 from './bg-slova-1.png'
-import bg2 from './bg-slova-2.2.png'
-import bg3 from './bg-slova-3.png'
-import bg4 from './bg-slova-4.png'
+import bg1 from './bg-slova-1.jpg'
+import bg2 from './bg-slova-2.2.jpg'
+import bg3 from './bg-slova-3.jpg'
+import bg4 from './bg-slova-4.jpg'
 
 import PreloadImage from "react-preload-image";
 
@@ -267,6 +267,7 @@ class Slova extends React.Component{
                     }}
                     src={this.state.image}
                     duration={"1000ms"}
+                    lazy={true}
                 />
                 <DelayedBtn />
                 <DelayedVeliko />

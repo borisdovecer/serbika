@@ -18,7 +18,7 @@ import PojmoviZh from "./PojmoviZh";
 
 class Povezivanje extends React.Component {
     state = {
-        pojmovi: PojmoviP,
+        pojmovi: [],
         selected: "",
         guessed: "",
         complete: true

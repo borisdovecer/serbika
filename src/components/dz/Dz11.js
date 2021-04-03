@@ -25,7 +25,7 @@ import Pojmovi from "../games/pojmovi/Pojmovi";
 
 class Dz11 extends React.Component {
     state = {
-        slide: 19
+        slide: 1
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )

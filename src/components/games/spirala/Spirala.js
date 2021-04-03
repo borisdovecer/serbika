@@ -34,8 +34,8 @@ import SlovaH from "./SlovaH";
 
 class Spirala extends React.Component {
     state = {
-        slova: SlovaSh,
-        recenica: RecenicaSh,
+        slova: [],
+        recenica: [],
         image: bg,
         order: 1,
         complete : true
@@ -158,7 +158,6 @@ class Spirala extends React.Component {
                         backgroundRepeat: 'no-repeat'
                     }}
                     src={this.state.image}
-                    duration={"1500ms"}
                 />
                 {this.state.slova.map( (slovo, i) =>
                     <img key={i}

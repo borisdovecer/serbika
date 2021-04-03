@@ -38,7 +38,7 @@ const PojmoviZ = [
     {
         id: 5,
         name: "Киша",
-        image: "slika-kisa.jpg",
+        image: "slika-kisha.png",
         color: "#78c310",
         top: "3%",
         left: "70%",

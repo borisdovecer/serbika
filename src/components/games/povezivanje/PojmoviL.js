@@ -29,7 +29,7 @@ const PojmoviL = [
     {
         id: 4,
         name: "РАК",
-        image: "slika-rak.jpg",
+        image: "slika-rak.png",
         color: "#bb00ff",
         top: "40%",
         left: "10%",

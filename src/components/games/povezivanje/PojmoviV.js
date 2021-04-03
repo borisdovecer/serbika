@@ -20,7 +20,7 @@ const PojmoviV = [
     {
         id: 3,
         name: "Ватра",
-        image: "slika-vatra.jpg",
+        image: "slika-vatra.png",
         color: "#0040ff",
         top: "26%",
         left: "10%",

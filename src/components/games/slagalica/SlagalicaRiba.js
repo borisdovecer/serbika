@@ -1,5 +1,5 @@
 const SlagalicaRiba = {
-    image: "slika-riba.jpg",
+    image: "slika-riba.png",
     word: [
         {
             id: 10,

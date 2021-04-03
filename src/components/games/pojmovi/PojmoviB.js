@@ -4,7 +4,7 @@ const PojmoviB  = [
             {
                 name: "p",
                 order: 0,
-                image: "slika-lapma.png",
+                image: "slika-lampa.png",
                 top: "20%",
                 left: "1%",
                 found: false
@@ -41,7 +41,7 @@ const PojmoviB  = [
             {
                 name: "k2",
                 order: 1,
-                image: "slika-kisobran.jpg",
+                image: "slika-kisobran.png",
                 top: "20%",
                 left: "1%",
                 found: false
@@ -78,7 +78,7 @@ const PojmoviB  = [
             {
                 name: "b3",
                 order: 2,
-                image: "slika-bubamara.png",
+                image: "slika-bubamarica.png",
                 top: "20%",
                 left: "1%",
                 found: false
@@ -115,7 +115,7 @@ const PojmoviB  = [
             {
                 name: "sh4",
                 order: 3,
-                image: "slika-kisa.jpg",
+                image: "slika-kisha.png",
                 top: "20%",
                 left: "1%",
                 found: false
@@ -124,7 +124,7 @@ const PojmoviB  = [
             {
                 name: "b4",
                 order: 3,
-                image: "slika-oblak.jpg",
+                image: "slika-oblak.png",
                 top: "20%",
                 left: "30%",
                 found: false
