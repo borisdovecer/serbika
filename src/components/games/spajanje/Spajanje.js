@@ -1,50 +1,48 @@
 import React from 'react'
+import { DragDropContext, Draggable, Droppable  } from 'react-beautiful-dnd'
+
+const getListStyle = isDraggingOver => ({
+    padding: 8,
+});
 
 class Spajanje extends React.Component{
     state = {
         pojmovi: [],
+        random: [],
+        arr:[],
         selected: "",
         guessed: "",
-        complete: true
+        complete: false
     }
 
     componentDidMount() {
-        this.setState({pojmovi: this.props.game})
+        const pojmovi = this.props.game
+        const random = [...pojmovi].sort(() => Math.random() - 0.5)
+
+        this.setState({pojmovi, random})
     }
+
+    onDragEnd = (result) => {
+        let {pojmovi, arr} = this.state
+
+        if (!result.destination) {
+            return;
+        }
+        pojmovi.forEach(p => {
+            if(result.destination.droppableId ===  "droppable"+p.name && result.draggableId === "item-"+p.name){
+                p.found = true
+                // pojmovi.splice(result.source.index, 1)
+                arr.push(p.id)
+                this.setState({pojmovi, arr})
+            }else{
+                return;
+            }
+        } )
+    }
+
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        this.compare()
         this.complete()
-    }
-
-    handleClick = (e) => {
-        let id = e.target.attributes.id.value
-        let row = e.target.attributes.row.value
-
-        if(row === "lower"){
-            this.setState({ selected: id })
-        }else{
-            this.setState({ guessed: id })
-        }
-    }
-
-    compare = () => {
-        let { pojmovi, selected, guessed } = this.state
-
-        if(selected === guessed && guessed !== ""){
-            setTimeout( () => {
-                pojmovi.forEach( function (p){
-                    if(p.id === parseInt(selected)){
-                        p.found = true
-                    }
-                })
-                this.setState({pojmovi:pojmovi, selected: "", guessed: "" })
-            }, 200 )
-        }else if( guessed.length >0 ){
-            setTimeout( () => {
-                this.setState({ selected: "", guessed: "" })
-            }, 200 )
-        }
     }
 
     complete = () => {
@@ -63,48 +61,80 @@ class Spajanje extends React.Component{
     }
 
     render() {
-        const {pojmovi, complete} = this.state
+        const {pojmovi,random, complete} = this.state
+
         return(
             <div className={"main"}>
-                <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
-                    {pojmovi.map( (p, i) =>
-                        <div key={i} className={"col-lg-2 col-md-2 col-sm-2"} style={{marginTop: "3%"}}>
-                            <h1 style={{ color: p.color}}>{p.name}</h1>
-                            <div onClick={this.handleClick}
-                                 id={p.id}
-                                 row="upper"
-                                 style={{width: "200px", height: "200px", backgroundColor: p.color, borderRadius: "25px"}}
-                            >
-                                {p.found ?  <img
-                                    id={p.id}
-                                    src={'./slides/' + p.image}
-                                    alt={'card'}
-                                    row="lower"
-                                    style={{width:"100%", zIndex:"-50"}}
-                                    onClick={this.handleClick}
-                                /> : null }
-
-                            </div>
-                        </div>
-                    )}
-                </div>
                 {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
-                <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
+                <DragDropContext onDragEnd={this.onDragEnd}>
+                    <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
 
+                    {pojmovi.map((s, i) =>
+                        <div>
+                        <h1 style={{ color: s.color}}>{s.name}</h1>
+                        <Droppable droppableId={"droppable"+s.name }
+                                   key={i}
+                                   index={s.id}
+                        >
+                            {(provided, snapshot) => (
+                                <div
+                                    ref={provided.innerRef}
+                                    {...provided.draggableProps}
+                                    {...provided.dragHandleProps}
+                                    className={"slagalica-box"}
+                                    style={{width: "200px", height: "200px", margin:"5vh", backgroundColor: s.color, borderRadius: "25px"}}
 
-                    {pojmovi.map( (p, i) =>
-                        <div key={i} className={"col-lg-2 col-md-2 col-sm-2"} style={{marginTop: "6%"}}>
-                            {p.found ? null : <img
-                                id={p.id}
-                                src={'./slides/' + p.image}
-                                alt={'card'}
-                                row="lower"
-                                style={{width:"100%", zIndex:"-50"}}
-                                onClick={this.handleClick}
-                            /> }
+                                >
+                                    {s.found ? <img
+                                        src={"./slides/" + s.image}
+                                        alt={"A"}
+                                        style={{width:"90%", position:"absolute",top:"5%", left:"5%"}}
+                                    /> :  null}
+
+                                </div>
+                            )}
+                        </Droppable>
                         </div>
                     )}
-                </div>
+                    </div>
+                    <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
+                        <Droppable droppableId="droppable2">
+                            {(provided, snapshot) => (
+                                <div
+                                    {...provided.droppableProps}
+                                    ref={provided.innerRef}
+                                    style={getListStyle(snapshot.isDraggingOver)}
+                                >
+                                    {random.map((item, index) => (
+                                        <div style={{display:"inline-block"}} >
+                                            <Draggable key={item.id} draggableId={"item-"+item.name} index={index} >
+                                                {(provided, snapshot) => (
+                                                    <div
+                                                        key={item.id}
+                                                        ref={provided.innerRef}
+                                                        {...provided.draggableProps}
+                                                        {...provided.dragHandleProps}
+                                                        className={"spajanje-ponudjena"}
+                                                    >
+
+                                                        {item.found ? null : <img
+                                                            src={"./slides/" + item.image}
+                                                            alt={"A"}
+                                                            style={{width:"80%"}}
+                                                        />}
+                                                    </div>
+                                                )}
+                                            </Draggable>
+                                        </div>
+
+                                    ))
+                                    }
+                                    {provided.placeholder}
+                                </div>
+                            )}
+                        </Droppable>
+                    </div>
+                </DragDropContext>
             </div>
         )
     }
