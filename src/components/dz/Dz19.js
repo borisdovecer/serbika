@@ -22,6 +22,8 @@ import Spirala from "../games/spirala/Spirala";
 import Povezivanje from "../games/povezivanje/Povezivanje";
 import Slagalica from "../games/slagalica/Slagalica";
 import Pojmovi from "../games/pojmovi/Pojmovi";
+import KarteF from "../games/karte/KarteF";
+import PojmoviF from "../games/spajanje/PojmoviF";
 
 
 class Dz19 extends React.Component {
@@ -40,11 +42,11 @@ class Dz19 extends React.Component {
                 { this.state.slide === 2 ? <Slova slide={"f"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"f"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 4 ? <Tabla slide={"f"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 5 ? <Karte slide={"f"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 5 ? <Karte slide={"f"} cards={KarteF} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 6 ? <Skrivalice slide={"f"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 7 ? <Reci slide={"f3"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 8 ? <Deca slide={"f"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 9 ? <Spajanje slide={"f"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 9 ? <Spajanje slide={"f"} game={PojmoviF} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 10 ? <SlikaIRec slide={"fen"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 11 ? <SlikaIRec slide={"lift"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 12 ? <SlikaIRec slide={"kofer"} nextSlide={this.nextSlide}/> : null}

@@ -1,19 +1,4 @@
 import React from 'react'
-import PojmoviR from "./PojmoviR"
-import PojmoviSh from './PojmoviSh'
-import PojmoviP from "./PojmoviP"
-import PojmoviK from "./PojmoviK"
-import PojmoviL from "./PojmoviL"
-import PojmoviLJ from "./PojmoviLJ"
-import PojmoviB from "./PojmoviB"
-import PojmoviV from "./PojmoviV";
-import PojmoviZ from "./PojmoviZ";
-import PojmoviD from "./PojmoviD";
-import PojmoviG from "./PojmoviG";
-import PojmoviCh from "./PojmoviCh";
-import PojmoviH from "./PojmoviH";
-import PojmoviF from "./PojmoviF";
-import PojmoviZh from "./PojmoviZh";
 
 class Spajanje extends React.Component{
     state = {
@@ -24,51 +9,7 @@ class Spajanje extends React.Component{
     }
 
     componentDidMount() {
-        if(this.props.slide === "r"){
-            this.setState({ pojmovi: PojmoviR })
-        }
-        if(this.props.slide === "sh"){
-            this.setState({ pojmovi: PojmoviSh })
-        }
-        if(this.props.slide === "p"){
-            this.setState({ pojmovi: PojmoviP })
-        }
-        if(this.props.slide === "k"){
-            this.setState({ pojmovi: PojmoviK })
-        }
-        if(this.props.slide === "l"){
-            this.setState({ pojmovi: PojmoviL })
-        }
-        if(this.props.slide === "lj"){
-            this.setState({ pojmovi: PojmoviLJ })
-        }
-        if(this.props.slide === "b"){
-            this.setState({ pojmovi: PojmoviB })
-        }
-        if(this.props.slide === "v"){
-            this.setState({ pojmovi: PojmoviV })
-        }
-        if(this.props.slide === "z"){
-            this.setState({ pojmovi: PojmoviZ })
-        }
-        if(this.props.slide === "d"){
-            this.setState({ pojmovi: PojmoviD })
-        }
-        if(this.props.slide === "g"){
-            this.setState({ pojmovi: PojmoviG })
-        }
-        if(this.props.slide === "ch"){
-            this.setState({ pojmovi: PojmoviCh })
-        }
-        if(this.props.slide === "h"){
-            this.setState({ pojmovi: PojmoviH })
-        }
-        if(this.props.slide === "f"){
-            this.setState({ pojmovi: PojmoviF })
-        }
-        if(this.props.slide === "zh"){
-            this.setState({ pojmovi: PojmoviZh })
-        }
+        this.setState({pojmovi: this.props.game})
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {

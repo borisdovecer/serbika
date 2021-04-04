@@ -4,6 +4,7 @@ const KarteI = [
         name: "a",
         animation: "",
         image: "karta-back-zuta.png",
+        front: "karta-front-a.png",
         ck: false,
         found: false
     },
@@ -12,6 +13,7 @@ const KarteI = [
         name: "a",
         animation: "",
         image: "karta-back-zuta.png",
+        front: "karta-front-a.png",
         ck: false,
         found: false
     },
@@ -20,6 +22,7 @@ const KarteI = [
         name: "m",
         animation: "",
         image: "karta-back-zuta.png",
+        front: "karta-front-m.png",
         ck: false,
         found: false
     },
@@ -28,6 +31,7 @@ const KarteI = [
         name: "m",
         animation: "",
         image: "karta-back-zuta.png",
+        front: "karta-front-m.png",
         ck: false,
         found: false
     },
@@ -36,6 +40,7 @@ const KarteI = [
         name: "t",
         animation: "",
         image: "karta-back-zuta.png",
+        front: "karta-front-t.png",
         ck: false,
         found: false
     },
@@ -44,6 +49,7 @@ const KarteI = [
         name: "t",
         animation: "",
         image: "karta-back-zuta.png",
+        front: "karta-front-t.png",
         ck: false,
         found: false
     },
@@ -52,6 +58,7 @@ const KarteI = [
         name: "i",
         animation: "",
         image: "karta-back-zuta.png",
+        front: "karta-front-i.png",
         ck: false,
         found: false
     },
@@ -60,6 +67,7 @@ const KarteI = [
         name: "i",
         animation: "",
         image: "karta-back-zuta.png",
+        front: "karta-front-i.png",
         ck: false,
         found: false
     }

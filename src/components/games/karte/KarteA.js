@@ -4,6 +4,7 @@ const KarteA = [
         name: "a",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-a.png",
         ck: false,
         found: false
     },
@@ -12,6 +13,7 @@ const KarteA = [
         name: "a",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-a.png",
         ck: false,
         found: false
     },
@@ -20,6 +22,7 @@ const KarteA = [
         name: "m",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-malo-a.png",
         ck: false,
         found: false
     },
@@ -28,6 +31,7 @@ const KarteA = [
         name: "m",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-malo-a.png",
         ck: false,
         found: false
     }

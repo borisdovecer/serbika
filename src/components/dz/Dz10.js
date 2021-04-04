@@ -4,7 +4,10 @@ import Slova from '../games/slova/Slova'
 import Drvo from '../games/drvo/Drvo'
 import Tabla from "../games/tabla/Tabla"
 import Skrivalice from "../games/skrivalice/Skrivalice"
+
 import Karte from "../games/karte/Karte"
+import KarteL from "../games/karte/KarteL"
+
 import Reci from "../games/reci/Reci"
 import Deca from '../games/deca/Deca'
 import Video from '../games/video/Video'
@@ -22,6 +25,7 @@ import Povezivanje from "../games/povezivanje/Povezivanje"
 import '../../App.css';
 import '../../bootstrap.css'
 import Pojmovi from "../games/pojmovi/Pojmovi";
+import PojmoviL from "../games/spajanje/PojmoviL";
 
 class Dz10 extends React.Component {
     state = {
@@ -39,12 +43,12 @@ class Dz10 extends React.Component {
                 { this.state.slide === 2 ? <Slova slide={"l"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"l"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 4 ? <Tabla slide={"l"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 5 ? <Karte slide={"l"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 5 ? <Karte slide={"l"} cards={KarteL} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 6 ? <Skrivalice slide={"l"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 7 ? <Reci slide={"l"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 8 ? <Reci slide={"l3"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 9 ? <Deca slide={"l"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 10 ? <Spajanje slide={"l"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 10 ? <Spajanje slide={"l"} game={PojmoviL} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 11 ? <SlikaIRec slide={"sal"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 12 ? <SlikaIRec slide={"pajp"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 13 ? <SlikaIRec slide={"lutka"} nextSlide={this.nextSlide}/> : null}

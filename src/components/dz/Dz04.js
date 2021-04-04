@@ -4,13 +4,18 @@ import Slova from '../games/slova/Slova'
 import Drvo from '../games/drvo/Drvo'
 import Tabla from "../games/tabla/Tabla"
 import Skrivalice from "../games/skrivalice/Skrivalice"
+
 import Karte from "../games/karte/Karte"
+import KarteU from "../games/karte/KarteU";
+import KarteN from "../games/karte/KarteN";
+
 import Reci from "../games/reci/Reci"
 import Deca from '../games/deca/Deca'
 import Video from '../games/video/Video'
 
 import '../../App.css';
 import '../../bootstrap.css'
+
 
 class Dz04 extends React.Component {
     state = {
@@ -28,14 +33,14 @@ class Dz04 extends React.Component {
                 { this.state.slide === 2 ? <Slova slide={"u"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"u"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 4 ? <Tabla slide={"u"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 5 ? <Karte slide={"u"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 5 ? <Karte slide={"u"} cards={KarteU} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 6 ? <Skrivalice slide={"u"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 7 ? <Main slide={"star"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 8 ? <Main slide={"train"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 9 ? <Slova slide={"n"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 10 ? <Drvo slide={"n"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 11 ? <Tabla slide={"n"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 12 ? <Karte slide={"n"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 12 ? <Karte slide={"n"} cards={KarteN} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 13 ? <Skrivalice slide={"n"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 14 ? <Main slide={"medal"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 15 ? <Reci slide={"un"} nextSlide={this.nextSlide}/> : null}

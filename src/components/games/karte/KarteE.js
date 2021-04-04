@@ -4,6 +4,7 @@ const KarteE = [
         name: "j",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-j.png",
         ck: false,
         found: false
     },
@@ -12,6 +13,7 @@ const KarteE = [
         name: "j",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-j.png",
         ck: false,
         found: false
     },
@@ -20,6 +22,7 @@ const KarteE = [
         name: "e",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-e.png",
         ck: false,
         found: false
     },
@@ -28,6 +31,7 @@ const KarteE = [
         name: "e",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-e.png",
         ck: false,
         found: false
     },
@@ -36,6 +40,7 @@ const KarteE = [
         name: "u",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-u.png",
         ck: false,
         found: false
     },
@@ -44,6 +49,7 @@ const KarteE = [
         name: "u",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-u.png",
         ck: false,
         found: false
     },
@@ -52,6 +58,7 @@ const KarteE = [
         name: "n",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-n.png",
         ck: false,
         found: false
     },
@@ -60,6 +67,7 @@ const KarteE = [
         name: "n",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-n.png",
         ck: false,
         found: false
     },
@@ -68,6 +76,7 @@ const KarteE = [
         name: "i",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-i.png",
         ck: false,
         found: false
     },
@@ -76,6 +85,7 @@ const KarteE = [
         name: "i",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-i.png",
         ck: false,
         found: false
     },
@@ -84,6 +94,7 @@ const KarteE = [
         name: "s",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-s.png",
         ck: false,
         found: false
     },
@@ -92,6 +103,7 @@ const KarteE = [
         name: "s",
         animation: "",
         image: "karta-back-ljubicasta.png",
+        front: "karta-front-s.png",
         ck: false,
         found: false
     }

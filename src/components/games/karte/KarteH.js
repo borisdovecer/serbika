@@ -4,6 +4,7 @@ const KarteH = [
         name: "h",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-h.png",
         ck: false,
         found: false
     },
@@ -12,6 +13,7 @@ const KarteH = [
         name: "h",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-h.png",
         ck: false,
         found: false
     },
@@ -20,6 +22,7 @@ const KarteH = [
         name: "ch",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-ch.png",
         ck: false,
         found: false
     },
@@ -28,6 +31,7 @@ const KarteH = [
         name: "ch",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-ch.png",
         ck: false,
         found: false
     },
@@ -36,6 +40,7 @@ const KarteH = [
         name: "b",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-b.png",
         ck: false,
         found: false
     },
@@ -44,6 +49,7 @@ const KarteH = [
         name: "b",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-b.png",
         ck: false,
         found: false
     },
@@ -52,6 +58,7 @@ const KarteH = [
         name: "z",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-z.png",
         ck: false,
         found: false
     },
@@ -60,6 +67,7 @@ const KarteH = [
         name: "z",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-z.png",
         ck: false,
         found: false
     },
@@ -68,6 +76,7 @@ const KarteH = [
         name: "v",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-v.png",
         ck: false,
         found: false
     },
@@ -76,6 +85,7 @@ const KarteH = [
         name: "v",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-v.png",
         ck: false,
         found: false
     },
@@ -84,6 +94,7 @@ const KarteH = [
         name: "g",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-g.png",
         ck: false,
         found: false
     },
@@ -92,6 +103,7 @@ const KarteH = [
         name: "g",
         animation: "",
         image: "karta-back-pink.png",
+        front: "karta-front-g.png",
         ck: false,
         found: false
     }

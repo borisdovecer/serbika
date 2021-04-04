@@ -25,6 +25,9 @@ class Dzak extends React.Component {
     }
 
     componentDidMount() {
+
+
+
         if(this.props.slide === "dz06"){
             this.setState({ items: Items06, letter: "radno-39.png" })
         }

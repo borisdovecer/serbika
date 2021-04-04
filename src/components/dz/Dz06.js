@@ -18,6 +18,8 @@ import Leptiri from "../games/leptiri/Leptiri"
 
 import '../../App.css';
 import '../../bootstrap.css'
+import KarteR from "../games/karte/KarteR";
+import PojmoviR from "../games/spajanje/PojmoviR";
 
 
 class Dz06 extends React.Component {
@@ -36,12 +38,12 @@ class Dz06 extends React.Component {
                 { this.state.slide === 2 ? <Slova slide={"r"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"r"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 4 ? <Tabla slide={"r"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 5 ? <Karte slide={"r"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 5 ? <Karte slide={"r"} cards={KarteR} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 6 ? <Skrivalice slide={"r"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 7 ? <Reci slide={"r"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 8 ? <Reci slide={"r3"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 9 ? <Deca slide={"r"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 10 ? <Spajanje slide={"r"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 10 ? <Spajanje slide={"r"} game={PojmoviR} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 11 ? <SlikaIRec slide={"more"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 12 ? <SlikaIRec slide={"sirena"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 13 ? <SlikaIRec slide={"motor"} nextSlide={this.nextSlide}/> : null}

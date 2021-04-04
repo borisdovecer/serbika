@@ -5,11 +5,15 @@ import Drvo from '../games/drvo/Drvo'
 import Tabla from "../games/tabla/Tabla"
 import Skrivalice from "../games/skrivalice/Skrivalice"
 import Karte from "../games/karte/Karte"
+import KarteLJ from "../games/karte/KarteLJ";
+
 import Reci from "../games/reci/Reci"
 import Deca from '../games/deca/Deca'
 import Video from '../games/video/Video'
 
 import Spajanje from "../games/spajanje/Spajanje"
+import PojmoviLJ from "../games/spajanje/PojmoviLJ";
+
 import SlikaIRec from "../games/slika-i-rec/SlikaIRec"
 import Pravilna from "../games/pravilna-slova/Pravilna"
 import Opisivanje from "../games/opisivanje/Opisivanje"
@@ -28,6 +32,7 @@ class Dz11 extends React.Component {
         slide: 1
     };
 
+
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )
 
     backToMain = () => this.setState({ slide:0})
@@ -39,11 +44,11 @@ class Dz11 extends React.Component {
                 { this.state.slide === 2 ? <Slova slide={"lj"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"lj"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 4 ? <Tabla slide={"lj"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 5 ? <Karte slide={"lj"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 5 ? <Karte slide={"lj"} cards={KarteLJ} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 6 ? <Skrivalice slide={"lj"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 7 ? <Reci slide={"lj3"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 8 ? <Deca slide={"lj"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 9 ? <Spajanje slide={"lj"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 9 ? <Spajanje slide={"lj"} game={PojmoviLJ} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 10 ? <SlikaIRec slide={"ljut"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 11 ? <SlikaIRec slide={"polje"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 12 ? <SlikaIRec slide={"kosulja"} nextSlide={this.nextSlide}/> : null}

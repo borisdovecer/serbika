@@ -5,6 +5,8 @@ import Drvo from '../games/drvo/Drvo'
 import Tabla from "../games/tabla/Tabla"
 import Skrivalice from "../games/skrivalice/Skrivalice"
 import Karte from "../games/karte/Karte"
+import KarteA from "../games/karte/KarteA"
+import KarteM from "../games/karte/KarteM"
 import Video from '../games/video/Video'
 
 import '../../App.css';
@@ -26,14 +28,14 @@ class Dz01 extends React.Component {
                 { this.state.slide === 2 ? <Slova slide={"a"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"a"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 4 ? <Tabla slide={"a"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 5 ? <Karte slide={"a"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 5 ? <Karte slide={"a"} cards={KarteA} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 6 ? <Skrivalice slide={"a"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 7 ? <Main slide={"star"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 8 ? <Main slide={"train"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 9 ? <Slova slide={"m"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 10 ? <Drvo slide={"m"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 11 ? <Tabla slide={"m"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 12 ? <Karte slide={"m"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 12 ? <Karte slide={"m"} cards={KarteM} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 13 ? <Skrivalice slide={"m"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 14 ? <Main slide={"medal"} nextSlide={this.nextSlide}/> : null}
 
