@@ -4,27 +4,52 @@ import Slova from '../games/slova/Slova'
 import Drvo from '../games/drvo/Drvo'
 import Tabla from "../games/tabla/Tabla"
 import Skrivalice from "../games/skrivalice/Skrivalice"
+import SlovaSkrivalice from '../games/skrivalice/SlovaA'
+import bg1 from '../games/skrivalice/bg-more.jpg'
+
 import Karte from "../games/karte/Karte"
+import KarteB from "../games/karte/KarteB";
+
 import Reci from "../games/reci/Reci"
+import ReciB3 from "../games/reci/ReciB3"
+
 import Deca from '../games/deca/Deca'
+import DecaReci from '../games/deca/ReciB'
+
 import Video from '../games/video/Video'
 
 import Spajanje from "../games/spajanje/Spajanje"
-import SlikaIRec from "../games/slika-i-rec/SlikaIRec"
-import Pravilna from "../games/pravilna-slova/Pravilna"
-import Opisivanje from "../games/opisivanje/Opisivanje"
-import Dzak from "../games/dzak/Dzak"
-import Leptiri from "../games/leptiri/Leptiri"
+import PojmoviB from "../games/spajanje/PojmoviB"
 
-import '../../App.css';
-import '../../bootstrap.css'
+import SlikaIRec from "../games/slika-i-rec/SlikaIRec"
+import RecBik from "../games/slika-i-rec/RecBik";
+import RecBure from "../games/slika-i-rec/RecBure";
+import RecBalon from "../games/slika-i-rec/RecBalon";
+import RecJabuka from "../games/slika-i-rec/RecJabuka";
+import RecNebo from "../games/slika-i-rec/RecNebo";
+import RecTabla from "../games/slika-i-rec/RecTabla";
+
+import Pravilna from "../games/pravilna-slova/Pravilna"
+import SlovaDz12 from "../games/pravilna-slova/SlovaDz12"
+
+import Opisivanje from "../games/opisivanje/Opisivanje"
+import OpisDz12 from "../games/opisivanje/OpisDz12"
+
+import Dzak from "../games/dzak/Dzak"
+import Items12 from "../games/dzak/Items12";
+
+import Leptiri from "../games/leptiri/Leptiri"
 import Spirala from "../games/spirala/Spirala";
 import Povezivanje from "../games/povezivanje/Povezivanje";
 import Slagalica from "../games/slagalica/Slagalica";
 import Pojmovi from "../games/pojmovi/Pojmovi";
-import KarteB from "../games/karte/KarteB";
-import PojmoviB from "../games/spajanje/PojmoviB";
 
+import '../../App.css';
+import '../../bootstrap.css'
+import Reci12 from "../games/leptiri/Reci12";
+
+const audioTabla = '16 hajde sada ti napisi nas enovo slovo B.mp3'
+const letter = "radno-03.png"
 
 class Dz12 extends React.Component {
     state = {
@@ -41,22 +66,22 @@ class Dz12 extends React.Component {
                 { this.state.slide === 1 ? <Main slide={"main"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 2 ? <Slova slide={"b"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"b"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 4 ? <Tabla slide={"b"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 5 ? <Karte slide={"b"} cards={KarteB} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 6 ? <Skrivalice slide={"b"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 7 ? <Reci slide={"b3"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 8 ? <Deca slide={"b"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 9 ? <Spajanje slide={"b"} game={PojmoviB} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 10 ? <SlikaIRec slide={"bik"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 11 ? <SlikaIRec slide={"bure"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 12 ? <SlikaIRec slide={"balon"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 13 ? <SlikaIRec slide={"jabuka"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 14 ? <SlikaIRec slide={"nebo"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 15 ? <SlikaIRec slide={"tabla"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 16 ? <Pravilna slide={"dz12"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 17 ? <Opisivanje slide={"dz12"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 18 ? <Dzak slide={"dz12"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 19 ? <Leptiri slide={"dz12"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 4 ? <Tabla audio={audioTabla} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 5 ? <Karte cards={KarteB} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 6 ? <Skrivalice slova={SlovaSkrivalice} bg={bg1} letter={letter} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 7 ? <Reci reci={ReciB3} bg={2} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 8 ? <Deca reci={DecaReci} bg={3} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 9 ? <Spajanje game={PojmoviB} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 10 ? <SlikaIRec rec={RecBik} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 11 ? <SlikaIRec rec={RecBure} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 12 ? <SlikaIRec rec={RecBalon} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 13 ? <SlikaIRec rec={RecJabuka} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 14 ? <SlikaIRec rec={RecNebo} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 15 ? <SlikaIRec rec={RecTabla} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 16 ? <Pravilna slova={SlovaDz12} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 17 ? <Opisivanje opis={OpisDz12} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 18 ? <Dzak items={Items12} letter={letter} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 19 ? <Leptiri reci={Reci12} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 20 ? <Spirala slide={"b"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 21 ? <Pojmovi slide={"b"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 22 ? <Povezivanje slide={"b"} nextSlide={this.nextSlide}/> : null}

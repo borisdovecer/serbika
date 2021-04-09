@@ -1,28 +1,10 @@
 import React from 'react'
 import Reci from "./Reci"
-import Reci2 from "./Reci2"
-import Reci3 from "./Reci3"
-import Reci4 from "./Reci4"
-import ReciJE from './ReciJE'
-import ReciSh from './ReciSh'
-import ReciP from './ReciP'
-import ReciK from './ReciK'
-import ReciL from './ReciL'
-import ReciLJ from "./ReciLJ"
-import ReciB from "./ReciB"
 
 import bg1 from './decabg.jpg'
 import bg2 from './decabg2.jpg'
 import bg3 from './decabg3.jpg'
 import PreloadImage from "react-preload-image";
-import ReciZh from "./ReciZh";
-import ReciF from "./ReciF";
-import ReciH from "./ReciH";
-import ReciV from "./ReciV";
-import ReciZ from "./ReciZ";
-import ReciD from "./ReciD";
-import ReciG from "./ReciG";
-import ReciCh from "./ReciCh";
 
 class Deca extends React.Component{
     state = {
@@ -40,62 +22,12 @@ class Deca extends React.Component{
     }
 
     componentDidMount() {
-        if(this.props.slide === "to"){
-            this.setState({ reci: Reci })
+        this.setState({reci: this.props.reci})
+        if(this.props.bg === 3){
+            this.setState({image: bg3})
         }
-        if(this.props.slide === "si"){
-            this.setState({ reci: Reci2 })
-        }
-        if(this.props.slide === "un"){
-            this.setState({ reci: Reci3, image:bg2 })
-        }
-        if(this.props.slide === "je"){
-            this.setState({ reci: ReciJE, image:bg3 })
-        }
-        if(this.props.slide === "r"){
-            this.setState({ reci: Reci4, image:bg3 })
-        }
-        if(this.props.slide === "sh"){
-            this.setState({ reci: ReciSh, image:bg3 })
-        }
-        if(this.props.slide === "p"){
-            this.setState({ reci: ReciP, image:bg3 })
-        }
-        if(this.props.slide === "k"){
-            this.setState({ reci: ReciK, image:bg3 })
-        }
-        if(this.props.slide === "l"){
-            this.setState({ reci: ReciL, image:bg3 })
-        }
-        if(this.props.slide === "lj"){
-            this.setState({ reci: ReciLJ, image:bg3 })
-        }
-        if(this.props.slide === "b"){
-            this.setState({ reci: ReciB, image:bg3 })
-        }
-        if(this.props.slide === "v"){
-            this.setState({ reci: ReciV, image:bg3 })
-        }
-        if(this.props.slide === "z"){
-            this.setState({ reci: ReciZ, image:bg3 })
-        }
-        if(this.props.slide === "d"){
-            this.setState({ reci: ReciD, image:bg3 })
-        }
-        if(this.props.slide === "g"){
-            this.setState({ reci: ReciG, image:bg3 })
-        }
-        if(this.props.slide === "ch"){
-            this.setState({ reci: ReciCh, image:bg3 })
-        }
-        if(this.props.slide === "h"){
-            this.setState({ reci: ReciH, image:bg3 })
-        }
-        if(this.props.slide === "f"){
-            this.setState({ reci: ReciF, image:bg3 })
-        }
-        if(this.props.slide === "zh"){
-            this.setState({ reci: ReciZh, image:bg3 })
+        if(this.props.bg === 2){
+            this.setState({image: bg2})
         }
 
         let ani = this.state.animation

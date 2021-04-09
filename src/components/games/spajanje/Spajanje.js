@@ -10,8 +10,6 @@ class Spajanje extends React.Component{
         pojmovi: [],
         random: [],
         arr:[],
-        selected: "",
-        guessed: "",
         complete: false
     }
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import CanvasDraw from "react-canvas-draw"
-
 import bg1 from './bg-tabla-a.jpg'
 import bg2 from './bg-tabla-m.jpg'
 import PreloadImage from "react-preload-image";
@@ -12,37 +11,9 @@ class Tabla extends React.Component{
     }
 
     componentDidMount() {
-        // DZ 01
-        if(this.props.slide === "a"){
-            this.setState({ image: bg1, audio:"05 hajde sada ti napisi nase slovo A.mp3"})
-        }
-        if(this.props.slide === "m"){
-            this.setState({ image: bg2, audio:"16 hajde sada ti napisi nas enovo slovo M.mp3"})
-        }
-        // DZ 02
-        if(this.props.slide === "t"){
-            this.setState({ image: bg1, audio:"05 hajde sada ti napisi nase slovo T.mp3"})
-        }
-        if(this.props.slide === "o"){
-            this.setState({ image: bg2, audio:"16 hajde sada ti napisi nase slovo O.mp3"})
-        }
-        // DZ 03
-        if(this.props.slide === "i"){
-            this.setState({ image: bg1, audio:"05 hajde sada ti napisi nase slovo I.mp3"})
-        }
-        if(this.props.slide === "s"){
-            this.setState({ image: bg2, audio:"16 hajde sada ti napisi nase slovo S.mp3"})
-        }
-        // DZ 04
-        if(this.props.slide === "u"){
-            this.setState({ image: bg1, audio:"05 hajde sada ti napisi nase slovo U.mp3"})
-        }
-        if(this.props.slide === "n"){
-            this.setState({ image: bg2, audio:"16 hajde sada ti napisi nase slovo N.mp3"})
-        }
-        // DZ 06
-        if(this.props.slide === "r"){
-            this.setState({ image: bg1, audio:"05 hajde sada ti napisi nase slovo R.mp3"})
+        this.setState({audio: this.props.audio})
+        if(this.props.bg === 2){
+            this.setState({image:bg2})
         }
     }
 

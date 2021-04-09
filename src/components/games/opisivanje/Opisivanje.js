@@ -1,20 +1,6 @@
 import React from 'react'
 
 import OpisDz06 from "./OpisDz06"
-import OpisDz07 from "./OpisDz07"
-import OpisDz08 from "./OpisDz08"
-import OpisDz09 from "./OpisDz09"
-import OpisDz10 from "./OpisDz10"
-import OpisDz11 from "./OpisDz11"
-import OpisDz12 from "./OpisDz12";
-import OpisDz13 from "./OpisDz13";
-import OpisDz14 from "./OpisDz14";
-import OpisDz15 from "./OpisDz15";
-import OpisDz16 from "./OpisDz16";
-import OpisDz17 from "./OpisDz17";
-import OpisDz19 from "./OpisDz19";
-import OpisDz18 from "./OpisDz18";
-import OpisDz20 from "./OpisDz20";
 
 class Opisivanje extends React.Component {
     state = {
@@ -25,51 +11,7 @@ class Opisivanje extends React.Component {
     }
 
     componentDidMount() {
-        if(this.props.slide === "dz06"){
-            this.setState({ opis: OpisDz06 })
-        }
-        if(this.props.slide === "dz07"){
-            this.setState({ opis: OpisDz07 })
-        }
-        if(this.props.slide === "dz08"){
-            this.setState({ opis: OpisDz08 })
-        }
-        if(this.props.slide === "dz09"){
-            this.setState({ opis: OpisDz09 })
-        }
-        if(this.props.slide === "dz10"){
-            this.setState({ opis: OpisDz10 })
-        }
-        if(this.props.slide === "dz11"){
-            this.setState({ opis: OpisDz11 })
-        }
-        if(this.props.slide === "dz12"){
-            this.setState({ opis: OpisDz12 })
-        }
-        if(this.props.slide === "dz13"){
-            this.setState({ opis: OpisDz13 })
-        }
-        if(this.props.slide === "dz14"){
-            this.setState({ opis: OpisDz14 })
-        }
-        if(this.props.slide === "dz15"){
-            this.setState({ opis: OpisDz15 })
-        }
-        if(this.props.slide === "dz16"){
-            this.setState({ opis: OpisDz16 })
-        }
-        if(this.props.slide === "dz17"){
-            this.setState({ opis: OpisDz17 })
-        }
-        if(this.props.slide === "dz18"){
-            this.setState({ opis: OpisDz18 })
-        }
-        if(this.props.slide === "dz19"){
-            this.setState({ opis: OpisDz19 })
-        }
-        if(this.props.slide === "dz20"){
-            this.setState({ opis: OpisDz20 })
-        }
+        this.setState({ opis: this.props.opis})
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {

@@ -53,6 +53,8 @@ class Drvo extends React.Component {
     }
 
     componentDidMount() {
+
+
         // DZ 01
         if(this.props.slide === "a"){
             this.setState({

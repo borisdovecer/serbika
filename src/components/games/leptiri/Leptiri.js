@@ -1,19 +1,5 @@
 import React from "react"
 import Reci06 from "./Reci06"
-import Reci07 from "./Reci07"
-import Reci08 from "./Reci08"
-import Reci09 from "./Reci09"
-import Reci10 from './Reci10'
-import Reci11 from "./Reci11"
-import Reci12 from "./Reci12";
-import Reci13 from "./Reci13";
-import Reci14 from "./Reci14";
-import Reci15 from "./Reci15";
-import Reci16 from "./Reci16";
-import Reci17 from "./Reci17";
-import Reci18 from "./Reci18";
-import Reci19 from "./Reci19";
-import Reci20 from "./Reci20";
 
 class Leptiri extends React.Component {
     state = {
@@ -24,51 +10,7 @@ class Leptiri extends React.Component {
     }
 
     componentDidMount() {
-        if(this.props.slide === "dz06"){
-            this.setState({ reci: Reci06 })
-        }
-        if(this.props.slide === "dz07"){
-            this.setState({ reci: Reci07 })
-        }
-        if(this.props.slide === "dz08"){
-            this.setState({ reci: Reci08 })
-        }
-        if(this.props.slide === "dz09"){
-            this.setState({ reci: Reci09 })
-        }
-        if(this.props.slide === "dz10"){
-            this.setState({ reci: Reci10 })
-        }
-        if(this.props.slide === "dz11"){
-            this.setState({ reci: Reci11 })
-        }
-        if(this.props.slide === "dz12"){
-            this.setState({ reci: Reci12 })
-        }
-        if(this.props.slide === "dz13"){
-            this.setState({ reci: Reci13 })
-        }
-        if(this.props.slide === "dz14"){
-            this.setState({ reci: Reci14 })
-        }
-        if(this.props.slide === "dz15"){
-            this.setState({ reci: Reci15 })
-        }
-        if(this.props.slide === "dz16"){
-            this.setState({ reci: Reci16 })
-        }
-        if(this.props.slide === "dz17"){
-            this.setState({ reci: Reci17 })
-        }
-        if(this.props.slide === "dz18"){
-            this.setState({ reci: Reci18 })
-        }
-        if(this.props.slide === "dz19"){
-            this.setState({ reci: Reci19 })
-        }
-        if(this.props.slide === "dz20"){
-            this.setState({ reci: Reci20 })
-        }
+        this.setState({reci: this.props.reci})
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {

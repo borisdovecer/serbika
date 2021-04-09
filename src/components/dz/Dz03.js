@@ -3,18 +3,31 @@ import Main from '../games/main/Main'
 import Slova from '../games/slova/Slova'
 import Drvo from '../games/drvo/Drvo'
 import Tabla from "../games/tabla/Tabla"
+
 import Skrivalice from "../games/skrivalice/Skrivalice"
+import SlovaSkrivalice from '../games/skrivalice/SlovaA'
+import SlovaSkrivalice2 from '../games/skrivalice/SlovaM'
+import bg1 from "../games/skrivalice/skrivalice-bg-1.jpg";
+import bgLivada from '../games/skrivalice/bg-livada.jpg'
 
 import Karte from "../games/karte/Karte"
 import KarteI from "../games/karte/KarteI";
 import KarteS from "../games/karte/KarteS";
 
 import Reci from "../games/reci/Reci"
+import ReciSI from "../games/reci/ReciSI";
+
 import Deca from '../games/deca/Deca'
+import DecaReci from "../games/deca/Reci2";
+
 import Video from '../games/video/Video'
 
 import '../../App.css';
 import '../../bootstrap.css'
+
+
+const audioTabla = '05 hajde sada ti napisi nase slovo I.mp3'
+const audioTabla2 = '16 hajde sada ti napisi nase slovo S.mp3'
 
 class Dz03 extends React.Component {
     state = {
@@ -31,19 +44,19 @@ class Dz03 extends React.Component {
                 { this.state.slide === 1 ? <Main slide={"main"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 2 ? <Slova slide={"i"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slide={"i"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 4 ? <Tabla slide={"i"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 5 ? <Karte slide={"i"} cards={KarteI}  nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 6 ? <Skrivalice slide={"i"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 4 ? <Tabla audio={audioTabla} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 5 ? <Karte cards={KarteI}  nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 6 ? <Skrivalice slova={SlovaSkrivalice} bg={bg1}  letter={"radno-19.png"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 7 ? <Main slide={"star"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 8 ? <Main slide={"train"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 9 ? <Slova slide={"s"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 10 ? <Drvo slide={"s"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 11 ? <Tabla slide={"s"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 11 ? <Tabla audio={audioTabla2} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 12 ? <Karte slide={"s"} cards={KarteS}  nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 13 ? <Skrivalice slide={"s"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 13 ? <Skrivalice slova={SlovaSkrivalice2} bg={bgLivada}  letter={"radno-41.png"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 14 ? <Main slide={"medal"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 15 ? <Reci slide={"si"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 16 ? <Deca slide={"si"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 15 ? <Reci reci={ReciSI} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 16 ? <Deca reci={DecaReci} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 17 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 18 ? <Video end={this.backToMain}/> : null}
             </div>
