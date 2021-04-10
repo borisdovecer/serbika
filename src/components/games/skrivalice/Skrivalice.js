@@ -1,4 +1,5 @@
 import React from 'react'
+// eslint-disable-next-line
 import SlovaI from './SlovaI'
 import bg1 from './skrivalice-bg-1.jpg'
 

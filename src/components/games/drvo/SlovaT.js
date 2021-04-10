@@ -5,7 +5,7 @@ const SlovaT = [
         hidden: "",
         value: "upper",
         top: "7%",
-        left: "47%",
+        left: "47.1%",
         found: false
     },
     {
@@ -14,7 +14,7 @@ const SlovaT = [
         hidden: "",
         value: "lower",
         top: "11%",
-        left: "38.5%",
+        left: "38%",
         found: false
     },
     {
@@ -23,7 +23,7 @@ const SlovaT = [
         hidden: "",
         value: "upper",
         top: "11%",
-        left: "55.5%",
+        left: "56%",
         found: false
     },
     {
@@ -32,7 +32,7 @@ const SlovaT = [
         hidden: "",
         value: "lower",
         top: "20%",
-        left: "32.5%",
+        left: "32%",
         found: false
     },
     {
@@ -41,7 +41,7 @@ const SlovaT = [
         hidden: "",
         value: "upper",
         top: "20%",
-        left: "43%",
+        left: "42.5%",
         found: false
     },
     {
@@ -59,7 +59,7 @@ const SlovaT = [
         hidden: "",
         value: "upper",
         top: "20%",
-        left: "60.5%",
+        left: "61%",
         found: false
     }
 ]

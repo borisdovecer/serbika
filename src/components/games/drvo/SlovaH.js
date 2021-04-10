@@ -4,8 +4,8 @@ const SlovaH = [
         class:"radno-51.png",
         hidden: "",
         value: "upper",
-        top: "7%",
-        left: "47%",
+        top: "6.5%",
+        left: "41.3%",
         found: false
     },
     {
@@ -14,7 +14,7 @@ const SlovaH = [
         hidden: "",
         value: "lower",
         top: "11%",
-        left: "38.5%",
+        left: "33.6%",
         found: false
     },
     {
@@ -22,8 +22,8 @@ const SlovaH = [
         class:"radno-51.png",
         hidden: "",
         value: "upper",
-        top: "11%",
-        left: "55.5%",
+        top: "6.9%",
+        left: "50.4%",
         found: false
     },
     {
@@ -32,7 +32,7 @@ const SlovaH = [
         hidden: "",
         value: "lower",
         top: "20%",
-        left: "32.5%",
+        left: "30.3%",
         found: false
     },
     {
@@ -40,8 +40,8 @@ const SlovaH = [
         class:"radno-51.png",
         hidden: "",
         value: "upper",
-        top: "20%",
-        left: "43%",
+        top: "22%",
+        left: "40%",
         found: false
     },
     {
@@ -49,8 +49,8 @@ const SlovaH = [
         class:"radno-52.png",
         hidden: "",
         value: "lower",
-        top: "20%",
-        left: "52%",
+        top: "22%",
+        left: "54.7%",
         found: false
     },
     {
@@ -58,8 +58,8 @@ const SlovaH = [
         class:"radno-51.png",
         hidden: "",
         value: "upper",
-        top: "20%",
-        left: "60.5%",
+        top: "12%",
+        left: "59.6%",
         found: false
     }
 ]

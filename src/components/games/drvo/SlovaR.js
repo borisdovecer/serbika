@@ -4,9 +4,11 @@ const SlovaR = [
         class:"radno-39.png",
         hidden: "",
         value: "upper",
-        top: "7%",
-        left: "47%",
-        found: false
+        top: "6.5%",
+        left: "41.3%",
+        found: false,
+        audio1: "03 pritisni svako veliko slovo U koje vidis na drvetu.mp3",
+        audio2:"04 pritisni svako malo slovo U koje vidis na drvetu.mp3"
     },
     {
         id:"2",
@@ -14,7 +16,7 @@ const SlovaR = [
         hidden: "",
         value: "lower",
         top: "11%",
-        left: "38.5%",
+        left: "33.6%",
         found: false
     },
     {
@@ -22,8 +24,8 @@ const SlovaR = [
         class:"radno-39.png",
         hidden: "",
         value: "upper",
-        top: "11%",
-        left: "55.5%",
+        top: "6.9%",
+        left: "50.4%",
         found: false
     },
     {
@@ -32,7 +34,7 @@ const SlovaR = [
         hidden: "",
         value: "lower",
         top: "20%",
-        left: "32.5%",
+        left: "30.3%",
         found: false
     },
     {
@@ -40,8 +42,8 @@ const SlovaR = [
         class:"radno-39.png",
         hidden: "",
         value: "upper",
-        top: "20%",
-        left: "43%",
+        top: "22%",
+        left: "40%",
         found: false
     },
     {
@@ -49,8 +51,8 @@ const SlovaR = [
         class:"radno-40.png",
         hidden: "",
         value: "lower",
-        top: "20%",
-        left: "52%",
+        top: "22%",
+        left: "54.7%",
         found: false
     },
     {
@@ -58,8 +60,8 @@ const SlovaR = [
         class:"radno-39.png",
         hidden: "",
         value: "upper",
-        top: "20%",
-        left: "60.5%",
+        top: "12%",
+        left: "59.6%",
         found: false
     }
 ]

@@ -4,8 +4,8 @@ const SlovaM = [
         class:"radno-29.png",
         hidden: "",
         value: "upper",
-        top: "7%",
-        left: "47%",
+        top: "5.5%",
+        left: "47.2%",
         found: false
     },
     {
@@ -14,7 +14,7 @@ const SlovaM = [
         hidden: "",
         value: "lower",
         top: "11%",
-        left: "38.5%",
+        left: "37.2%",
         found: false
     },
     {
@@ -23,7 +23,7 @@ const SlovaM = [
         hidden: "",
         value: "upper",
         top: "11%",
-        left: "55.5%",
+        left: "57%",
         found: false
     },
     {
@@ -32,7 +32,7 @@ const SlovaM = [
         hidden: "",
         value: "lower",
         top: "20%",
-        left: "32.5%",
+        left: "32%",
         found: false
     },
     {
@@ -59,7 +59,7 @@ const SlovaM = [
         hidden: "",
         value: "upper",
         top: "20%",
-        left: "60.5%",
+        left: "62%",
         found: false
     }
 ]

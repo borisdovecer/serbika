@@ -2,6 +2,8 @@ import React from 'react'
 import Main from '../games/main/Main'
 import Slova from '../games/slova/Slova'
 import Drvo from '../games/drvo/Drvo'
+import DrvoSlova from "../games/drvo/SlovaD"
+
 import Tabla from "../games/tabla/Tabla"
 import Skrivalice from "../games/skrivalice/Skrivalice"
 import SlovaSkrivalice from '../games/skrivalice/SlovaA'
@@ -76,8 +78,8 @@ class Dz15 extends React.Component {
         return (
             <div style={{width: "100%"}} >
                 { this.state.slide === 1 ? <Main slide={"main"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 2 ? <Slova slide={"d"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 3 ? <Drvo slide={"d"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 2 ? <Slova slovo={19} bg={4} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 3 ? <Drvo slova={DrvoSlova} bg={3} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 4 ? <Tabla audio={audioTabla} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 5 ? <Karte cards={KarteD} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 6 ? <Skrivalice slova={SlovaSkrivalice} bg={bg1} letter={letter} nextSlide={this.nextSlide}/> : null}

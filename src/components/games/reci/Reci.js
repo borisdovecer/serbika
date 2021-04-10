@@ -1,6 +1,6 @@
 import React from 'react'
 import Delay from "react-delay-render";
-
+// eslint-disable-next-line
 import bg1 from './balonihd.jpg'
 import bg2 from './vockice.jpg'
 import PreloadImage from "react-preload-image";

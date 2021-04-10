@@ -5,8 +5,10 @@ const SlovaJ = [
         hidden: "",
         value: "upper",
         top: "7%",
-        left: "47%",
-        found: false
+        left: "47.1%",
+        found: false,
+        audio1: "03 pritisni svako veliko slovo U koje vidis na drvetu.mp3",
+        audio2:"04 pritisni svako malo slovo U koje vidis na drvetu.mp3"
     },
     {
         id:"2",
@@ -14,7 +16,7 @@ const SlovaJ = [
         hidden: "",
         value: "lower",
         top: "11%",
-        left: "38.5%",
+        left: "38%",
         found: false
     },
     {
@@ -23,7 +25,7 @@ const SlovaJ = [
         hidden: "",
         value: "upper",
         top: "11%",
-        left: "55.5%",
+        left: "56%",
         found: false
     },
     {
@@ -32,7 +34,7 @@ const SlovaJ = [
         hidden: "",
         value: "lower",
         top: "20%",
-        left: "32.5%",
+        left: "32%",
         found: false
     },
     {
@@ -41,7 +43,7 @@ const SlovaJ = [
         hidden: "",
         value: "upper",
         top: "20%",
-        left: "43%",
+        left: "42.53%",
         found: false
     },
     {
@@ -59,7 +61,7 @@ const SlovaJ = [
         hidden: "",
         value: "upper",
         top: "20%",
-        left: "60.5%",
+        left: "61%",
         found: false
     }
 ]

@@ -6,7 +6,9 @@ const SlovaA = [
         value: "upper",
         top: "7%",
         left: "47%",
-        found: false
+        found: false,
+        audio1: "03 pritisni svako veliko slovo A koje vidis na drvetu.mp3",
+        audio2: "04 pritisni svako malo slovo A koje vidis na drvetu.mp3"
     },
     {
         id:"2",
