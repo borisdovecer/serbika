@@ -1,20 +1,5 @@
 import React from 'react'
 
-import SlovaDz06 from "./SlovaDz06"
-import SlovaDz07 from "./SlovaDz07"
-import SlovaDz08 from "./SlovaDz08"
-import SlovaDz09 from "./SlovaDz09"
-import SlovaDz10 from "./SlovaDz10"
-import SlovaDz11 from "./SlovaDz11"
-import SlovaDz12 from "./SlovaDz12"
-import SlovaDz13 from "./SlovaDz13";
-import SlovaDz14 from "./SlovaDz14";
-import SlovaDz15 from "./SlovaDz15";
-import SlovaDz16 from "./SlovaDz16";
-import SlovaDz17 from "./SlovaDz17";
-import SlovaDz19 from "./SlovaDz19";
-import SlovaDz20 from "./SlovaDz20";
-import SlovaDz18 from "./SlovaDz18";
 
 class Pravilna extends React.Component {
     state = {
@@ -26,52 +11,6 @@ class Pravilna extends React.Component {
     componentDidMount() {
         this.setState({ slova: this.props.slova })
 
-
-        // if(this.props.slide === 'dz06'){
-        //     this.setState({slova: SlovaDz06})
-        // }
-        // if(this.props.slide === 'dz07'){
-        //     this.setState({slova: SlovaDz07})
-        // }
-        // if(this.props.slide === 'dz08'){
-        //     this.setState({slova: SlovaDz08})
-        // }
-        // if(this.props.slide === 'dz09'){
-        //     this.setState({slova: SlovaDz09})
-        // }
-        // if(this.props.slide === 'dz10'){
-        //     this.setState({slova: SlovaDz10})
-        // }
-        // if(this.props.slide === 'dz11'){
-        //     this.setState({slova: SlovaDz11})
-        // }
-        // if(this.props.slide === 'dz12'){
-        //     this.setState({slova: SlovaDz12})
-        // }
-        // if(this.props.slide === 'dz13'){
-        //     this.setState({slova: SlovaDz13})
-        // }
-        // if(this.props.slide === 'dz14'){
-        //     this.setState({slova: SlovaDz14})
-        // }
-        // if(this.props.slide === 'dz15'){
-        //     this.setState({slova: SlovaDz15})
-        // }
-        // if(this.props.slide === 'dz16'){
-        //     this.setState({slova: SlovaDz16})
-        // }
-        // if(this.props.slide === 'dz17'){
-        //     this.setState({slova: SlovaDz17})
-        // }
-        // if(this.props.slide === 'dz18'){
-        //     this.setState({slova: SlovaDz18})
-        // }
-        // if(this.props.slide === 'dz19'){
-        //     this.setState({slova: SlovaDz19})
-        // }
-        // if(this.props.slide === 'dz20'){
-        //     this.setState({slova: SlovaDz20})
-        // }
     }
 
     handleClick = (e) => {

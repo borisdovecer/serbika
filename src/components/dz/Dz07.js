@@ -42,10 +42,12 @@ import Reci07 from "../games/leptiri/Reci07";
 
 import Spirala from "../games/spirala/Spirala"
 import Pojmovi from "../games/pojmovi/Pojmovi"
-
+import pojmovi from "../games/pojmovi/PojmoviSh"
 
 import '../../App.css';
 import '../../bootstrap.css'
+import SlovaSh from "../games/spirala/SlovaSh";
+import RecenicaSh from "../games/spirala/RecenicaSh";
 
 
 const audioTabla = '05 hajde sada ti napisi nase slovo J.mp3'
@@ -81,8 +83,8 @@ class Dz07 extends React.Component {
                 { this.state.slide === 16 ? <Opisivanje opis={OpisDz07} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 17 ? <Dzak items={Items07} letter={letter} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 18 ? <Leptiri reci={Reci07} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 19 ? <Spirala slide={"sh"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 20 ? <Pojmovi slide={"sh"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 19 ? <Spirala slova={SlovaSh} recenica={RecenicaSh} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Pojmovi pojmovi={pojmovi} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 21 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 22 ? <Video end={this.backToMain}/> : null}
 

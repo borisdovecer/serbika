@@ -43,11 +43,18 @@ import Leptiri from "../games/leptiri/Leptiri"
 import Spirala from "../games/spirala/Spirala"
 import Slagalica from "../games/slagalica/Slagalica"
 import Povezivanje from "../games/povezivanje/Povezivanje"
+import povezivanje from "../games/povezivanje/PojmoviL"
 
 import '../../App.css';
 import '../../bootstrap.css'
 import Pojmovi from "../games/pojmovi/Pojmovi"
+import pojmovi from "../games/pojmovi/PojmoviL"
+
 import Reci10 from "../games/leptiri/Reci10";
+import SlovaL from "../games/spirala/SlovaL";
+import RecenicaL from "../games/spirala/RecenicaL";
+import SlagalicaL from "../games/slagalica/SlagalicaL";
+import SlagalicaPlaneta from "../games/slagalica/SlagalicaPlaneta";
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo L.mp3'
 const letter = "radno-25.png"
@@ -83,11 +90,11 @@ class Dz10 extends React.Component {
                 { this.state.slide === 17 ? <Opisivanje opis={OpisDz10} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 18 ? <Dzak items={Items10} letter={letter} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 19 ? <Leptiri reci={Reci10} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 20 ? <Spirala slide={"l"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 21 ? <Pojmovi slide={"l"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 22 ? <Povezivanje slide={"l"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 23 ? <Slagalica slide={"l"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 24 ? <Slagalica slide={"planeta"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Spirala slova={SlovaL} recenica={RecenicaL} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 21 ? <Pojmovi pojmovi={pojmovi} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 22 ? <Povezivanje povezivanje={povezivanje} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 23 ? <Slagalica slagalica={SlagalicaL} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 24 ? <Slagalica slagalica={SlagalicaPlaneta} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 25 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 26 ? <Video end={this.backToMain}/> : null}
             </div>

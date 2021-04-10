@@ -1,20 +1,5 @@
 import React from 'react'
 import LineTo from 'react-lineto'
-import PojmoviP from "./PojmoviP"
-import PojmoviK from "./PojmoviK"
-import PojmoviL from "./PojmoviL"
-import PojmoviLj from "./PojmoviLj"
-import PojmoviB from "./PojmoviB";
-import PojmoviV from "./PojmoviV";
-import PojmoviZ from "./PojmoviZ";
-import PojmoviD from "./PojmoviD";
-import PojmoviG from "./PojmoviG";
-import PojmoviCh from "./PojmoviCh";
-import PojmoviH from "./PojmoviH";
-import PojmoviF from "./PojmoviF";
-import PojmoviZh from "./PojmoviZh";
-
-
 
 class Povezivanje extends React.Component {
     state = {
@@ -25,45 +10,8 @@ class Povezivanje extends React.Component {
     }
 
     componentDidMount() {
-        if(this.props.slide === "p") {
-            this.setState({pojmovi: PojmoviP.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "k") {
-            this.setState({pojmovi: PojmoviK.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "l") {
-            this.setState({pojmovi: PojmoviL.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "lj") {
-            this.setState({pojmovi: PojmoviLj.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "b") {
-            this.setState({pojmovi: PojmoviB.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "v") {
-            this.setState({pojmovi: PojmoviV.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "z") {
-            this.setState({pojmovi: PojmoviZ.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "d") {
-            this.setState({pojmovi: PojmoviD.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "g") {
-            this.setState({pojmovi: PojmoviG.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "ch") {
-            this.setState({pojmovi: PojmoviCh.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "h") {
-            this.setState({pojmovi: PojmoviH.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "f") {
-            this.setState({pojmovi: PojmoviF.sort(() => Math.random() - 0.5)})
-        }
-        if(this.props.slide === "zh") {
-            this.setState({pojmovi: PojmoviZh.sort(() => Math.random() - 0.5)})
-        }
+        this.setState({pojmovi: this.props.povezivanje})
+
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {

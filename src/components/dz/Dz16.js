@@ -40,12 +40,22 @@ import Items16 from "../games/dzak/Items16"
 import Leptiri from "../games/leptiri/Leptiri"
 import Spirala from "../games/spirala/Spirala";
 import Povezivanje from "../games/povezivanje/Povezivanje";
+import povezivanje from "../games/povezivanje/PojmoviG"
+
 import Slagalica from "../games/slagalica/Slagalica";
 import Pojmovi from "../games/pojmovi/Pojmovi";
+import pojmovi from "../games/pojmovi/PojmoviG"
 
 import '../../App.css';
 import '../../bootstrap.css'
 import Reci16 from "../games/leptiri/Reci16";
+import SlovaG from "../games/spirala/SlovaG";
+import RecenicaG from "../games/spirala/RecenicaG";
+import SlagalicaGol from "../games/slagalica/SlagalicaGol";
+import SlagalicaGrana from "../games/slagalica/SlagalicaGrana";
+import SlagalicaGlava from "../games/slagalica/SlagalicaGlava";
+import SlagalicaDugme from "../games/slagalica/SlagalicaDugme";
+import SlagalicaDuga from "../games/slagalica/SlagalicaDuga";
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo G.mp3'
 const letter = "radno-07.png"
@@ -81,14 +91,14 @@ class Dz16 extends React.Component {
                 { this.state.slide === 17 ? <Opisivanje opis={OpisDz16} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 18 ? <Dzak items={Items16} letter={letter} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 19 ? <Leptiri reci={Reci16} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 20 ? <Spirala slide={"g"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 21 ? <Pojmovi slide={"g"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 22 ? <Povezivanje slide={"g"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 23 ? <Slagalica slide={"gol"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 24 ? <Slagalica slide={"grana"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 25 ? <Slagalica slide={"glava"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 26 ? <Slagalica slide={"dugme"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 27 ? <Slagalica slide={"duga"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Spirala slova={SlovaG} recenica={RecenicaG} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 21 ? <Pojmovi pojmovi={pojmovi} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 22 ? <Povezivanje povezivanje={povezivanje} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 23 ? <Slagalica slagalica={SlagalicaGol} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 24 ? <Slagalica slagalica={SlagalicaGrana} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 25 ? <Slagalica slagalica={SlagalicaGlava} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 26 ? <Slagalica slagalica={SlagalicaDugme} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 27 ? <Slagalica slagalica={SlagalicaDuga} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 28 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 29 ? <Video end={this.backToMain}/> : null}
             </div>

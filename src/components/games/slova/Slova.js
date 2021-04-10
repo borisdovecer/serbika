@@ -22,6 +22,15 @@ class Slova extends React.Component{
     }
 
     componentDidMount() {
+
+
+        this.setState({
+            audio: { upper: "01 nase novo slovo je slovo A kazi A.mp3", lower:"02 ovo je nase malo slovo A kazi A.mp3", delay: 8000 },
+            veliko:"radno-01.png",
+            malo: "radno-02.png"
+        })
+
+
         // DZ 01
         if(this.props.slide === "a"){
             this.setState({

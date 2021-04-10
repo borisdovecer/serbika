@@ -42,11 +42,15 @@ import Items09 from "../games/dzak/Items09";
 import Leptiri from "../games/leptiri/Leptiri"
 import Spirala from "../games/spirala/Spirala"
 import Povezivanje from "../games/povezivanje/Povezivanje"
-import Pojmovi from "../games/pojmovi/Pojmovi"
+import povezivanje from "../games/povezivanje/PojmoviK"
 
+import Pojmovi from "../games/pojmovi/Pojmovi"
+import pojmovi from "../games/pojmovi/PojmoviK"
 import '../../App.css';
 import '../../bootstrap.css'
 import Reci09 from "../games/leptiri/Reci09";
+import SlovaK from "../games/spirala/SlovaK";
+import RecenicaK from "../games/spirala/RecenicaK";
 
 
 const audioTabla = '05 hajde sada ti napisi nase slovo K.mp3'
@@ -84,9 +88,9 @@ class Dz09 extends React.Component {
                 { this.state.slide === 17 ? <Opisivanje opis={OpisDz09} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 18 ? <Dzak items={Items09} letter={letter} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 19 ? <Leptiri reci={Reci09} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 20 ? <Spirala slide={"k"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 21 ? <Pojmovi slide={"k"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 22 ? <Povezivanje slide={"k"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Spirala slova={SlovaK} recenica={RecenicaK} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 21 ? <Pojmovi pojmovi={pojmovi} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 22 ? <Povezivanje povezivanje={povezivanje} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 23 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 24 ? <Video end={this.backToMain}/> : null}
             </div>
