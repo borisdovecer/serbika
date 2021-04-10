@@ -1,6 +1,5 @@
 import React from "react";
 import Dz01 from './dz/Dz01'
-
 import Dz02 from './dz/Dz02'
 import Dz03 from './dz/Dz03'
 import Dz04 from './dz/Dz04'
@@ -20,6 +19,7 @@ import Dz17 from './dz/Dz17'
 import Dz18 from "./dz/Dz18"
 import Dz19 from './dz/Dz19'
 import Dz20 from "./dz/Dz20"
+import Dz21 from "./dz/Dz21"
 
 class Main extends React.Component {
     state = {
@@ -59,9 +59,9 @@ class Main extends React.Component {
 
                   <img src={"./slides/dz19start.png"} alt="btn" name={19} className="main-button" style={{marginTop: "34%" ,left:"2%", width:"10%"}} onClick={this.SelectDz} />
                   <img src={"./slides/dz20start.png"} alt="btn" name={20} className="main-button" style={{marginTop: "34%" ,left:"14%", width:"10%"}} onClick={this.SelectDz} />
-                  {/*< href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"26%", width:"10%"}} /></a>*/}
-                  {/*<a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"38%", width:"10%"}} /></a>*/}
-                  {/*<a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"50%", width:"10%"}} /></a>*/}
+                  <img src={"./slides/play.png"} alt="btn" name={21} className="main-button" style={{marginTop: "34%" ,left:"26%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/play.png"} alt="btn" name={22} className="main-button" style={{marginTop: "34%" ,left:"38%", width:"10%"}} />
+                  <img src={"./slides/play.png"} alt="btn" name={23} className="main-button" style={{marginTop: "34%" ,left:"50%", width:"10%"}} />
                   {/*<a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"62%", width:"10%"}} /></a>*/}
               </div> : null}
               {dz === 1 ? <Dz01 /> : null }
@@ -84,6 +84,7 @@ class Main extends React.Component {
               {dz === 18 ? <Dz18 /> : null }
               {dz === 19 ? <Dz19 /> : null }
               {dz === 20 ? <Dz20 /> : null }
+              {dz === 21 ? <Dz21 /> : null }
             </div>
         )
     }

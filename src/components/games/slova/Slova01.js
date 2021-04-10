@@ -173,9 +173,28 @@ const Slova01 = [
         audio1: "",
         audio2: "",
         delay: 8000
+    },
+    {
+        veliko: "radno-53.png",
+        malo: "radno-54.png",
+        audio1: "",
+        audio2: "",
+        delay: 8000
+    },
+    {
+        veliko: "radno-33.png",
+        malo: "radno-34.png",
+        audio1: "",
+        audio2: "",
+        delay: 8000
+    },
+    {
+        veliko: "radno-45.png",
+        malo: "radno-46.png",
+        audio1: "",
+        audio2: "",
+        delay: 8000
     }
-
-
 ]
 
 export default Slova01
