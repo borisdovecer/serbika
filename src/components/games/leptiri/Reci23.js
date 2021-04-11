@@ -1,14 +1,14 @@
-const Reci21 = [
+const Reci23 = [
     {
         id: 1,
         image: "slika-bubamara1.jpg",
         imgTop: "55vh",
         imgLeft: "50vw",
-        slova: ["С","Р","","Е"],
-        full: ["С","Р","Ц","Е"],
+        slova: ["О","Д","Е","","А"],
+        full: ["О","Д","Е","Ћ","А"],
         slovaTop: "3vh",
         slovaLeft: "3vw",
-        correct: ["Ц"],
+        correct: ["Ћ"],
         color: "#d00a0c",
         found: false
     },
@@ -17,9 +17,9 @@ const Reci21 = [
         image: "slika-bubamara2.jpg",
         imgTop: "24vh",
         imgLeft: "24vw",
-        slova: ["К","О","М","А","Р","",""],
-        full: ["К","О","М","А","Р","А","Ц"],
-        correct: ["А","Ц"],
+        slova: ["П","Р","О","Л","","","Е"],
+        full: ["П","Р","О","Л","Е","Ћ","Е"],
+        correct: ["Е","Ћ"],
         slovaTop: "80vh",
         slovaLeft: "3vw",
         color: "#fd3301",
@@ -30,9 +30,9 @@ const Reci21 = [
         image: "slika-bubamara3.jpg",
         imgTop: "50vh",
         imgLeft: "12vw",
-        slova: ["Р","А","Н","",""],
-        full:  ["Р","А","Н","А","Ц"],
-        correct: ["А","Ц"],
+        slova: ["","","Ш","А","К"],
+        full:  ["Ћ","О","Ш","А","К"],
+        correct: ["Ћ","О"],
         slovaTop: "3vh",
         slovaLeft: "70vw",
         color: "#fdd6cc",
@@ -45,12 +45,12 @@ const Reci21 = [
         imgLeft: "60vw",
         slovaTop: "80vh",
         slovaLeft: "70vw",
-        slova: ["Т","А","","","А"],
-        full: ["Т","А","Ц","Н","А"],
-        correct: ["Ц","Н"],
+        slova: ["","","Р","А","Н"],
+        full: ["Ћ","У","Р","А","Н"],
+        correct: ["Ћ","У"],
         color: "#be0002",
         found: false
     }
 ]
 
-export default Reci21
+export default Reci23

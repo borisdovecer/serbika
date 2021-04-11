@@ -32,8 +32,8 @@ import Items21 from "../games/dzak/Items21"
 import Leptiri from "../games/leptiri/Leptiri"
 import Reci21 from "../games/leptiri/Reci21";
 import Spirala from "../games/spirala/Spirala";
-import SlovaZh from "../games/spirala/SlovaZh";
-import RecenicaZh from "../games/spirala/RecenicaZh";
+import SlovaC from "../games/spirala/SlovaC";
+import RecenicaC from "../games/spirala/RecenicaC";
 import Povezivanje from "../games/povezivanje/Povezivanje";
 import povezivanje from "../games/povezivanje/PojmoviC"
 import Slagalica from "../games/slagalica/Slagalica";
@@ -82,7 +82,7 @@ class Dz21 extends React.Component {
                 { this.state.slide === 17 ? <Opisivanje opis={OpisDz21} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 18 ? <Dzak items={Items21} letter={letter} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 19 ? <Leptiri reci={Reci21} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 20 ? <Spirala slova={SlovaZh} recenica={RecenicaZh} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Spirala slova={SlovaC} recenica={RecenicaC} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 21 ? <Pojmovi pojmovi={pojmovi} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 22 ? <Povezivanje povezivanje={povezivanje} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 23 ? <Slagalica slagalica={SlagalicaCrv} nextSlide={this.nextSlide}/> : null}

@@ -1,57 +1,57 @@
-const SlagalicaSrce = {
-    image: "slika-srce.jpg",
+const SlagalicaNjiva = {
+    image: "slika-njiva.jpg",
     word: [
         {
             id: 10,
-            name: "s",
-            image: "radno-41.png",
+            name: "nj",
+            image: "radno-33.png",
             found: false
         },
         {
             id: 20,
-            name: "r",
-            image: "radno-39.png",
+            name: "i",
+            image: "radno-19.png",
             found: false
         },
         {
             id: 30,
-            name: "c",
-            image: "radno-53.png",
+            name: "v",
+            image: "radno-05.png",
             found: false
         },
         {
             id: 40,
-            name: "e",
-            image: "radno-13.png",
+            name: "a",
+            image: "radno-01.png",
             found: false
         }
     ],
     ponudjena: [
         {
             id: 1,
-            name: "r",
-            image: "radno-39.png",
+            name: "nj",
+            image: "radno-33.png",
             top: "10%",
             left: "15%"
         },
         {
             id: 2,
-            name: "c",
-            image: "radno-53.png",
+            name: "v",
+            image: "radno-05.png",
             top: "34%",
             left: "8%"
         },
         {
             id: 3,
-            name: "k",
-            image: "radno-23.png",
+            name: "i",
+            image: "radno-19.png",
             top: "55%",
             left: "12%"
         },
         {
             id: 4,
-            name: "e",
-            image: "radno-19.png",
+            name: "a",
+            image: "radno-01.png",
             top: "10%",
             left: "75%"
         },
@@ -80,4 +80,4 @@ const SlagalicaSrce = {
 
 }
 
-export default SlagalicaSrce
+export default SlagalicaNjiva
