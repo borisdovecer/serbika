@@ -10,13 +10,13 @@ const SlagalicaUlica = {
         {
             id: 20,
             name: "l",
-            image: "radno-23.png",
+            image: "radno-25.png",
             found: false
         },
         {
             id: 30,
             name: "i",
-            image: "radno-18.png",
+            image: "radno-19.png",
             found: false
         },
         {

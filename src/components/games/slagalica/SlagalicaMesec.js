@@ -71,8 +71,8 @@ const SlagalicaMesec = {
         },
         {
             id: 7,
-            name: "c",
-            image: "radno-53.png",
+            name: "r",
+            image: "radno-39.png",
             top: "55%",
             left: "72%"
         },

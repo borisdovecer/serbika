@@ -1,5 +1,5 @@
 const SlagalicaPtica = {
-    image: "slika-prica.png",
+    image: "slika-ptica.png",
     word: [
         {
             id: 10,
@@ -16,7 +16,7 @@ const SlagalicaPtica = {
         {
             id: 30,
             name: "i",
-            image: "radno-18.png",
+            image: "radno-19.png",
             found: false
         },
         {

@@ -10,7 +10,7 @@ class Povezivanje extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({pojmovi: this.props.povezivanje})
+        this.setState({pojmovi: this.props.povezivanje.sort(() => Math.random() - 0.5)})
 
     }
 

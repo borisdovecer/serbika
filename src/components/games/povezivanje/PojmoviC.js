@@ -2,7 +2,7 @@ const PojmoviC = [
     {
         id: 1,
         name: "Ружа",
-        image: "slika-ruza.jpg",
+        image: "slika-ruza.png",
         color: "#ff0000",
         top: "2%",
         left: "10%",
@@ -11,7 +11,7 @@ const PojmoviC = [
     {
         id: 2,
         name: "Краставац",
-        image: "slika-krastavac.jpg",
+        image: "slika-krastavac.png",
         color: "#08ff00",
         top: "14%",
         left: "10%",
@@ -20,7 +20,7 @@ const PojmoviC = [
     {
         id: 3,
         name: "Учитаљица",
-        image: "slika-uciteljica.jpg",
+        image: "slika-uciteljica.png",
         color: "#0040ff",
         top: "26%",
         left: "10%",
@@ -29,7 +29,7 @@ const PojmoviC = [
     {
         id: 4,
         name: "Столица",
-        image: "slika-stolica.jpg",
+        image: "slika-stolica.png",
         color: "#bb00ff",
         top: "38%",
         left: "10%",
@@ -38,7 +38,7 @@ const PojmoviC = [
     {
         id: 5,
         name: "Звоно",
-        image: "slika-zvino.jpg",
+        image: "slika-zvono.png",
         color: "#78c310",
         top: "3%",
         left: "70%",
@@ -65,7 +65,7 @@ const PojmoviC = [
     {
         id: 8,
         name: "Чузме",
-        image: "slika-cizme.png",
+        image: "slika-cizme.jpg",
         color: "#00ffb0",
         top: "40%",
         left: "70%",

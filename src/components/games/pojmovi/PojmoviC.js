@@ -13,7 +13,7 @@ const PojmoviC  = [
             {
                 name: "z",
                 order: 0,
-                image: "slika-zvezda.png",
+                image: "slika-zvezda.jpg",
                 top: "20%",
                 left: "30%",
                 found: false
@@ -58,7 +58,7 @@ const PojmoviC  = [
             {
                 name: "c2",
                 order: 1,
-                image: "radno-55.png",
+                image: "radno-53.png",
                 top:"2%",
                 left: "65%",
                 found: false
