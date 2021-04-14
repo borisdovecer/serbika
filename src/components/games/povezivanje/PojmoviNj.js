@@ -11,7 +11,7 @@ const PojmoviNj = [
     {
         id: 2,
         name: "Њушка",
-        image: "slika-njuska.jpg",
+        image: "slika-njuska.png",
         color: "#08ff00",
         top: "14%",
         left: "10%",
@@ -38,7 +38,7 @@ const PojmoviNj = [
     {
         id: 5,
         name: "Птица",
-        image: "slika-prica.png",
+        image: "slika-ptica.png",
         color: "#78c310",
         top: "3%",
         left: "70%",

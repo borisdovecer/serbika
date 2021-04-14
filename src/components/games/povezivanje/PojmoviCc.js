@@ -20,7 +20,7 @@ const PojmoviCc = [
     {
         id: 3,
         name: "Обућа",
-        image: "slika-obuca.jpg",
+        image: "slika-obuca.png",
         color: "#0040ff",
         top: "26%",
         left: "10%",
@@ -29,7 +29,7 @@ const PojmoviCc = [
     {
         id: 4,
         name: "Врећа",
-        image: "slika-vreca.jpg",
+        image: "slika-vreca.png",
         color: "#bb00ff",
         top: "38%",
         left: "10%",
@@ -38,7 +38,7 @@ const PojmoviCc = [
     {
         id: 5,
         name: "Ћирилица",
-        image: "slika-azbuka.jpg",
+        image: "slika-azbuka.png",
         color: "#78c310",
         top: "3%",
         left: "70%",

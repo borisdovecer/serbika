@@ -2,7 +2,7 @@ const OpisDz23 = [
     {
         id: 1,
         text: "Летећи ћилим одлете у ноћ.",
-        image: "slika-leteci-cilim.jpg",
+        image: "slika-leteci-cilim.png",
         found: false
     },
     {

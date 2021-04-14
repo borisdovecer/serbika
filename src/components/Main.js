@@ -61,9 +61,9 @@ class Main extends React.Component {
 
                   <img src={"./slides/dz19start.png"} alt="btn" name={19} className="main-button" style={{marginTop: "34%" ,left:"2%", width:"10%"}} onClick={this.SelectDz} />
                   <img src={"./slides/dz20start.png"} alt="btn" name={20} className="main-button" style={{marginTop: "34%" ,left:"14%", width:"10%"}} onClick={this.SelectDz} />
-                  <img src={"./slides/play.png"} alt="btn" name={21} className="main-button" style={{marginTop: "34%" ,left:"26%", width:"10%"}} onClick={this.SelectDz} />
-                  <img src={"./slides/play.png"} alt="btn" name={22} className="main-button" style={{marginTop: "34%" ,left:"38%", width:"10%"}} onClick={this.SelectDz} />
-                  <img src={"./slides/play.png"} alt="btn" name={23} className="main-button" style={{marginTop: "34%" ,left:"50%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/dz21start.png"} alt="btn" name={21} className="main-button" style={{marginTop: "34%" ,left:"26%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/dz22start.png"} alt="btn" name={22} className="main-button" style={{marginTop: "34%" ,left:"38%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/dz23start.png"} alt="btn" name={23} className="main-button" style={{marginTop: "34%" ,left:"50%", width:"10%"}} onClick={this.SelectDz} />
                   {/*<a href="/"><img src={"./slides/play.png"} alt="btn" className="main-button" style={{marginTop: "34%" ,left:"62%", width:"10%"}} /></a>*/}
               </div> : null}
               {dz === 1 ? <Dz01 /> : null }

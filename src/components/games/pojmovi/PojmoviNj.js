@@ -41,7 +41,7 @@ const PojmoviNj  = [
             {
                 name: "nj2",
                 order: 1,
-                image: "slika-visnja.png",
+                image: "slika-visnje.png",
                 top: "20%",
                 left: "1%",
                 found: false

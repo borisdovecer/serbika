@@ -6,7 +6,7 @@ import DrvoSlova from "../games/drvo/SlovaNj"
 import Tabla from "../games/tabla/Tabla"
 import Skrivalice from "../games/skrivalice/Skrivalice"
 import SlovaSkrivalice from '../games/skrivalice/SlovaA'
-import bg1 from '../games/skrivalice/bg-cirkus.jpg'
+import bg1 from '../games/skrivalice/bg-njiva.jpg'
 import Karte from "../games/karte/Karte"
 import KarteNj from "../games/karte/KarteNj";
 import Reci from "../games/reci/Reci"
@@ -65,7 +65,7 @@ class Dz22 extends React.Component {
         return (
             <div style={{width: "100%"}} >
                 { this.state.slide === 1 ? <Main slide={"main"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 2 ? <Slova slovo={26} bg={4} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 2 ? <Slova slovo={26} bg={5} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slova={DrvoSlova} bg={3} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 4 ? <Tabla audio={audioTabla} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 5 ? <Karte cards={KarteNj} nextSlide={this.nextSlide}/> : null}

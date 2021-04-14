@@ -9,7 +9,7 @@ const Items22 = [
     {
         id: 2,
         name: "njiva",
-        image: "slika-njiva.png",
+        image: "slika-njiva-mala.jpg",
         in: "red",
         found: false
     },

@@ -124,7 +124,7 @@ const PojmoviCc  = [
             {
                 name: "v4",
                 order: 3,
-                image: "slika-vutra.png",
+                image: "slika-vutra.jpg",
                 top: "20%",
                 left: "30%",
                 found: false

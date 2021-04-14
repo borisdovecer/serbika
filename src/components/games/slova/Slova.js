@@ -6,6 +6,7 @@ import bg1 from './bg-slova-1.jpg'
 import bg2 from './bg-slova-2.2.jpg'
 import bg3 from './bg-slova-3.jpg'
 import bg4 from './bg-slova-4.jpg'
+import bg5 from './bg-slova-5.jpg'
 
 import PreloadImage from "react-preload-image";
 
@@ -29,6 +30,7 @@ class Slova extends React.Component{
             case 2: bgg=bg2; break;
             case 3: bgg=bg3; break;
             case 4: bgg=bg4; break;
+            case 5: bgg=bg5; break;
             default: bgg=bg1;
         }
 
