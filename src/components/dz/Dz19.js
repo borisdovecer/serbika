@@ -56,11 +56,15 @@ import pojmovi from "../games/pojmovi/PojmoviF"
 
 import '../../App.css';
 import '../../bootstrap.css'
-import SlagalicaSef from "../games/slagalica/SlagalicaSef";
-import SlagalicaSofa from "../games/slagalica/SlagalicaSofa";
-import SlagalicaFlasa from "../games/slagalica/SlagalicaFlasa";
-import SlagalicaMafin from "../games/slagalica/SlagalicaMafin";
-import SlagalicaMikrofon from "../games/slagalica/SlagalicaMikrofon";
+import SlagalicaSef from "../games/slagalica/SlagalicaSef"
+import SlagalicaSofa from "../games/slagalica/SlagalicaSofa"
+import SlagalicaFlasa from "../games/slagalica/SlagalicaFlasa"
+import SlagalicaMafin from "../games/slagalica/SlagalicaMafin"
+import SlagalicaMikrofon from "../games/slagalica/SlagalicaMikrofon"
+import Puzle from "../games/puzle/Puzle"
+import puzle from "../games/puzle/PuzleDz19a"
+import puzle2 from "../games/puzle/PuzleDz19b"
+import puzle3 from "../games/puzle/PuzleDz19c"
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo F.mp3'
 const letter = "radno-49.png"
@@ -104,8 +108,11 @@ class Dz19 extends React.Component {
                 { this.state.slide === 25 ? <Slagalica slagalica={SlagalicaFlasa} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 26 ? <Slagalica slagalica={SlagalicaMafin} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 27 ? <Slagalica slagalica={SlagalicaMikrofon} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 28 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 29 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 28 ? <Puzle game={puzle} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 29 ? <Puzle game={puzle2} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 30 ? <Puzle game={puzle3} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 31 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 32 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

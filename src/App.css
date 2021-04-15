@@ -373,3 +373,12 @@
   width: 13vw;
   position: relative;
 }
+.puzzle-box {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: inline-block;
+  margin-top: 10%;
+  margin-left: -32px;
+  margin-right: -40px;
+}

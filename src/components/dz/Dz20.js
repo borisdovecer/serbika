@@ -58,6 +58,10 @@ import SlagalicaJez from "../games/slagalica/SlagalicaJez";
 import SlagalicaRaza from "../games/slagalica/SlagalicaRaza";
 import SlagalicaZvaka from "../games/slagalica/SlagalicaZvaka";
 import SlagalicaZirafa from "../games/slagalica/SlagalicaZirafa";
+import Puzle from "../games/puzle/Puzle";
+import puzle from "../games/puzle/PuzleDz20a";
+import puzle2 from "../games/puzle/PuzleDz20b";
+import puzle3 from "../games/puzle/PuzleDz20c";
 
 
 
@@ -101,8 +105,11 @@ class Dz20 extends React.Component {
                 { this.state.slide === 23 ? <Slagalica slagalica={SlagalicaRaza} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 24 ? <Slagalica slagalica={SlagalicaZvaka} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 25 ? <Slagalica slagalica={SlagalicaZirafa} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 26 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 27 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 26 ? <Puzle game={puzle} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 27 ? <Puzle game={puzle2} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 28 ? <Puzle game={puzle3} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 29 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 30 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

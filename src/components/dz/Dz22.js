@@ -44,10 +44,14 @@ import SlagalicaNjiva from "../games/slagalica/SlagalicaNjiva";
 import SlagalicaBubanj from "../games/slagalica/SlagalicaBubanj";
 import SlagalicaTresnja from "../games/slagalica/SlagalicaTresnja";
 import SlagalicaNjuska from "../games/slagalica/SlagalicaNjuska";
-
+import Puzle from "../games/puzle/Puzle";
+import puzle from "../games/puzle/PuzleDz22a";
+import puzle2 from "../games/puzle/PuzleDz22b";
+import puzle3 from "../games/puzle/PuzleDz22c";
 
 import '../../App.css';
 import '../../bootstrap.css'
+
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo Nj.mp3'
 const letter = "radno-33.png"
@@ -91,8 +95,11 @@ class Dz22 extends React.Component {
                 { this.state.slide === 25 ? <Slagalica slagalica={SlagalicaBubanj} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 26 ? <Slagalica slagalica={SlagalicaTresnja} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 27 ? <Slagalica slagalica={SlagalicaNjuska} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 28 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 29 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 28 ? <Puzle game={puzle} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 29 ? <Puzle game={puzle2} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 30 ? <Puzle game={puzle3} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 31 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 32 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

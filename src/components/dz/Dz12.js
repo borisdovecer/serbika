@@ -58,6 +58,9 @@ import SlagalicaNebo from "../games/slagalica/SlagalicaNebo";
 import SlagalicaRiba from "../games/slagalica/SlagalicaRiba";
 import SlagalicaBalerina from "../games/slagalica/SlagalicaBalerina";
 import SlagalicaJabuka from "../games/slagalica/SlagalicaJabuka";
+import Puzle from "../games/puzle/Puzle"
+import puzle from "../games/puzle/PuzleDz12"
+import puzle2 from "../games/puzle/PuzleDz12-2"
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo B.mp3'
 const letter = "radno-03.png"
@@ -100,8 +103,10 @@ class Dz12 extends React.Component {
                 { this.state.slide === 24 ? <Slagalica slagalica={SlagalicaRiba} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 25 ? <Slagalica slagalica={SlagalicaBalerina} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 26 ? <Slagalica slagalica={SlagalicaJabuka} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 27 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 28 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 27 ? <Puzle game={puzle} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 28 ? <Puzle game={puzle2} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 29 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 30 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }
