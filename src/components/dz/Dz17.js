@@ -62,6 +62,8 @@ import Puzle from "../games/puzle/Puzle";
 import puzle from "../games/puzle/PuzleDz17a";
 import puzle2 from "../games/puzle/PuzleDz17b";
 import puzle3 from "../games/puzle/PuzleDz17c";
+import Hrana from "../games/hrana/Hrana";
+import hrana from "../games/hrana/HranaDz17";
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo Ch.mp3'
 const letter = "radno-51.png"
@@ -109,7 +111,10 @@ class Dz17 extends React.Component {
                 { this.state.slide === 29 ? <Puzle game={puzle2} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 30 ? <Puzle game={puzle3} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 31 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 32 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 32 ? <Hrana hrana={hrana.dorucak} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 33 ? <Hrana hrana={hrana.rucak} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 34 ? <Hrana hrana={hrana.vecera} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 35 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

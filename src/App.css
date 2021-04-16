@@ -382,3 +382,10 @@
   margin-left: -32px;
   margin-right: -40px;
 }
+
+.hrana-ponudjena {
+  width: 100%;
+  height: 90px;
+  position: relative;
+
+}

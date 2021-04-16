@@ -125,14 +125,6 @@ class Dzak extends React.Component {
                             </div>
                         )}
                     </Droppable>
-
-                    {/*{slagalica.ponudjena.map((s, i) =>*/}
-                    {/*    <img*/}
-                    {/*        src={"./slides/" + s.image}*/}
-                    {/*        alt={"A"}*/}
-                    {/*        style={{width:"10%", position:"absolute",top:s.top, left:s.left}}*/}
-                    {/*    />*/}
-                    {/*)}*/}
                 </DragDropContext>
             </div>
         )
