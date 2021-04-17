@@ -48,9 +48,11 @@ import Puzle from "../games/puzle/Puzle"
 import puzle from "../games/puzle/PuzleDz14a"
 import puzle2 from "../games/puzle/PuzleDz14b"
 import puzle3 from "../games/puzle/PuzleDz14c"
-
+import Zoo from "../games/zoo/Zoo";
+import zoo from "../games/zoo/ZooDz14"
 import '../../App.css';
 import '../../bootstrap.css'
+
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo Z.mp3'
 const letter = "radno-17.png"
@@ -97,8 +99,9 @@ class Dz14 extends React.Component {
                 { this.state.slide === 28 ? <Puzle game={puzle} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 29 ? <Puzle game={puzle2} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 30 ? <Puzle game={puzle3} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 31 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 32 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 31 ? <Zoo animals={zoo} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 32 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 33 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

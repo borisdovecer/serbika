@@ -54,6 +54,10 @@ import '../../App.css';
 import '../../bootstrap.css'
 import Hrana from "../games/hrana/Hrana";
 import hrana from "../games/hrana/HranaDz23";
+import Sifra from "../games/sifra/Sifra";
+import kod from "../games/sifra/SifraDz23";
+import Zoo from "../games/zoo/Zoo";
+import zoo from "../games/zoo/ZooDz23";
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo Cc.mp3'
 const letter = "radno-45.png"
@@ -100,11 +104,13 @@ class Dz23 extends React.Component {
                 { this.state.slide === 28 ? <Puzle game={puzle} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 29 ? <Puzle game={puzle2} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 30 ? <Puzle game={puzle3} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 31 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 32 ? <Hrana hrana={hrana.dorucak} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 33 ? <Hrana hrana={hrana.rucak} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 34 ? <Hrana hrana={hrana.vecera} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 35 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 31 ? <Zoo animals={zoo} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 32 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 33 ? <Hrana hrana={hrana.dorucak} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 34 ? <Hrana hrana={hrana.rucak} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 35 ? <Hrana hrana={hrana.vecera} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 36 ? <Sifra sifra={kod} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 37 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }
