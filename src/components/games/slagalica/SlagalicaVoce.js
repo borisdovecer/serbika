@@ -4,7 +4,7 @@ const SlagalicaVoce = {
         {
             id: 10,
             name: "v",
-            image: "radno-35.png",
+            image: "radno-05.png",
             found: false
         },
         {
@@ -51,7 +51,7 @@ const SlagalicaVoce = {
         {
             id: 4,
             name: "e",
-            image: "radno-19.png",
+            image: "radno-13.png",
             top: "10%",
             left: "75%"
         },

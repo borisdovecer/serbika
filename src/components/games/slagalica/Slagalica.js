@@ -34,25 +34,9 @@ class Slagalica extends React.Component {
                 slagalica.ponudjena.splice(result.source.index, 1)
                 arr.push(s.id)
                 this.setState({slagalica, arr})
-            }else{
-                return;
             }
         } )
-        //
-        // const slag = reorder(
-        //     slagalica.ponudjena,
-        //     result.source.index,
-        //     result.destination.index
-        // );
-        //
-        // slagalica.ponudjena = slag
-        // this.setState({
-        //     slagalica
-        // });
-        //
-        // if(this.state.arr.length === slagalica.word.length){
-        //     this.setState({complete: true})
-        // }
+
     }
 
     render() {

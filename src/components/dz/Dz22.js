@@ -59,6 +59,8 @@ import Zoo from "../games/zoo/Zoo";
 import zoo from "../games/zoo/ZooDz22";
 import Broj from "../games/broj-slova/Broj";
 import broj from "../games/broj-slova/Broj22";
+import Ukrstenica from "../games/ukrstenica/Ukrstenica";
+import uReci from "../games/ukrstenica/Reci22";
 
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo Nj.mp3'
@@ -113,7 +115,8 @@ class Dz22 extends React.Component {
                 { this.state.slide === 35 ? <Hrana hrana={hrana.vecera} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 36 ? <Sifra sifra={kod} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 37 ? <Broj items={broj} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 38 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 38 ? <Ukrstenica words={uReci} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 39 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }
