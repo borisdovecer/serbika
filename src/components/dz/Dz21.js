@@ -57,6 +57,8 @@ import Sifra from "../games/sifra/Sifra";
 import kod from "../games/sifra/SifraDz21";
 import Zoo from "../games/zoo/Zoo";
 import zoo from "../games/zoo/ZooDz21";
+import Broj from "../games/broj-slova/Broj"
+import broj from "../games/broj-slova/Broj21"
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo C.mp3'
 const letter = "radno-53.png"
@@ -109,7 +111,8 @@ class Dz21 extends React.Component {
                 { this.state.slide === 34 ? <Hrana hrana={hrana.rucak} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 35 ? <Hrana hrana={hrana.vecera} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 36 ? <Sifra sifra={kod} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 37 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 37 ? <Broj items={broj} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 38 ? <Video end={this.backToMain}/> : null}
             </div>
         );
     }

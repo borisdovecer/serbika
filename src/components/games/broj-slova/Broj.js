@@ -5,15 +5,19 @@ class Broj extends React.Component {
     state = {
         items: [],
         arr: [],
+        list: [],
+        count: 0,
         complete: false
     }
 
     componentDidMount() {
-        this.setState({ items: this.props.items})
+        let {items} = this.props
+        let count = items.length
+        this.setState({ items: items, list:items[0].list, count})
     }
 
     onDragEnd = (result) => {
-        let {items, arr} = this.state
+        let {items, arr, count} = this.state
 
         if (!result.destination) {
             return;
@@ -22,24 +26,24 @@ class Broj extends React.Component {
         items.forEach(s => {
             if(result.destination.droppableId ===  "droppable-"+s.in && result.draggableId === "item-"+s.name ){
                 s.found = true
-                arr.push(s.id)
+                arr.push(s)
                 items.splice(result.source.index, 1)
                 this.setState({items, arr})
             }
         })
 
-        if(this.state.arr.length === 5){
+        if(arr.length === count){
             this.setState({complete: true})
         }
     }
 
     render() {
-        const {items, complete} = this.state
+        const {items,arr,list, complete} = this.state
         return(
             <div className={"main"}>
-                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop:"0%"}} onClick={this.props.nextSlide}/> : null}
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop:"25%"}} onClick={this.props.nextSlide}/> : null}
                 <DragDropContext onDragEnd={this.onDragEnd}>
-                    <div style={{position:"relative", height:"600px"}}>
+                    <div style={{position:"relative",height:"500px", padding:"2% 5%"}}>
                     <Droppable droppableId={"droppable-red" }
                                index={0}
                     >
@@ -48,22 +52,30 @@ class Broj extends React.Component {
                                 ref={provided.innerRef}
                                 {...provided.draggableProps}
                                 {...provided.dragHandleProps}
-                                style={{width:"40%",position:"relative" ,left:"15%"}}
+                                style={{width:"33%",position:"relative",display:"inline-block" }}
                             >
                                 <img
                                     src={"./slides/polica1.jpg"}
                                     alt={"A"}
-                                    style={{width:"50%", position:"absolute"}}
+                                    style={{width:"75%", position:"relative"}}
                                 />
-                                {items.map((a,i) =>
-                                    <img
-                                        key={i}
-                                        src={a.found ? "./slides/" + a.image : null}
-                                        alt={" "}
-                                        style={{width:"20%", position:"absolute", marginTop:"20%", left:(i*5)+"%"}}
-                                    />
-
-                                )}
+                                <h1 style={{position:"absolute", left:"25%"}}>{list[0]} slova</h1>
+                                {arr.map((a,i) => {
+                                    return(
+                                        a.in==="red" ?
+                                        <img
+                                            key={i}
+                                            src={"./slides/" + a.image}
+                                            alt={"broj"}
+                                            style={{
+                                                width: "30%",
+                                                position: "absolute",
+                                                marginTop: "20%",
+                                                left: (i * 6) + "%"
+                                            }}
+                                        /> : null
+                                    )
+                                })}
                             </div>
                         )}
                     </Droppable>
@@ -75,13 +87,30 @@ class Broj extends React.Component {
                                 ref={provided.innerRef}
                                 {...provided.draggableProps}
                                 {...provided.dragHandleProps}
-                                style={{width:"40%",position:"relative" ,left:"40%"}}
+                                style={{width:"33%",position:"relative",display:"inline-block" }}
                             >
                                 <img
                                     src={"./slides/polica2.jpg"}
                                     alt={"A"}
-                                    style={{width:"50%", position:"absolute"}}
+                                    style={{width:"75%", position:"relative"}}
                                 />
+                                <h1 style={{position:"absolute", left:"25%"}}>{list[1]} slova</h1>
+                                {arr.map((a,i) => {
+                                    return(
+                                        a.in==="yellow" ?
+                                            <img
+                                                key={i}
+                                                src={"./slides/" + a.image}
+                                                alt={"broj"}
+                                                style={{
+                                                    width: "30%",
+                                                    position: "absolute",
+                                                    marginTop: "16%",
+                                                    left: (i * 6) + "%"
+                                                }}
+                                            /> : null
+                                    )
+                                })}
                             </div>
                         )}
                     </Droppable>
@@ -93,13 +122,31 @@ class Broj extends React.Component {
                                 ref={provided.innerRef}
                                 {...provided.draggableProps}
                                 {...provided.dragHandleProps}
-                                style={{width:"40%",position:"relative" ,left:"65%"}}
+                                style={{width:"33%",position:"relative",display:"inline-block"}}
                             >
                                 <img
                                     src={"./slides/polica3.jpg"}
                                     alt={"A"}
-                                    style={{width:"50%", position:"absolute"}}
+                                    style={{width:"75%", position:"relative"}}
                                 />
+                                <h1 style={{position:"absolute", left:"25%"}}>{list[2]} slova</h1>
+                                {arr.map((a,i) => {
+                                    return(
+                                        a.in==="blue" ?
+                                            <img
+                                                key={i}
+                                                src={"./slides/" + a.image}
+                                                alt={"broj"}
+                                                style={{
+                                                    width: "30%",
+                                                    position: "absolute",
+                                                    marginTop: "18%",
+                                                    left: (i * 8) + "%"
+                                                }}
+                                            /> : null
+                                    )
+                                })}
+
                             </div>
                         )}
                     </Droppable>

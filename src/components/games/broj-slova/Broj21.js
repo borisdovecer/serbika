@@ -1,43 +1,51 @@
 const Broj21 = [
     {
         id: 1,
-        name: "baba",
-        image: "slika-cilim.png",
+        list:[3,5,7],
+        name: "zub",
+        image: "slika-zub.png",
         in: "red",
         found: false
     },
     {
         id: 2,
-        name: "njiva",
-        image: "slika-cebe.png",
-        in: "red",
+        name: "crkva",
+        image: "slika-crkva.png",
+        in: "yellow",
         found: false
     },
     {
         id: 3,
-        name: "knjiga",
-        image: "slika-smece.png",
-        in: "yellow",
+        name: "magarac",
+        image: "slika-magarac.png",
+        in: "blue",
         found: false
     },
     {
         id: 4,
-        name: "cesalj",
-        image: "slika-voce.png",
-        in: "yellow",
+        name: "telefon",
+        image: "slika-telefon.png",
+        in: "blue",
         found: false
     },
     {
         id: 5,
-        name: "svinja",
-        image: "slika-cvece.png",
+        name: "dva",
+        image: "slika-dva.png",
         in: "red",
         found: false
     },
     {
-        id: 5,
-        name: "kuca",
-        image: "slika-kuca.png",
+        id: 6,
+        name: "zebra",
+        image: "slika-zebra.png",
+        in: "yellow",
+        found: false
+    },
+    {
+        id: 9,
+        name: "crv",
+        image: "slika-crv.png",
         in: "red",
         found: false
     }
