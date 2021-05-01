@@ -14,97 +14,77 @@ class Karte extends React.Component{
 
     componentDidMount() {
         const cards = this.props.cards
-        this.setState({
-            karte: cards.sort(() => Math.random() - 0.5),
-            back: cards[0].image,
-        })
+        this.setState({ karte: cards.sort(() => Math.random() - 0.5), back: cards[0].image })
     }
 
     flip = (e) => {
         let id = e.target.attributes.id.value
-        let card = this.state.karte
-        let arr = this.state.arr
-        if(!card[id].ck && arr.length<2 ){
-            card[id].animation = "flip-vertical-right"
-            card[id].ck = true
-            card[id].image = card[id].front
-            arr.push(card[id])
-            this.setState( {karte: card, arr: arr} )
-            this.compare()
+        let {karte, arr } = this.state
+        if(!karte[id].ck && arr.length<2 ){
+            karte[id].animation = "flip-vertical-right"
+            karte[id].ck = true
+            karte[id].image = karte[id].front
+            arr.push(karte[id])
+            this.setState( {karte, arr} )
         }
+        // eslint-disable-next-line no-unused-expressions
+        arr.length === 2 ? this.compare() : null
     }
 
     compare = () => {
-        let card = this.state.karte
-        let arr = this.state.arr
-        let bakimg = this.state.back
-
-        if(arr.length === 2){
-            if(arr[0].name === arr[1].name){
-
-                card.forEach( function (crd){
-                    if(crd.name === arr[0].name){
-                        crd.animation = "pulsate-bck"
-                        crd.found = true
-                    }
-                })
-                this.setState({arr:[]})
-                this.setState({ sc: true })
-                setTimeout( () => {
-                    this.setState({sc: false})
-                }, 1500 )
-            }else{
-                this.setState({ err: true })
-                setTimeout( () => {
-                card.forEach( function (crd){
-                    if(!crd.found){
-                        crd.image = bakimg
-                        crd.ck = false
-                        crd.animation = ""
-                    }
-                })
-                this.setState({arr:[], err: false})
-                }, 2500 )
-            }
+        let {karte, arr, back, completearr} = this.state
+        if(arr[0].name === arr[1].name){
+            karte.forEach( function (crd){
+                if(crd.name === arr[0].name){
+                    crd.animation = "pulsate-bck"
+                    crd.found = true
+                    completearr.push(crd)
+                }
+            })
+            this.setState({arr:[],  sc: true, completearr})
+            setTimeout( () => {
+                this.setState({sc: false})
+            }, 1500 )
+        }else{
+            this.setState({ err: true })
+            setTimeout( () => {
+                karte.forEach( function (crd){
+                if(!crd.found){
+                    crd.image = back
+                    crd.ck = false
+                    crd.animation = ""
+                }
+            })
+            this.setState({arr:[], err: false})
+            }, 2000 )
         }
-        this.complete()
-    }
-
-    complete = () => {
-        let arr = []
-        this.state.karte.forEach( crd => {
-            if(crd.found){
-                arr.push(true)
-            }
-        })
-
-        if(arr.length === this.state.karte.length){
-            this.setState({ complete: true })
-        }
+        // eslint-disable-next-line no-unused-expressions
+        completearr.length === karte.length ? this.setState({ complete: true }) : null
     }
 
     render() {
+        const {karte, complete, err, sc, audio} = this.state
         return(
             <div className={"main color-change-2x"} style={{height:"100vh"}}>
                 <audio
                     autoPlay
-                    src={"./audio/" + this.state.audio}
+                    src={"./audio/" + audio}
                 />
-                {this.state.err ? <audio
+                {err ? <audio
                     autoPlay
                     src={"./audio/HAJDE PROBAJ JOS JEDNOM.mp3"}
                 /> : null}
-                {this.state.sc && !this.state.complete ? <audio
+                {sc && !complete ? <audio
                     autoPlay
                     src={"./audio/BRAVO.mp3"}
                 /> : null}
-                {this.state.complete ? <audio
+                {complete ? <audio
                     autoPlay
                     src={"./audio/FENOMENALNO.mp3"}
                 /> : null}
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop: "20%", right:"0%"}} onClick={this.props.nextSlide}/> : null}
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop: "20%", right:"0%"}} onClick={this.props.nextSlide}/> : null}
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
-                        {this.state.karte.map( (card, i) =>
+                        {karte.map( (card, i) =>
                             <div key={i} className={"col-lg-3 col-md-3 col-sm-3"} style={{marginTop: "3%"}}>
                                 <img
                                      id={i}

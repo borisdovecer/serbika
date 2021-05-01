@@ -1,73 +1,57 @@
 import React from 'react'
-// eslint-disable-next-line
-import SlovaI from './SlovaI'
-import bg1 from './skrivalice-bg-1.jpg'
-
 import PreloadImage from "react-preload-image";
 
 class Skrivalice extends React.Component{
     state = {
-        image: bg1,
+        image: "",
         audio: "07 sakrila se nasa nestasna slova pritisni svako slovo koje pronadjes.mp3",
         slovoImg: "",
-        slova: SlovaI,
+        slova: [],
         completearr: [],
         sc: false,
-        complete: true
+        complete: false,
+        loading: true
     }
     componentDidMount() {
-        this.setState({image:this.props.bg, slovoImg: this.props.letter, slova:this.props.slova})
+        const { bg, letter, slova } = this.props
+        this.setState({image: bg, slovoImg: letter, slova: slova, loading: false})
     }
 
     click = (e) => {
-        let s = e.target.attributes
-        let Slova = this.state.slova
-
-        if(Slova[s.id.value].found === false) {
-            Slova[s.id.value].animation = "rotate-scale-up"
-            Slova[s.id.value].found = true
-            this.state.completearr.push(Slova[s.id.value])
-            this.setState({slova: Slova})
-
-            this.setState({ sc: true })
+        let id = e.target.attributes.id.value
+        let { slova, completearr } = this.state
+        if(slova[id].found === false) {
+            slova[id].animation = "rotate-scale-up"
+            slova[id].found = true
+            completearr.push(slova[id])
+            this.setState({ slova, sc: true  })
             setTimeout( () => {
                 this.setState({sc: false})
             }, 1500 )
         }
-        this.complete()
-    };
-
-    complete = () => {
-        const {completearr, slova} = this.state
         if(completearr.length === slova.length){
             this.setState({ complete: true })
         }
-    }
+    };
 
     render() {
+        const { slova, image, slovoImg, audio, complete, sc, loading } = this.state
         return(
+            loading ? null :
             <div className={"main"}>
-                <PreloadImage
-                    style={{
-                        position: 'absolute',
-                        width: '100%',
-                        height: '100vh',
-                        backgroundColor: '#222222'
-                    }}
-                    src={this.state.image}
-                />
-                {this.state.sc && !this.state.complete ? <audio
+                <PreloadImage style={InnerStyle} src={image} />
+                {sc && !complete ? <audio
                     autoPlay
                     src={"./audio/BRAVO.mp3"}
                 /> : null}
-                {this.state.complete ? <audio
+                {complete ? <audio
                     autoPlay
                     src={"./audio/TO JE BILO ODLICNO.mp3"}
                 /> : null}
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
-                {this.state.slova.map( (slovo, i) => <img
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
+                {slova.map( (slovo, i) => <img
                     key={i}
-                    src={"./slides/" + this.state.slovoImg}
+                    src={"./slides/" + slovoImg}
                     alt={"slovo"}
                     className={slovo.animation}
                     id={i}
@@ -76,11 +60,16 @@ class Skrivalice extends React.Component{
                 /> )}
                 <audio
                     autoPlay
-                    src={"./audio/" + this.state.audio}
+                    src={"./audio/" + audio}
                 />
             </div>
         )
     }
+}
+const InnerStyle = {
+    position: 'absolute',
+    width: '100%',
+    height: '100vh'
 }
 
 export default Skrivalice

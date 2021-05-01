@@ -15,23 +15,18 @@ class Dzak extends React.Component {
 
     onDragEnd = (result) => {
         let {items, arr} = this.state
-
         if (!result.destination) {
             return;
         }
-
         items.forEach(s => {
             if(result.destination.droppableId ===  "droppable-"+s.in && result.draggableId === "item-"+s.name ){
                 s.found = true
                 arr.push(s.id)
                 items.splice(result.source.index, 1)
                 this.setState({items, arr})
-            }else{
-                return;
             }
         })
-
-        if(this.state.arr.length === 5){
+        if(arr.length === 5){
             this.setState({complete: true})
         }
     }
@@ -68,15 +63,11 @@ class Dzak extends React.Component {
                                             )}
                                         </Draggable>
                                     </div>
-
-                                ))
-                                }
+                                ))}
                             </div>
                         )}
                     </Droppable>
-                    <Droppable droppableId={"droppable-red" }
-                               index={0}
-                    >
+                    <Droppable droppableId={"droppable-red" } index={0} >
                         {(provided, snapshot) => (
                             <div
                                 ref={provided.innerRef}
@@ -97,9 +88,7 @@ class Dzak extends React.Component {
                             </div>
                         )}
                     </Droppable>
-                    <Droppable droppableId={"droppable-yellow" }
-                               index={1}
-                    >
+                    <Droppable droppableId={"droppable-yellow" } index={1} >
                         {(provided, snapshot) => (
                             <div
                                 ref={provided.innerRef}
@@ -129,8 +118,6 @@ class Dzak extends React.Component {
             </div>
         )
     }
-
-
 }
 
 export default Dzak

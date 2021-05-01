@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f405100f-780b-444d-ad57-bee488ed2d23" name="Default Changelist" comment="" />
+    <list default="true" id="d934c066-9d58-42b4-a6c3-241dd61cccd0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +10,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1oVsLM7kdWQq15SCrqtd2MSF5yH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1rwDQceFbU8ecpN28fuaYJjFJGG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -20,30 +19,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Desktop/zadatak" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path" value="node" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\Documents\GitHub\serbika\src\components\games\deca" />
-      <recent name="G:\Documents\GitHub\serbika\src" />
-      <recent name="G:\Documents\GitHub\serbika\public\slides" />
-      <recent name="G:\Documents\GitHub\serbika\src\components\games\skrivalice" />
-      <recent name="G:\Documents\GitHub\serbika\src\components\games\karte" />
-    </key>
-  </component>
-  <component name="RunManager" selected="npm.npm start">
-    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
-      <method v="2" />
-    </configuration>
-    <configuration name="npm start" type="js.build_tools.npm">
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -53,56 +36,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f405100f-780b-444d-ad57-bee488ed2d23" name="Default Changelist" comment="" />
-      <created>1613383035646</created>
+      <changelist id="d934c066-9d58-42b4-a6c3-241dd61cccd0" name="Default Changelist" comment="" />
+      <created>1619878253980</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1613383035646</updated>
-      <workItem from="1613383036993" duration="37485000" />
-      <workItem from="1613769925189" duration="7000" />
-      <workItem from="1613920723875" duration="30935000" />
-      <workItem from="1614207436840" duration="5616000" />
-      <workItem from="1614327105074" duration="16408000" />
-      <workItem from="1614683594213" duration="6259000" />
-      <workItem from="1614805717302" duration="23889000" />
-      <workItem from="1614976755584" duration="61945000" />
-      <workItem from="1615665890277" duration="8295000" />
-      <workItem from="1615726509015" duration="23806000" />
-      <workItem from="1616100752909" duration="10050000" />
-      <workItem from="1616154556905" duration="57377000" />
-      <workItem from="1616537545504" duration="16826000" />
-      <workItem from="1616621333810" duration="10093000" />
-      <workItem from="1616686358286" duration="18567000" />
-      <workItem from="1616764598190" duration="41000" />
-      <workItem from="1616878872381" duration="12252000" />
-      <workItem from="1616965472025" duration="10386000" />
-      <workItem from="1617012412849" duration="22331000" />
-      <workItem from="1617103518993" duration="17494000" />
-      <workItem from="1617202657205" duration="18360000" />
-      <workItem from="1617298176071" duration="13643000" />
-      <workItem from="1617363923884" duration="8756000" />
-      <workItem from="1617450337271" duration="607000" />
-      <workItem from="1617453612176" duration="10146000" />
-      <workItem from="1617538289217" duration="21225000" />
-      <workItem from="1617640012446" duration="648000" />
-      <workItem from="1617727868835" duration="21000" />
-      <workItem from="1617826834943" duration="4314000" />
-      <workItem from="1617894499936" duration="20385000" />
-      <workItem from="1617926944995" duration="122000" />
-      <workItem from="1618000502230" duration="7176000" />
-      <workItem from="1618061998511" duration="21383000" />
-      <workItem from="1618146453877" duration="15301000" />
-      <workItem from="1618238765643" duration="8414000" />
-      <workItem from="1618314722710" duration="2823000" />
-      <workItem from="1618429696748" duration="9914000" />
-      <workItem from="1618487216985" duration="25662000" />
-      <workItem from="1618589277239" duration="10485000" />
-      <workItem from="1618657246835" duration="28932000" />
-      <workItem from="1618751452505" duration="13792000" />
+      <updated>1619878253980</updated>
+      <workItem from="1619878258753" duration="19750000" />
     </task>
     <servers />
   </component>

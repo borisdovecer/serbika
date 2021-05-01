@@ -11,6 +11,7 @@ class Deca extends React.Component{
         reci: Reci,
         btn: true,
         image: bg1,
+        loading: true,
         animation: [
             { name : "", delay: 6000, audio: false },
             { name : "", delay: 12000, audio: false },
@@ -22,7 +23,7 @@ class Deca extends React.Component{
     }
 
     componentDidMount() {
-        this.setState({reci: this.props.reci})
+        this.setState({reci: this.props.reci, loading: false})
         if(this.props.bg === 3){
             this.setState({image: bg3})
         }
@@ -38,14 +39,15 @@ class Deca extends React.Component{
                 this.setState({animation:ani})
             }, a.delay )
         })
-
     }
 
     render() {
+        const { reci, image, animation, loading } = this.state
         return(
+            loading ? null :
             <div className={"main"}>
                 <img src={"./slides/button.png"} alt="btn" className="main-button" style={{   marginTop: "32%"}} onClick={this.props.nextSlide}/>
-                { this.state.animation[4].audio ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{   marginTop: "32%"}} onClick={this.props.nextSlide}/> : null}
+                { animation[4].audio ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{   marginTop: "32%"}} onClick={this.props.nextSlide}/> : null}
                 <PreloadImage
                     style={{
                         position: 'absolute',
@@ -58,27 +60,24 @@ class Deca extends React.Component{
                         backgroundPosition: 'center',
                         backgroundRepeat: 'repeat'
                     }}
-                    src={this.state.image}
+                    src={image}
                     duration={"1000ms"}
                 />
-                {this.state.reci.map( (rec, i) =>
+                {reci.map( (rec, i) =>
                     <h1 key={i}
-                         className={this.state.animation[i].name}
+                         className={animation[i].name}
                          id={i}
                          style={{fontSize: "3.2vw",fontWeight:"bold", position:"absolute", marginTop:rec.top, left:rec.left}}
                     >{rec.name}</h1>)}
                 <audio autoPlay src={"./audio/31 nasi drugari su napisali nesto hajde procitaj.mp3"} />
-                {this.state.animation[0].audio ? <audio autoPlay src={"./audio/" + this.state.reci[0].audio} /> : null}
-                {this.state.animation[1].audio ? <audio autoPlay src={"./audio/" + this.state.reci[1].audio} /> : null}
-                {this.state.animation[2].audio ? <audio autoPlay src={"./audio/" + this.state.reci[2].audio} /> : null}
-                {this.state.animation[3].audio ? <audio autoPlay src={"./audio/" + this.state.reci[3].audio} /> : null}
-                {this.state.animation[4].audio ? <audio autoPlay src={"./audio/" + this.state.reci[4].audio} /> : null}
-                {this.state.animation[5].audio && this.state.reci.length > 5 ? <audio autoPlay src={"./audio/" + this.state.reci[5].audio} /> : null}
+                {animation.map((a, i) =>
+                    a.found ?
+                    <audio autoPlay src={"./audio/" + reci[i].audio} /> : null
+                )}
 
             </div>
         )
     }
-
 }
 
 export default Deca

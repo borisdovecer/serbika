@@ -1,7 +1,5 @@
 import React from 'react'
 import PreloadImage from "react-preload-image";
-
-
 import bg from './bg-spirala.jpg'
 
 class Spirala extends React.Component {
@@ -10,14 +8,16 @@ class Spirala extends React.Component {
         recenica: [],
         image: bg,
         order: 1,
-        complete : true
+        complete : true,
+        loading: true
     }
 
     componentDidMount() {
         const {slova, recenica} = this.props
         this.setState({slova, recenica})
-
-
+        setTimeout( () => {
+            this.setState({ loading:false })
+        }, 300)
     }
 
     handleClick = (e) => {
@@ -35,14 +35,12 @@ class Spirala extends React.Component {
         }
     }
 
-
     render() {
-        let {order} = this.state
+        let {order, slova, recenica, complete, image, loading} = this.state
         return(
             <div className={'main'} style={{textAlign:"center"}}>
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop:"17.7%", right:"26%"}} onClick={this.props.nextSlide}/> : null}
-
-                {this.state.recenica.map( (slovo, i) =>
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop:"17.7%", right:"26%"}} onClick={this.props.nextSlide}/> : null}
+                {recenica.map( (slovo, i) =>
                     <div key={i}
                          style={{
                              width:"4.5vw",
@@ -59,9 +57,7 @@ class Spirala extends React.Component {
                             name={slovo.name}
                             style={{width:"100%", position:"relative"}}
                         /> : null}
-
                     </div>
-
                     )}
 
                 <PreloadImage
@@ -70,16 +66,17 @@ class Spirala extends React.Component {
                         width: '100%',
                         height: '50vw',
                         backgroundColor: '#fff',
-
                     }}
                     innerStyle={{
                         backgroundSize: "contain",
                         backgroundPosition: 'right',
                         backgroundRepeat: 'no-repeat'
                     }}
-                    src={this.state.image}
+                    src={image}
                 />
-                {this.state.slova.map( (slovo, i) =>
+                {loading ? null :
+                <span>
+                {slova.map( (slovo, i) =>
                     <img key={i}
                          src={"./slides/" + slovo.image}
                          alt={"A"}
@@ -88,6 +85,7 @@ class Spirala extends React.Component {
                          style={{width:"5%", position:"absolute", marginTop:slovo.top, left:slovo.left}}
                          onClick={slovo.order === order ? this.handleClick : null}
                     /> )}
+                </span>}
             </div>
         )
     }

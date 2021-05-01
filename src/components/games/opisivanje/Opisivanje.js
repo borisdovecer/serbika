@@ -1,17 +1,16 @@
 import React from 'react'
 
-import OpisDz06 from "./OpisDz06"
-
 class Opisivanje extends React.Component {
     state = {
-        opis: OpisDz06,
+        opis: [],
         selected: "",
         guessed: "",
-        complete: true
+        complete: true,
+        loading: true
     }
 
     componentDidMount() {
-        this.setState({ opis: this.props.opis})
+        this.setState({ opis: this.props.opis, loading: false})
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -22,7 +21,6 @@ class Opisivanje extends React.Component {
     handleClick = (e) => {
         let id = e.target.attributes.id.value
         let row = e.target.attributes.row.value
-
         if(row === "lower"){
             this.setState({ selected: id })
         }else{
@@ -32,7 +30,6 @@ class Opisivanje extends React.Component {
 
     compare = () => {
         let { opis, selected, guessed } = this.state
-
         if(selected === guessed && guessed !== ""){
             setTimeout( () => {
                 opis.forEach( function (p){
@@ -67,10 +64,11 @@ class Opisivanje extends React.Component {
     }
 
     render() {
-        const {opis} = this.state
+        const {opis, complete, loading} = this.state
         return(
+            loading ? null :
             <div className={'main'}>
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
                 <div className="row justify-content-center "  style={{marginLeft: 0, marginRight: 0}} >
                     {opis.map((p,i) =>
                             <div key={i} className={"col-lg-4 col-md-5 col-sm-5"}>
