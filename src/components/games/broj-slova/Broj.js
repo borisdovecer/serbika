@@ -13,16 +13,14 @@ class Broj extends React.Component {
     componentDidMount() {
         let {items} = this.props
         let count = items.length
-        this.setState({ items: items, list:items[0].list, count})
+        this.setState({ items, list:items[0].list, count})
     }
 
     onDragEnd = (result) => {
         let {items, arr, count} = this.state
-
         if (!result.destination) {
             return;
         }
-
         items.forEach(s => {
             if(result.destination.droppableId ===  "droppable-"+s.in && result.draggableId === "item-"+s.name ){
                 s.found = true
@@ -31,7 +29,6 @@ class Broj extends React.Component {
                 this.setState({items, arr})
             }
         })
-
         if(arr.length === count){
             this.setState({complete: true})
         }

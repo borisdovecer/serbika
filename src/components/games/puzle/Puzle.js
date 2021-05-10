@@ -3,10 +3,6 @@ import { DragDropContext, Draggable, Droppable  } from 'react-beautiful-dnd'
 import PreloadImage from "react-preload-image";
 import ovir from './puzle-okvir.jpg'
 
-const getListStyle = isDraggingOver => ({
-    padding: 8,
-});
-
 class Puzle extends React.Component{
     state = {
         image:ovir,
@@ -19,28 +15,21 @@ class Puzle extends React.Component{
     componentDidMount() {
         const pojmovi = this.props.game
         const random = [...pojmovi].sort(() => Math.random() - 0.5)
-
         this.setState({pojmovi, random})
     }
 
     onDragEnd = (result) => {
-        let {pojmovi, arr} = this.state
-
+        let {pojmovi} = this.state
         if (!result.destination) {
             return;
         }
         pojmovi.forEach(p => {
             if(result.destination.droppableId ===  "droppable"+p.name && result.draggableId === "item-"+p.name){
                 p.found = true
-                // pojmovi.splice(result.source.index, 1)
-                arr.push(p.id)
-                this.setState({pojmovi, arr})
-            }else{
-                return;
+                this.setState({pojmovi})
             }
-        } )
+        })
     }
-
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         this.complete()
@@ -50,9 +39,7 @@ class Puzle extends React.Component{
         let {pojmovi} = this.state
         let count = 0
         pojmovi.forEach(p => {
-            if(p.found){
-                count++
-            }
+            count += p.found ? 1 : 0
         })
         if(count === pojmovi.length){
             setTimeout( () => {
@@ -62,8 +49,7 @@ class Puzle extends React.Component{
     }
 
     render() {
-        const {pojmovi,random, complete} = this.state
-
+        const {pojmovi,random, complete, image} = this.state
         return(
             <div className={"main"}>
                 <PreloadImage
@@ -73,20 +59,14 @@ class Puzle extends React.Component{
                         height: '100vh',
                         backgroundColor: '#222222'
                     }}
-                    src={this.state.image}
-                    duration={"1000ms"}
-                    lazy={true}
+                    src={image}
                 />
                 {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
                 <DragDropContext onDragEnd={this.onDragEnd}>
                     <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
-
                         {pojmovi.map((s, i) =>
-                            <div style={{marginTop:"10%"}}>
-                                <Droppable droppableId={"droppable"+s.name }
-                                           key={i}
-                                           index={s.id}
-                                >
+                            <div key={i} style={{marginTop:"10%"}}>
+                                <Droppable droppableId={"droppable"+s.name } index={s.id} >
                                     {(provided, snapshot) => (
                                         <div
                                             ref={provided.innerRef}
@@ -94,7 +74,6 @@ class Puzle extends React.Component{
                                             {...provided.dragHandleProps}
                                             className={"puzzle-box"}
                                             style={{width: "250px", height: "250px"}}
-
                                         >
                                             {s.found ? <div >
                                                 <p style={{position:'relative', marginTop:"40%", zIndex:"14", fontSize:"25px"}}>{s.name}</p>
@@ -104,8 +83,6 @@ class Puzle extends React.Component{
                                                     style={{width:"90%", position:"absolute",top:"5%", left:"5%"}}
                                                 />
                                             </div> : null}
-
-
                                         </div>
                                     )}
                                 </Droppable>
@@ -118,14 +95,13 @@ class Puzle extends React.Component{
                                 <div
                                     {...provided.droppableProps}
                                     ref={provided.innerRef}
-                                    style={getListStyle(snapshot.isDraggingOver)}
+                                    style={{ padding: 8 }}
                                 >
                                     {random.map((item, index) => (
-                                        <div  style={{display:"inline-block"}} >
-                                            {item.found ? null :  <Draggable key={item.id} draggableId={"item-"+item.name} index={index} >
+                                        <div key={index} style={{display:"inline-block"}} >
+                                            {item.found ? null : <Draggable key={item.id} draggableId={"item-"+item.name} index={index} >
                                                 {(provided, snapshot) => (
                                                     <div
-                                                        key={item.id}
                                                         ref={provided.innerRef}
                                                         {...provided.draggableProps}
                                                         {...provided.dragHandleProps}
@@ -143,7 +119,6 @@ class Puzle extends React.Component{
                                                 )}
                                             </Draggable>}
                                         </div>
-
                                     ))
                                     }
                                     {provided.placeholder}

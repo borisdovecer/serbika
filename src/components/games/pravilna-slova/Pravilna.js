@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 class Pravilna extends React.Component {
     state = {
         slova: [],
@@ -10,7 +9,6 @@ class Pravilna extends React.Component {
 
     componentDidMount() {
         this.setState({ slova: this.props.slova })
-
     }
 
     handleClick = (e) => {
@@ -27,15 +25,9 @@ class Pravilna extends React.Component {
                 this.setState({slova})
             })
             this.setState({arr})
-            this.complete()
-            console.log(slova)
-        }
-    }
-
-    complete = () => {
-        const {arr} = this.state
-        if(arr.length >= 5) {
-            this.setState({complete: true})
+            if(arr.length >= 5) {
+                this.setState({complete: true})
+            }
         }
     }
 
@@ -61,8 +53,7 @@ class Pravilna extends React.Component {
                             />
                         </div>
                     )}
-
-                </div>
+                    </div>
                 </div>
             </div>
         )

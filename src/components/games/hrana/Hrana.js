@@ -20,12 +20,10 @@ class Hrana extends React.Component {
     }
 
     onDragEnd = (result) => {
-        let {items, arr} = this.state
-
+        let {items, arr, count} = this.state
         if (!result.destination) {
             return;
         }
-
         items.forEach(s => {
             if(result.destination.droppableId ===  "droppable-"+s.in && result.draggableId === "item-"+s.name ){
                 s.found = true
@@ -34,9 +32,7 @@ class Hrana extends React.Component {
                 this.setState({items, arr})
             }
         })
-
-        if(this.state.arr.length === this.state.count){
-
+        if(arr.length === count){
             this.setState({complete: true})
         }
     }
@@ -79,12 +75,10 @@ class Hrana extends React.Component {
                                 style={{width:"33%", position:"absolute", top: "15%", right:"0"}}
                             >
                                 {items.map((item, index) => (
-                                    <div >
-                                        <Draggable key={item.id} draggableId={"item-"+item.name} index={index} >
+                                    <div key={item.id} >
+                                        <Draggable  draggableId={"item-"+item.name} index={index} >
                                             {(provided, snapshot) => (
-                                                <div
-                                                    key={item.id}
-                                                    ref={provided.innerRef}
+                                                <div ref={provided.innerRef}
                                                     {...provided.draggableProps}
                                                     {...provided.dragHandleProps}
                                                     className={"hrana-ponudjena"}
@@ -94,9 +88,7 @@ class Hrana extends React.Component {
                                             )}
                                         </Draggable>
                                     </div>
-
-                                ))
-                                }
+                                ))}
                             </div>
                         )}
                     </Droppable>
@@ -104,8 +96,6 @@ class Hrana extends React.Component {
             </div>
         )
     }
-
-
 }
 
 export default Hrana

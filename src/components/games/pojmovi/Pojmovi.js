@@ -1,18 +1,18 @@
 import React from 'react'
-import PojmoviSh from "./PojmoviSh"
 
 class Pojmovi extends React.Component {
     state = {
-        pojmovi: PojmoviSh,
+        pojmovi: [],
         selected: "",
         guessed: "",
         order: 0,
-        complete : true
+        complete : true,
+        loading: true
     }
 
     componentDidMount() {
         const {pojmovi} = this.props
-        this.setState({pojmovi})
+        this.setState({pojmovi, loading: false})
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -22,16 +22,12 @@ class Pojmovi extends React.Component {
     handleClick = (e) => {
         let id = e.target.attributes.id.value
         let o = e.target.attributes.order.value
-      //  let name = e.target.attributes.name.value
         let {pojmovi, selected, guessed} = this.state
-
         if(!selected){
             this.setState({ selected: pojmovi[o].poj[id],order: parseInt(o)  })
         }else if(!guessed){
             this.setState({ guessed: pojmovi[o].poj[id],order: parseInt(o) })
-
         }
-
     }
 
     compare = (o) => {
@@ -47,7 +43,6 @@ class Pojmovi extends React.Component {
                 this.setState({pojmovi:pojmovi, selected: "", guessed: "", order:0 })
             }, 200 )
         }  else
-
         if(guessed?.name) {
             setTimeout( () => {
                 this.setState({ selected: "", guessed: "", order:0 })
@@ -55,17 +50,16 @@ class Pojmovi extends React.Component {
         }
     }
 
-
     complete = () => {
 
     }
 
     render() {
-        const {pojmovi} = this.state
-
+        const {pojmovi, complete, loading} = this.state
         return(
+            loading ? null :
             <div className={'main'} style={{textAlign:"center"}}>
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
                 <div style={{padding:"4%"}}>
                     {pojmovi.map((poj, ind) =>
                         <div style={{ width:"45%", height:"40vh",position:"relative",  display:"inline-block", border:"3px solid black", borderRadius:"25px", margin:"0 5px" }}>

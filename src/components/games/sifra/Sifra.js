@@ -44,10 +44,10 @@ class Sifra extends React.Component {
     }
 
     render() {
-        const {simbols} = this.state
+        const { simbols, complete, arr1, hint } = this.state
         return(
             <div className={"main"} >
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
                 <img src={"./slides/devojcica-sifra.jpg"}  alt={'sifra'} width={"35%"} style={{position:"absolute", zIndex:-1, padding:"2%" }} />
                 <div style={{position:"absolute", right:"40%", top:"10%"}}>
                     {simbols.map((s, i) =>
@@ -58,14 +58,14 @@ class Sifra extends React.Component {
                     )}
                 </div>
                 <div style={{paddingLeft:"8%", paddingTop:"30%"}}>
-                    {this.state.hint.map((a, i) =>
+                    {hint.map((a, i) =>
                         <div key={i} style={{display:"inline-block", width:"50px"}}>
                             <img style={{width:"100%"}} src={"./slides/"+a } alt={"simbol"}/>
                         </div>
                     )}
                 </div>
                 <div style={{paddingLeft:"8%"}}>
-                    {this.state.arr1.map((a, i) =>
+                    {arr1.map((a, i) =>
                         <div key={i} style={{display:"inline-block", paddingRight:"15px", paddingLeft:"15px"}}>
                             <h3 onClick={this.hadleClick} id={i} pos={"next"} >+</h3>
                             <h3>{a}</h3>

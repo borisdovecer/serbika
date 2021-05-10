@@ -4,6 +4,7 @@ import LineTo from 'react-lineto'
 class Povezivanje extends React.Component {
     state = {
         pojmovi: [],
+        arr: [],
         selected: "",
         guessed: "",
         complete: true
@@ -11,7 +12,6 @@ class Povezivanje extends React.Component {
 
     componentDidMount() {
         this.setState({pojmovi: this.props.povezivanje.sort(() => Math.random() - 0.5)})
-
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -27,16 +27,16 @@ class Povezivanje extends React.Component {
         if(localName === "h1"){
             this.setState({guessed: id})
         }
-
     }
 
     compare = () => {
-        let {pojmovi, selected, guessed} = this.state
+        let {pojmovi, arr, selected, guessed} = this.state
         if(selected === guessed && guessed !== ""){
             setTimeout( () => {
                 pojmovi.forEach( function (p){
                     if(p.id === parseInt(selected)){
                         p.found = true
+                        arr.push(p)
                     }
                 })
                 this.complete()
@@ -50,13 +50,8 @@ class Povezivanje extends React.Component {
     }
 
     complete = () => {
-        let arr = []
-        this.state.pojmovi.forEach( p => {
-            if(p.found){
-                arr.push(true)
-            }
-        })
-        if(arr.length === this.state.pojmovi.length){
+        let { pojmovi, arr } = this.state
+        if(arr.length === pojmovi.length){
             this.setState({ complete: true })
         }
     }
@@ -66,12 +61,10 @@ class Povezivanje extends React.Component {
         return (
             <div className={"main text-center"} >
                 {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop: "20%"}} onClick={this.props.nextSlide}/> : null}
-
                 {pojmovi.map((p, i) =>
-                    <div>
+                    <div key={i}>
                         {p.found ?  <LineTo from={p.name} to={p.id} /> : null}
                         <img src={"./slides/" + p.image }
-                             key={i}
                              id={p.id}
                              className={p.name}
                              alt={"A"}

@@ -1,15 +1,6 @@
 import React from 'react'
 import { DragDropContext, Draggable, Droppable  } from 'react-beautiful-dnd'
 
-const grid = 8;
-
-const getListStyle = isDraggingOver => ({
-    padding: grid,
-    width: 500,
-    height: 500
-});
-
-
 class Slagalica extends React.Component {
     state = {
         slagalica: {word:[], ponudjena:[]},
@@ -19,12 +10,10 @@ class Slagalica extends React.Component {
 
     componentDidMount() {
         this.setState({slagalica: this.props.slagalica})
-
     }
 
     onDragEnd = (result) => {
         let {slagalica, arr} = this.state
-
         if (!result.destination) {
             return;
         }
@@ -35,49 +24,50 @@ class Slagalica extends React.Component {
                 arr.push(s.id)
                 this.setState({slagalica, arr})
             }
-        } )
-
+        })
+        if(arr.length === slagalica.word.length){
+            this.setState({complete: true})
+        }
     }
 
     render() {
-        let {slagalica} = this.state
+        let {slagalica, complete} = this.state
         return(
             <div className={'main text-center'}>
-                {this.state.complete ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
                 <DragDropContext onDragEnd={this.onDragEnd}>
                     <img
                         src={"./slides/" + slagalica.image}
                         alt={"A"}
-                        style={{width:"25%", position:"absolute", left:"38vw"}}
+                        style={{height: "35vh", position:"absolute", left:"38vw"}}
                     />
                     <Droppable droppableId="droppable2">
                         {(provided, snapshot) => (
                             <div
                                 {...provided.droppableProps}
                                 ref={provided.innerRef}
-                                style={getListStyle(snapshot.isDraggingOver)}
+                                style={{ padding: 8,
+                                    width: 500,
+                                    height: 500}}
                             >
                                 {slagalica?.ponudjena.map((item, index) => (
-                                    <div style={{display:"inline-block"}} >
-                                    <Draggable key={item.id} draggableId={"item-"+item.name} index={index} >
-                                {(provided, snapshot) => (
-                                    <div
-                                    key={item.id}
-                                    ref={provided.innerRef}
-                                {...provided.draggableProps}
-                                {...provided.dragHandleProps}
-                                    className={"slagalica-ponudjena"}
-                                    >
-                                    <img
-                                    src={"./slides/" + item.image}
-                                    alt={"A"}
-                                    style={{width:"80%"}}
-                                    />
+                                    <div key={index} style={{display:"inline-block"}} >
+                                        <Draggable draggableId={"item-"+item.name} index={index} >
+                                        {(provided, snapshot) => (
+                                            <div ref={provided.innerRef}
+                                                {...provided.draggableProps}
+                                                {...provided.dragHandleProps}
+                                                className={"slagalica-ponudjena"}
+                                            >
+                                                <img
+                                                    src={"./slides/" + item.image}
+                                                    alt={"A"}
+                                                    style={{width:"80%"}}
+                                                />
+                                            </div>
+                                        )}
+                                        </Draggable>
                                     </div>
-                                    )}
-                                    </Draggable>
-                                    </div>
-
                                     ))
                                 }
                                 {provided.placeholder}
@@ -95,7 +85,6 @@ class Slagalica extends React.Component {
                                      {...provided.draggableProps}
                                      {...provided.dragHandleProps}
                                      className={"slagalica-box"}
-
                                 >
                                     {s.found ? <img
                                         src={"./slides/" + s.image}
@@ -107,19 +96,10 @@ class Slagalica extends React.Component {
                             )}
                     </Droppable>
                     )}
-
-                    {/*{slagalica.ponudjena.map((s, i) =>*/}
-                {/*    <img*/}
-                {/*        src={"./slides/" + s.image}*/}
-                {/*        alt={"A"}*/}
-                {/*        style={{width:"10%", position:"absolute",top:s.top, left:s.left}}*/}
-                {/*    />*/}
-                {/*)}*/}
                 </DragDropContext>
             </div>
         )
     }
-
 }
 
 export default Slagalica

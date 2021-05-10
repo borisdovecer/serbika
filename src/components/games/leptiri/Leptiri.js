@@ -1,9 +1,8 @@
 import React from "react"
-import Reci06 from "./Reci06"
 
 class Leptiri extends React.Component {
     state = {
-        reci: Reci06,
+        reci: [],
         selected: "",
         guessed: "",
         complete: true
@@ -15,26 +14,21 @@ class Leptiri extends React.Component {
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         this.compare()
-     //   this.complete()
     }
 
     handleClick = (e) => {
         let id = e.target.attributes.id.value
         let name = e.target.attributes.name.value
-       // let {reci} = this.state
-        console.log(id)
         if (name === "text"){
             this.setState({ guessed: id })
         }
         if (name === "img"){
             this.setState({ selected: id })
         }
-
     }
 
     compare = () => {
         let {reci, selected, guessed} = this.state
-
         if(selected === guessed && guessed !== ""){
             setTimeout( () => {
                 reci.forEach( function (p){
@@ -73,7 +67,6 @@ class Leptiri extends React.Component {
                     </div>
                     )}
                     {reci.map((x,i) =>
-
                     <div
                         onClick={this.handleClick}
                         id={x.id}

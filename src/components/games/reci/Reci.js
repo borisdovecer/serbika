@@ -51,7 +51,7 @@ class Reci extends React.Component{
                     />)}
                 {word === 0 ? <DelayedAudio/> : null}
                 {reci.map((r, i) =>
-                    word === r.id ? <audio autoPlay src={"./audio/" + r.audio} /> : null
+                    word === r.id ? <audio key={i} autoPlay src={"./audio/" + r.audio} /> : null
                 )}
             </div>
         )
