@@ -194,6 +194,20 @@ const Slova01 = [
         audio1: "",
         audio2: "",
         delay: 8000
+    },
+    {
+        veliko: "radno-11.png",
+        malo: "radno-12.png",
+        audio1: "",
+        audio2: "",
+        delay: 8000
+    },
+    {
+        veliko: "radno-57.png",
+        malo: "radno-58.png",
+        audio1: "",
+        audio2: "",
+        delay: 8000
     }
 ]
 
