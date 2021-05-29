@@ -77,14 +77,23 @@ class Spirala extends React.Component {
                 {loading ? null :
                 <span>
                 {slova.map( (slovo, i) =>
-                    <img key={i}
-                         src={"./slides/" + slovo.image}
-                         alt={"A"}
-                         order={slovo.order ? slovo.order : 0}
-                         name={slovo.name}
-                         style={{width:"5%", position:"absolute", marginTop:slovo.top, left:slovo.left}}
-                         onClick={slovo.order === order ? this.handleClick : null}
-                    /> )}
+                    <p key={i}
+                        order={slovo.order ? slovo.order : 0}
+                        name={slovo.name}
+                        style={{ color:slovo.color, fontSize: '3.8vw', position:"absolute", marginTop:slovo.top, left:slovo.left }}
+                        onClick={slovo.order === order ? this.handleClick : null}
+                    >
+                        { slovo.name }
+                    </p>
+                    // <img key={i}
+                    //      src={"./slides/" + slovo.image}
+                    //      alt={"A"}
+                    //      order={slovo.order ? slovo.order : 0}
+                    //      name={slovo.name}
+                    //      style={{width:"5%", position:"absolute", marginTop:slovo.top, left:slovo.left}}
+                    //      onClick={slovo.order === order ? this.handleClick : null}
+                    // />
+                )}
                 </span>}
             </div>
         )

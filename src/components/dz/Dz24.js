@@ -17,12 +17,7 @@ import Video from '../games/video/Video'
 import Spajanje from "../games/spajanje/Spajanje"
 import pojmoviSpajanje from "../games/spajanje/PojmoviDj";
 import SlikaIRec from "../games/slika-i-rec/SlikaIRec"
-import Rec1 from "../games/slika-i-rec/RecDjak";
-import Rec2 from "../games/slika-i-rec/RecSmudj";
-import Rec3 from "../games/slika-i-rec/RecLadja";
-import Rec4 from "../games/slika-i-rec/RecOrudje";
-import Rec5 from "../games/slika-i-rec/RecSundjer";
-import Rec6 from "../games/slika-i-rec/RecMindjuse";
+import rec from '../games/slika-i-rec/ReciDz24';
 import Pravilna from "../games/pravilna-slova/Pravilna"
 import pravilna from "../games/pravilna-slova/SlovaDz24"
 import Opisivanje from "../games/opisivanje/Opisivanje"
@@ -32,8 +27,7 @@ import Items from "../games/dzak/Items24"
 import Leptiri from "../games/leptiri/Leptiri"
 import leptiri from "../games/leptiri/Reci24";
 import Spirala from "../games/spirala/Spirala";
-import SlovaC from "../games/spirala/SlovaC";
-import RecenicaC from "../games/spirala/RecenicaC";
+import slova from "../games/spirala/SlovaDj";
 import Pojmovi from "../games/pojmovi/Pojmovi";
 import pojmovi from "../games/pojmovi/PojmoviDj"
 import Povezivanje from "../games/povezivanje/Povezivanje";
@@ -59,15 +53,12 @@ import broj from "../games/broj-slova/Broj23";
 import Ukrstenica from "../games/ukrstenica/Ukrstenica";
 import uReci from "../games/ukrstenica/Reci23";
 
-import '../../App.css';
-import '../../bootstrap.css'
-
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo Dj.mp3'
 const letter = "radno-11.png"
 
 class Dz24 extends React.Component {
     state = {
-        slide: 1
+        slide: 10
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )
@@ -84,17 +75,17 @@ class Dz24 extends React.Component {
                 { this.state.slide === 7 ? <Reci reci={reci} bg={2} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 8 ? <Deca reci={DecaReci} bg={3} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 9 ? <Spajanje game={pojmoviSpajanje} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 10 ? <SlikaIRec rec={Rec1} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 11 ? <SlikaIRec rec={Rec2} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 12 ? <SlikaIRec rec={Rec3} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 13 ? <SlikaIRec rec={Rec4} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 14 ? <SlikaIRec rec={Rec5} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 15 ? <SlikaIRec rec={Rec6} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 10 ? <SlikaIRec rec={rec[0]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 11 ? <SlikaIRec rec={rec[1]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 12 ? <SlikaIRec rec={rec[2]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 13 ? <SlikaIRec rec={rec[3]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 14 ? <SlikaIRec rec={rec[4]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 15 ? <SlikaIRec rec={rec[5]} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 16 ? <Pravilna slova={pravilna} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 17 ? <Opisivanje opis={opisivanje} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 18 ? <Dzak items={Items} letter={letter} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 19 ? <Leptiri reci={leptiri} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 20 ? <Spirala slova={SlovaC} recenica={RecenicaC} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Spirala slova={slova.slova} recenica={slova.recenica} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 21 ? <Pojmovi pojmovi={pojmovi} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 22 ? <Povezivanje povezivanje={povezivanje} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 23 ? <Slagalica slagalica={SlagalicaNoc} nextSlide={this.nextSlide}/> : null}

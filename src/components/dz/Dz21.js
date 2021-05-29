@@ -17,12 +17,7 @@ import Video from '../games/video/Video'
 import Spajanje from "../games/spajanje/Spajanje"
 import PojmoviC from "../games/spajanje/PojmoviC";
 import SlikaIRec from "../games/slika-i-rec/SlikaIRec"
-import RecCrv from "../games/slika-i-rec/RecCrv";
-import RecCvet from "../games/slika-i-rec/RecCvet";
-import RecDeca from "../games/slika-i-rec/RecDeca";
-import RecMesec from "../games/slika-i-rec/RecMesec";
-import RecDvorac from "../games/slika-i-rec/RecDvorac";
-import RecCamac from "../games/slika-i-rec/RecCamac";
+import rec from '../games/slika-i-rec/RecDz21'
 import Pravilna from "../games/pravilna-slova/Pravilna"
 import SlovaDz21 from "../games/pravilna-slova/SlovaDz21"
 import Opisivanje from "../games/opisivanje/Opisivanje"
@@ -32,8 +27,7 @@ import Items21 from "../games/dzak/Items21"
 import Leptiri from "../games/leptiri/Leptiri"
 import Reci21 from "../games/leptiri/Reci21";
 import Spirala from "../games/spirala/Spirala";
-import SlovaC from "../games/spirala/SlovaC";
-import RecenicaC from "../games/spirala/RecenicaC";
+import slova from "../games/spirala/SlovaC";
 import Povezivanje from "../games/povezivanje/Povezivanje";
 import povezivanje from "../games/povezivanje/PojmoviC"
 import Slagalica from "../games/slagalica/Slagalica";
@@ -44,9 +38,6 @@ import SlagalicaMesec from "../games/slagalica/SlagalicaMesec";
 import SlagalicaUlica from "../games/slagalica/SlagalicaUlica";
 import Pojmovi from "../games/pojmovi/Pojmovi";
 import pojmovi from "../games/pojmovi/PojmoviC"
-
-import '../../App.css';
-import '../../bootstrap.css'
 import Puzle from "../games/puzle/Puzle";
 import puzle from "../games/puzle/PuzleDz21a";
 import puzle2 from "../games/puzle/PuzleDz21b";
@@ -72,8 +63,6 @@ class Dz21 extends React.Component {
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )
 
-    backToMain = () => this.setState({ slide:0})
-
     render() {
         return (
             <div style={{width: "100%"}} >
@@ -86,17 +75,17 @@ class Dz21 extends React.Component {
                 { this.state.slide === 7 ? <Reci reci={ReciC} bg={2} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 8 ? <Deca reci={DecaReci} bg={3} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 9 ? <Spajanje game={PojmoviC} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 10 ? <SlikaIRec rec={RecCrv} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 11 ? <SlikaIRec rec={RecCvet} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 12 ? <SlikaIRec rec={RecDeca} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 13 ? <SlikaIRec rec={RecMesec} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 14 ? <SlikaIRec rec={RecDvorac} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 15 ? <SlikaIRec rec={RecCamac} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 10 ? <SlikaIRec rec={rec[0]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 11 ? <SlikaIRec rec={rec[1]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 12 ? <SlikaIRec rec={rec[2]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 13 ? <SlikaIRec rec={rec[3]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 14 ? <SlikaIRec rec={rec[4]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 15 ? <SlikaIRec rec={rec[5]} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 16 ? <Pravilna slova={SlovaDz21} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 17 ? <Opisivanje opis={OpisDz21} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 18 ? <Dzak items={Items21} letter={letter} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 19 ? <Leptiri reci={Reci21} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 20 ? <Spirala slova={SlovaC} recenica={RecenicaC} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 20 ? <Spirala slova={slova.slova} recenica={slova.recenica} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 21 ? <Pojmovi pojmovi={pojmovi} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 22 ? <Povezivanje povezivanje={povezivanje} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 23 ? <Slagalica slagalica={SlagalicaCrv} nextSlide={this.nextSlide}/> : null}
@@ -115,7 +104,7 @@ class Dz21 extends React.Component {
                 { this.state.slide === 36 ? <Sifra sifra={kod} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 37 ? <Broj items={broj} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 38 ? <Ukrstenica words={uReci} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 39 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 39 ? <Video /> : null}
             </div>
         );
     }

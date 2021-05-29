@@ -65,7 +65,7 @@ class Main extends React.Component {
                   <img src={"./slides/dz21start.png"} alt="btn" name={21} className="main-button" style={{marginTop: "34%" ,left:"26%", width:"10%"}} onClick={this.SelectDz} />
                   <img src={"./slides/dz22start.png"} alt="btn" name={22} className="main-button" style={{marginTop: "34%" ,left:"38%", width:"10%"}} onClick={this.SelectDz} />
                   <img src={"./slides/dz23start.png"} alt="btn" name={23} className="main-button" style={{marginTop: "34%" ,left:"50%", width:"10%"}} onClick={this.SelectDz} />
-                  <img src={"./slides/play.png"} alt="btn" name={23} className="main-button" style={{marginTop: "34%" ,left:"62%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/play.png"} alt="btn" name={24} className="main-button" style={{marginTop: "34%" ,left:"62%", width:"10%"}} onClick={this.SelectDz} />
               </div> : null}
               {dz === 1 ? <Dz01 /> : null }
               {dz === 2 ? <Dz02 /> : null }

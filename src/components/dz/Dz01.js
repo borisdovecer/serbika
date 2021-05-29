@@ -4,21 +4,16 @@ import Slova from '../games/slova/Slova'
 import Drvo from '../games/drvo/Drvo'
 import DrvoSlova from "../games/drvo/SlovaA"
 import DrvoSlova2 from "../games/drvo/SlovaM"
-
 import Tabla from "../games/tabla/Tabla"
 import Skrivalice from "../games/skrivalice/Skrivalice"
 import SlovaA from '../games/skrivalice/SlovaA'
 import SlovaM from "../games/skrivalice/SlovaM"
 import bgLivada from '../games/skrivalice/bg-livada.jpg'
 import bgMost from '../games/skrivalice/bg-most.jpg'
-
 import Karte from "../games/karte/Karte"
 import KarteA from "../games/karte/KarteA"
 import KarteM from "../games/karte/KarteM"
 import Video from '../games/video/Video'
-
-import '../../App.css';
-import '../../bootstrap.css'
 
 const audioTabla = '05 hajde sada ti napisi nase slovo A.mp3'
 const audioTabla2 = '16 hajde sada ti napisi nas enovo slovo M.mp3'
@@ -29,8 +24,6 @@ class Dz01 extends React.Component {
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )
-
-    backToMain = () => this.setState({ slide:0})
 
     render() {
         return (
@@ -50,7 +43,7 @@ class Dz01 extends React.Component {
                 { this.state.slide === 13 ? <Skrivalice slova={SlovaM} bg={bgMost} letter={"radno-29.png"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 14 ? <Main slide={"medal"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 15 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 16 ? <Video end={this.backToMain}/> : null}
+                { this.state.slide === 16 ? <Video /> : null}
             </div>
         );
     }

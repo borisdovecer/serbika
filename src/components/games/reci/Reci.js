@@ -36,6 +36,7 @@ class Reci extends React.Component{
             loading ? null :
             <div className={"main"}>
                 <PreloadImage style={InnerStyle} src={image} />
+                <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/>
                 {word === 0 ? <audio autoPlay src={"./audio/20 sada kad znamo jos dva slova hajde da citamo.mp3"} /> : null}
                 {word === reci.length ? <audio autoPlay src={"./audio/FENOMENALNO.mp3"} /> : null}
                 {word === reci.length ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}

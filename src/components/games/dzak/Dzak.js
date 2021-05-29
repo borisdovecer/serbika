@@ -6,7 +6,7 @@ class Dzak extends React.Component {
         items: [],
         arr: [],
         letter: "",
-        complete: false
+        complete: true
     }
 
     componentDidMount() {

@@ -31,7 +31,7 @@ class SlikaIRec extends React.Component {
                 <div className={'main'}>
                 {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
                 <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
-                    <img src={"./slides/" + rec.image }  alt={'card'} style={{height:"35vh"}}/>
+                    <img src={"./slides/" + rec.image }  alt={'card'} style={{height:"55vh"}}/>
                     {rec.ponudjena.map((p,i) =>
                         <div key={i} style={{width: "10vw", height:"10vw" }}>
                             <img

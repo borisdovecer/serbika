@@ -35,8 +35,8 @@ class Pravilna extends React.Component {
         const {slova, complete} = this.state
         return(
             <div className={"main"}>
-                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" onClick={this.props.nextSlide}/> : null}
-                <div className={'container'}>
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{ marginTop: '12%' }} onClick={this.props.nextSlide}/> : null}
+                <div className={'container'} style={{ marginTop: '17vh' }}>
                     <div className="row text-center justify-content-center"  style={{marginLeft: 0, marginRight: 0}} >
                     {slova.map((p,i) =>
                         <div style={{width: "20%", height:"300px" }}>

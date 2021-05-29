@@ -57,7 +57,7 @@ class Sifra extends React.Component {
                         </div>
                     )}
                 </div>
-                <div style={{paddingLeft:"8%", paddingTop:"30%"}}>
+                <div style={{paddingLeft:"8%", paddingTop:"32%"}}>
                     {hint.map((a, i) =>
                         <div key={i} style={{display:"inline-block", width:"50px"}}>
                             <img style={{width:"100%"}} src={"./slides/"+a } alt={"simbol"}/>
@@ -66,7 +66,7 @@ class Sifra extends React.Component {
                 </div>
                 <div style={{paddingLeft:"8%"}}>
                     {arr1.map((a, i) =>
-                        <div key={i} style={{display:"inline-block", paddingRight:"15px", paddingLeft:"15px"}}>
+                        <div key={i} style={{display:"inline-block", paddingRight:"20px", paddingLeft:"19px"}}>
                             <h3 onClick={this.hadleClick} id={i} pos={"next"} >+</h3>
                             <h3>{a}</h3>
                             <h3 onClick={this.hadleClick}  id={i} pos={"prev"}>-</h3>

@@ -9,7 +9,7 @@ class Skrivalice extends React.Component{
         slova: [],
         completearr: [],
         sc: false,
-        complete: false,
+        complete: true,
         loading: true
     }
     componentDidMount() {
