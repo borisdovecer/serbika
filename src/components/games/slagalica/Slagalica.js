@@ -20,7 +20,7 @@ class Slagalica extends React.Component {
         slagalica.word.forEach(s => {
             if(result.destination.droppableId ===  "droppable"+s.name && result.draggableId === "item-"+s.name){
                 s.found = true
-                slagalica.ponudjena.splice(result.source.index, 1)
+                // slagalica.ponudjena.splice(result.source.index, 1)
                 arr.push(s.id)
                 this.setState({slagalica, arr})
             }
@@ -46,13 +46,11 @@ class Slagalica extends React.Component {
                             <div
                                 {...provided.droppableProps}
                                 ref={provided.innerRef}
-                                style={{ padding: 8,
-                                    width: 500,
-                                    height: 500}}
+                                style={{ padding: 8, width: 500, height: 500}}
                             >
                                 {slagalica?.ponudjena.map((item, index) => (
                                     <div key={index} style={{display:"inline-block"}} >
-                                        <Draggable draggableId={"item-"+item.name} index={index} >
+                                        <Draggable draggableId={"item-"+item.name} index={item.id} >
                                         {(provided, snapshot) => (
                                             <div ref={provided.innerRef}
                                                 {...provided.draggableProps}

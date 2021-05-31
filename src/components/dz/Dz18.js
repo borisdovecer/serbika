@@ -33,15 +33,9 @@ import povezivanje from "../games/povezivanje/PojmoviH"
 import Slagalica from "../games/slagalica/Slagalica";
 import Pojmovi from "../games/pojmovi/Pojmovi";
 import pojmovi from "../games/pojmovi/PojmoviH"
-import SlagalicaSah from "../games/slagalica/SlagalicaSah";
-import SlagalicaOsmeh from "../games/slagalica/SlagalicaOsmeh";
-import SlagalicaHleb from "../games/slagalica/SlagalicaHleb";
-import SlagalicaHrcak from "../games/slagalica/SlagalicaHrcak";
-import SlagalicaHemijska from "../games/slagalica/SlagalicaHemijska";
+import slagalica from "../games/slagalica/SlagalicaDz18";
 import Puzle from "../games/puzle/Puzle";
-import puzle from "../games/puzle/PuzleDz18a";
-import puzle2 from "../games/puzle/PuzleDz18b";
-import puzle3 from "../games/puzle/PuzleDz18c";
+import puzle from "../games/puzle/PuzleDz18";
 import Hrana from "../games/hrana/Hrana";
 import hrana from "../games/hrana/HranaDz18";
 import Sifra from "../games/sifra/Sifra";
@@ -83,14 +77,14 @@ class Dz18 extends React.Component {
                 { this.state.slide === 19 ? <Spirala slova={slova.slova} recenica={slova.recenica} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 20 ? <Pojmovi pojmovi={pojmovi} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 21 ? <Povezivanje povezivanje={povezivanje} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 22 ? <Slagalica slagalica={SlagalicaSah} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 23 ? <Slagalica slagalica={SlagalicaOsmeh} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 24 ? <Slagalica slagalica={SlagalicaHleb} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 25 ? <Slagalica slagalica={SlagalicaHrcak} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 26 ? <Slagalica slagalica={SlagalicaHemijska} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 27 ? <Puzle game={puzle} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 28 ? <Puzle game={puzle2} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 29 ? <Puzle game={puzle3} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 22 ? <Slagalica slagalica={slagalica[0]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 23 ? <Slagalica slagalica={slagalica[1]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 24 ? <Slagalica slagalica={slagalica[2]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 25 ? <Slagalica slagalica={slagalica[3]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 26 ? <Slagalica slagalica={slagalica[4]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 27 ? <Puzle game={puzle[0]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 28 ? <Puzle game={puzle[1]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 29 ? <Puzle game={puzle[2]} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 30 ? <Zoo animals={zoo} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 31 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 32 ? <Hrana hrana={hrana.dorucak} nextSlide={this.nextSlide}/> : null}

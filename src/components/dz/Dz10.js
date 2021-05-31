@@ -34,8 +34,7 @@ import povezivanje from "../games/povezivanje/PojmoviL"
 import Pojmovi from "../games/pojmovi/Pojmovi"
 import pojmovi from "../games/pojmovi/PojmoviL"
 import Reci10 from "../games/leptiri/Reci10";
-import SlagalicaL from "../games/slagalica/SlagalicaL";
-import SlagalicaPlaneta from "../games/slagalica/SlagalicaPlaneta";
+import slagalica from "../games/slagalica/SlagalicaDz10";
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo L.mp3'
 const letter = "radno-25.png"
@@ -72,8 +71,8 @@ class Dz10 extends React.Component {
                 { this.state.slide === 20 ? <Spirala slova={slova.slova} recenica={slova.recenica} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 21 ? <Pojmovi pojmovi={pojmovi} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 22 ? <Povezivanje povezivanje={povezivanje} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 23 ? <Slagalica slagalica={SlagalicaL} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 24 ? <Slagalica slagalica={SlagalicaPlaneta} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 23 ? <Slagalica slagalica={slagalica[0]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 24 ? <Slagalica slagalica={slagalica[1]} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 25 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 26 ? <Video /> : null}
             </div>

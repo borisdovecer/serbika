@@ -30,18 +30,12 @@ import slova from "../games/spirala/SlovaV";
 import Povezivanje from "../games/povezivanje/Povezivanje";
 import povezivanje from "../games/povezivanje/PojmoviV"
 import Slagalica from "../games/slagalica/Slagalica";
+import slagalica from "../games/slagalica/SlagalicaDz13"
 import Pojmovi from "../games/pojmovi/Pojmovi";
 import pojmovi from "../games/pojmovi/PojmoviV"
 import Reci13 from "../games/leptiri/Reci13";
-import SlagalicaSova from "../games/slagalica/SlagalicaSova";
-import SlagalicaOlovka from "../games/slagalica/SlagalicaOlovka";
-import SlagalicaMravi from "../games/slagalica/SlagalicaMravi";
-import SlagalicaKlovn from "../games/slagalica/SlagalicaKlovn";
-import SlagalicaSljiva from "../games/slagalica/SlagalicaSljiva";
 import Puzle from "../games/puzle/Puzle"
 import puzle from "../games/puzle/PuzleDz13"
-import puzle2 from "../games/puzle/PuzleDz13b"
-import puzle3 from "../games/puzle/PuzleDz13c"
 
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo V.mp3'
 const letter = "radno-05.png"
@@ -78,14 +72,14 @@ class Dz13 extends React.Component {
                 { this.state.slide === 20 ? <Spirala slova={slova.slova} recenica={slova.recenica} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 21 ? <Pojmovi pojmovi={pojmovi} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 22 ? <Povezivanje povezivanje={povezivanje} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 23 ? <Slagalica slagalica={SlagalicaSova} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 24 ? <Slagalica slagalica={SlagalicaOlovka} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 25 ? <Slagalica slagalica={SlagalicaMravi} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 26 ? <Slagalica slagalica={SlagalicaKlovn} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 27 ? <Slagalica slagalica={SlagalicaSljiva} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 28 ? <Puzle game={puzle} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 29 ? <Puzle game={puzle2} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 30 ? <Puzle game={puzle3} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 23 ? <Slagalica slagalica={slagalica[0]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 24 ? <Slagalica slagalica={slagalica[1]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 25 ? <Slagalica slagalica={slagalica[2]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 26 ? <Slagalica slagalica={slagalica[3]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 27 ? <Slagalica slagalica={slagalica[4]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 28 ? <Puzle game={puzle[0]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 29 ? <Puzle game={puzle[1]} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 30 ? <Puzle game={puzle[2]} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 31 ? <Main slide={"pehar"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 32 ? <Video /> : null}
             </div>
