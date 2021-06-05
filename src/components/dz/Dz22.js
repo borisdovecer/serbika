@@ -27,7 +27,7 @@ import Items22 from "../games/dzak/Items22"
 import Leptiri from "../games/leptiri/Leptiri"
 import Reci22 from "../games/leptiri/Reci22";
 import Spirala from "../games/spirala/Spirala";
-import slova from "../games/spirala/SlovaC";
+import slova from "../games/spirala/SlovaNj";
 import Pojmovi from "../games/pojmovi/Pojmovi";
 import pojmovi from "../games/pojmovi/PojmoviNj"
 import Povezivanje from "../games/povezivanje/Povezivanje";
@@ -52,7 +52,7 @@ const letter = "radno-33.png"
 
 class Dz22 extends React.Component {
     state = {
-        slide: 1
+        slide: 20
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )

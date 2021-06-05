@@ -12,7 +12,7 @@ const ReciDz24 = [
         ponudjena: ["radno-11.png", "radno-43.png", "radno-29.png"]
     },
     {
-        image: "slika-ladja.png",
+        image: "slika-brod.png",
         slova: ["radno-25.png", "radno-01.png","", "radno-01.png"],
         correct: "radno-11.png",
         ponudjena: ["radno-45.png", "radno-11.png", "radno-17.png"]

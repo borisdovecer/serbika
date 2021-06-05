@@ -52,7 +52,7 @@ const letter = "radno-53.png"
 
 class Dz21 extends React.Component {
     state = {
-        slide: 1
+        slide: 20
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )

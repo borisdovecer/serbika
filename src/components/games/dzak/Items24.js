@@ -23,7 +23,7 @@ const Items24 = [
     {
         id: 4,
         name: "lopta",
-        image: "slika-lopta.png",
+        image: "slika-carapa.png",
         in: "yellow",
         found: false
     },
