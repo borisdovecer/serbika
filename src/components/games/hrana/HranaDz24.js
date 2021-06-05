@@ -1,4 +1,4 @@
-const HranaDz23 = {
+const HranaDz24 = {
     dorucak: [
         { title: "Доручак", id: 1, name: "Чоколино", in: "yellow", found: false },
         { id: 2, name: "Сендвич", in: "yellow", found: false },
@@ -26,4 +26,4 @@ const HranaDz23 = {
     ]
 }
 
-export default HranaDz23
+export default HranaDz24

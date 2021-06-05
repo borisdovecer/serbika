@@ -23,6 +23,7 @@ import Dz21 from "./dz/Dz21"
 import Dz22 from "./dz/Dz22"
 import Dz23 from "./dz/Dz23"
 import Dz24 from "./dz/Dz24"
+import Dz25 from "./dz/Dz25"
 
 class Main extends React.Component {
     state = {
@@ -66,6 +67,7 @@ class Main extends React.Component {
                   <img src={"./slides/dz22start.png"} alt="btn" name={22} className="main-button" style={{marginTop: "34%" ,left:"38%", width:"10%"}} onClick={this.SelectDz} />
                   <img src={"./slides/dz23start.png"} alt="btn" name={23} className="main-button" style={{marginTop: "34%" ,left:"50%", width:"10%"}} onClick={this.SelectDz} />
                   <img src={"./slides/play.png"} alt="btn" name={24} className="main-button" style={{marginTop: "34%" ,left:"62%", width:"10%"}} onClick={this.SelectDz} />
+                  <img src={"./slides/play.png"} alt="btn" name={25} className="main-button" style={{marginTop: "34%" ,left:"74%", width:"10%"}} onClick={this.SelectDz} />
               </div> : null}
               {dz === 1 ? <Dz01 /> : null }
               {dz === 2 ? <Dz02 /> : null }
@@ -90,6 +92,7 @@ class Main extends React.Component {
               {dz === 21 ? <Dz21 /> : null }
               {dz === 22 ? <Dz22 /> : null }
               {dz === 23 ? <Dz23 /> : null }
+              {dz === 24 ? <Dz24 /> : null }
               {dz === 24 ? <Dz24 /> : null }
             </div>
         )

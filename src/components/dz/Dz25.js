@@ -50,9 +50,9 @@ import uReci from "../games/ukrstenica/Reci24";
 const audioTabla = '16 hajde sada ti napisi nas enovo slovo Dj.mp3'
 const letter = "radno-11.png"
 
-class Dz24 extends React.Component {
+class Dz25 extends React.Component {
     state = {
-        slide: 20
+        slide: 1
     };
 
     nextSlide = () => this.setState( prevState => {return { slide: prevState.slide + 1 }} )
@@ -104,4 +104,4 @@ class Dz24 extends React.Component {
     }
 }
 
-export default Dz24;
+export default Dz25;

@@ -1,4 +1,4 @@
-const SifraDz23 = {
+const SifraDz24 = {
     pocetna: ["?", "?", "?", "?", "?","?","?","?"],
     tacna: ["Ћ","И","Р","И","Л","И","Ц","А"],
     ponudjena: ["Њ","Ћ","Л","Р","У","Ц","А","Ј","М","И","С","Н"],
@@ -13,4 +13,4 @@ const SifraDz23 = {
     ]
 }
 
-export default SifraDz23
+export default SifraDz24
