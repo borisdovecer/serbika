@@ -9,7 +9,7 @@ class Puzle extends React.Component{
         pojmovi: [],
         random: [],
         arr:[],
-        complete: false
+        complete: true
     }
 
     componentDidMount() {

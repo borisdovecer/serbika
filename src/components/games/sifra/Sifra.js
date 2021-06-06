@@ -8,7 +8,7 @@ class Sifra extends React.Component {
         c: 0,
         hint: [],
         simbols: [],
-        complete: false
+        complete: true
     }
 
     componentDidMount() {

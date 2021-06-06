@@ -2,7 +2,7 @@ import React from 'react'
 import { DragDropContext, Draggable, Droppable  } from 'react-beautiful-dnd'
 
 const getListStyle = isDraggingOver => ({
-    width: 600,
+    width: '50vw',
     position:"absolute",
     left:"50%"
 });
@@ -12,7 +12,7 @@ class Ukrstenica extends React.Component {
         arr: [],
         words: [],
         random:[],
-        complete: false
+        complete: true
     }
 
     componentDidMount() {

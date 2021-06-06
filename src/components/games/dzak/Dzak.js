@@ -35,13 +35,14 @@ class Dzak extends React.Component {
         const {items, complete} = this.state
         return(
             <div className={"main"}>
-                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop:"0%"}} onClick={this.props.nextSlide}/> : null}
+                {complete ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop:"20%"}} onClick={this.props.nextSlide}/> : null}
                 <DragDropContext onDragEnd={this.onDragEnd}>
                     <Droppable droppableId="droppable2">
                         {(provided, snapshot) => (
                             <div
                                 {...provided.droppableProps}
                                 ref={provided.innerRef}
+                                style={{ height:'40vh' }}
                             >
                                 {items.map((item, index) => (
                                     <div style={{display:"inline-block", width:"20%"}} >
@@ -57,7 +58,7 @@ class Dzak extends React.Component {
                                                     <img
                                                         src={"./slides/" + item.image}
                                                         alt={"A"}
-                                                        style={{width:"80%"}}
+                                                        style={{width:"70%"}}
                                                     />
                                                 </div>
                                             )}
@@ -73,7 +74,7 @@ class Dzak extends React.Component {
                                 ref={provided.innerRef}
                                 {...provided.draggableProps}
                                 {...provided.dragHandleProps}
-                                style={{width:"40%",position:"relative" ,marginTop:"20%" ,left:"15%"}}
+                                style={{width:"40%",position:"relative" ,marginTop:"10%" ,left:"15%"}}
                             >
                                 <img
                                     src={"./slides/dzak.jpg"}
@@ -94,7 +95,7 @@ class Dzak extends React.Component {
                                 ref={provided.innerRef}
                                 {...provided.draggableProps}
                                 {...provided.dragHandleProps}
-                                style={{width:"40%",position:"relative" ,marginTop:"20%" ,left:"45%"}}
+                                style={{width:"40%",position:"relative" ,marginTop:"10%" ,left:"45%"}}
                             >
                                 <img
                                     src={"./slides/dzak-x.jpg"}

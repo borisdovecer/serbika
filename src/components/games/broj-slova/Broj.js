@@ -7,7 +7,7 @@ class Broj extends React.Component {
         arr: [],
         list: [],
         count: 0,
-        complete: false
+        complete: true
     }
 
     componentDidMount() {

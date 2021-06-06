@@ -5,7 +5,7 @@ class Zoo extends React.Component {
         animals: [],
         count: 0,
         arr:[],
-        complete: false
+        complete: true
     }
 
     componentDidMount() {

@@ -7,7 +7,7 @@ class Hrana extends React.Component {
         arr: [],
         count: 0,
         title: "",
-        complete: false
+        complete: true
     }
 
     componentDidMount() {
