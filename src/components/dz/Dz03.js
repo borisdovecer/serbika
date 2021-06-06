@@ -33,14 +33,14 @@ class Dz03 extends React.Component {
         return (
             <div style={{width: "100%"}} >
                 { this.state.slide === 1 ? <Main slide={"main"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 2 ? <Slova slovo={4} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 2 ? <Slova slovo={'i'} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slova={DrvoSlova} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 4 ? <Tabla audio={audioTabla} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 5 ? <Karte cards={KarteI}  nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 6 ? <Skrivalice slova={SlovaSkrivalice} bg={bg1}  letter={"radno-19.png"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 7 ? <Main slide={"star"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 8 ? <Main slide={"train"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 9 ? <Slova slovo={5} bg={2} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 9 ? <Slova slovo={'s'} bg={2} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 10 ? <Drvo slova={DrvoSlova2} bg={2} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 11 ? <Tabla audio={audioTabla2} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 12 ? <Karte cards={KarteS}  nextSlide={this.nextSlide}/> : null}

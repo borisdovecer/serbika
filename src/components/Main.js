@@ -27,16 +27,16 @@ import Dz25 from "./dz/Dz25"
 
 class Main extends React.Component {
     state = {
-            dz: 0
+        dz: 0
     }
 
     SelectDz = (e) => {
-            let dz = e.target.attributes.name.value
-            this.setState({dz:parseInt(dz)})
+        let dz = e.target.attributes.name.value
+        this.setState({dz:parseInt(dz)})
     }
 
     render() {
-        let {dz} = this.state
+        const {dz} = this.state
         return (
             <div style={{width: "100%"}} >
               {dz === 0 ? <div style={{ width: "100%", height: "100vh", backgroundColor:"#625a52"}}>
@@ -93,7 +93,7 @@ class Main extends React.Component {
               {dz === 22 ? <Dz22 /> : null }
               {dz === 23 ? <Dz23 /> : null }
               {dz === 24 ? <Dz24 /> : null }
-              {dz === 24 ? <Dz24 /> : null }
+              {dz === 25 ? <Dz25 /> : null }
             </div>
         )
     }

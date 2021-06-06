@@ -2,53 +2,53 @@ import React from 'react'
 import Main from '../games/main/Main'
 import Slova from '../games/slova/Slova'
 import Drvo from '../games/drvo/Drvo'
-import DrvoSlova from "../games/drvo/SlovaDj"
+import DrvoSlova from "../games/drvo/SlovaDz"
 import Tabla from "../games/tabla/Tabla"
 import Skrivalice from "../games/skrivalice/Skrivalice"
 import SlovaSkrivalice from '../games/skrivalice/SlovaA'
 import bg1 from '../games/skrivalice/bg-pecina.jpg'
 import Karte from "../games/karte/Karte"
-import karte from "../games/karte/KarteDj";
+import karte from "../games/karte/KarteDz";
 import Reci from "../games/reci/Reci"
-import reci from "../games/reci/ReciDj"
+import reci from "../games/reci/ReciDz"
 import Deca from '../games/deca/Deca'
-import DecaReci from '../games/deca/ReciDj'
+import DecaReci from '../games/deca/ReciDz'
 import Video from '../games/video/Video'
 import Spajanje from "../games/spajanje/Spajanje"
-import pojmoviSpajanje from "../games/spajanje/PojmoviDj";
+import pojmoviSpajanje from "../games/spajanje/PojmoviDz";
 import SlikaIRec from "../games/slika-i-rec/SlikaIRec"
-import rec from '../games/slika-i-rec/ReciDz24';
+import rec from '../games/slika-i-rec/RecDz25';
 import Pravilna from "../games/pravilna-slova/Pravilna"
-import pravilna from "../games/pravilna-slova/SlovaDz24"
+import pravilna from "../games/pravilna-slova/SlovaDz25"
 import Opisivanje from "../games/opisivanje/Opisivanje"
-import opisivanje from "../games/opisivanje/OpisDz24"
+import opisivanje from "../games/opisivanje/OpisDz25"
 import Dzak from "../games/dzak/Dzak"
-import Items from "../games/dzak/Items24"
+import Items from "../games/dzak/Items25"
 import Leptiri from "../games/leptiri/Leptiri"
-import leptiri from "../games/leptiri/Reci24";
+import leptiri from "../games/leptiri/Reci25";
 import Spirala from "../games/spirala/Spirala";
-import slova from "../games/spirala/SlovaDj";
+import slova from "../games/spirala/SlovaDz";
 import Pojmovi from "../games/pojmovi/Pojmovi";
-import pojmovi from "../games/pojmovi/PojmoviDj"
+import pojmovi from "../games/pojmovi/PojmoviDz"
 import Povezivanje from "../games/povezivanje/Povezivanje";
-import povezivanje from "../games/povezivanje/PojmoviDj"
+import povezivanje from "../games/povezivanje/PojmoviDz"
 import Slagalica from "../games/slagalica/Slagalica";
-import slagalica from "../games/slagalica/SlagalicaDz24";
+import slagalica from "../games/slagalica/SlagalicaDz25";
 import Puzle from "../games/puzle/Puzle";
-import puzle from "../games/puzle/PuzleDz24";
+import puzle from "../games/puzle/PuzleDz25";
 import Hrana from "../games/hrana/Hrana";
-import hrana from "../games/hrana/HranaDz24";
+import hrana from "../games/hrana/HranaDz25";
 import Sifra from "../games/sifra/Sifra";
-import kod from "../games/sifra/SifraDz24";
+import kod from "../games/sifra/SifraDz25";
 import Zoo from "../games/zoo/Zoo";
-import zoo from "../games/zoo/ZooDz24";
+import zoo from "../games/zoo/ZooDz25";
 import Broj from "../games/broj-slova/Broj";
-import broj from "../games/broj-slova/Broj24";
+import broj from "../games/broj-slova/Broj25";
 import Ukrstenica from "../games/ukrstenica/Ukrstenica";
-import uReci from "../games/ukrstenica/Reci24";
+import uReci from "../games/ukrstenica/Reci25";
 
-const audioTabla = '16 hajde sada ti napisi nas enovo slovo Dj.mp3'
-const letter = "radno-11.png"
+const audioTabla = '16 hajde sada ti napisi nas enovo slovo Dz.mp3'
+const letter = "radno-57.png"
 
 class Dz25 extends React.Component {
     state = {
@@ -61,7 +61,7 @@ class Dz25 extends React.Component {
         return (
             <div style={{width: "100%"}} >
                 { this.state.slide === 1 ? <Main slide={"main"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 2 ? <Slova slovo={28} bg={5} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 2 ? <Slova slovo={'dz'} bg={5} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slova={DrvoSlova} bg={3} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 4 ? <Tabla audio={audioTabla} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 5 ? <Karte cards={karte} nextSlide={this.nextSlide}/> : null}

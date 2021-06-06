@@ -1,4 +1,4 @@
-const ReciDj = [
+const ReciDz = [
     { id: 1, name: "Ђорђе", audio: "32 Sima.mp3", animation: "", top: "21%", left: "4.5%", found: false },
     { id: 2, name: "Ђурђа", audio: "33 Una.mp3", animation: "", top: "21%", left: "22%", found: false },
     { id: 3, name: "Ђурађ", audio: "34 Mita.mp3", animation: "", top: "21%", left: "35%", found: false },
@@ -7,4 +7,4 @@ const ReciDj = [
     { id: 6, name: "Ђина", audio: "37 Nena.mp3", animation: "", top: "21%", left: "86%", found: false }
 ]
 
-export default ReciDj
+export default ReciDz

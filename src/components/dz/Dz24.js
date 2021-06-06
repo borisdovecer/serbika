@@ -61,7 +61,7 @@ class Dz24 extends React.Component {
         return (
             <div style={{width: "100%"}} >
                 { this.state.slide === 1 ? <Main slide={"main"} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 2 ? <Slova slovo={28} bg={5} nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 2 ? <Slova slovo={'dj'} bg={5} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 3 ? <Drvo slova={DrvoSlova} bg={3} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 4 ? <Tabla audio={audioTabla} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 5 ? <Karte cards={karte} nextSlide={this.nextSlide}/> : null}

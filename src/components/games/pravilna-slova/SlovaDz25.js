@@ -1,4 +1,4 @@
-const SlovaDz24 = [
+const SlovaDz25 = [
     { id: 1, name: "cc", image: "radno-45.png", fake: false, found: false },
     { id: 2, name: "n", image: "radno-31.png", fake: false, found: false },
     { id: 3, name: "b", image: "radno-03.png", fake: true, found: false },
@@ -11,4 +11,4 @@ const SlovaDz24 = [
     { id: 10, name: "dj", image: "radno-11.png", fake: true, found: false },
 ]
 
-export default SlovaDz24
+export default SlovaDz25

@@ -1,4 +1,4 @@
-const PojmoviDj  = [
+const PojmoviDz  = [
     { poj: [
         { name: "dj", order: 0, image: "slika-djevrek.png", top: "20%", left: "1%", found: false },
         { name: "cc", order: 0, image: "slika-svece.png", top: "20%", left: "30%", found: false },
@@ -25,4 +25,4 @@ const PojmoviDj  = [
     }
 ]
 
-export default PojmoviDj
+export default PojmoviDz
