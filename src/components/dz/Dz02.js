@@ -43,7 +43,7 @@ class Dz02 extends React.Component {
                 { this.state.slide === 9 ? <Slova slovo={'o'} bg={2} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 10 ? <Drvo slova={DrvoSlova2} bg={2} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 11 ? <Tabla audio={audioTabla2} bg={2} nextSlide={this.nextSlide}/> : null}
-                { this.state.slide === 12 ? <Karte slide={"o"} cards={KarteO}  nextSlide={this.nextSlide}/> : null}
+                { this.state.slide === 12 ? <Karte cards={KarteO}  nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 13 ? <Skrivalice slova={SlovaSkrivalice2} bg={bgO} letter={"radno-35.png"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 14 ? <Main slide={"medal"} nextSlide={this.nextSlide}/> : null}
                 { this.state.slide === 15 ? <Reci reci={ReciTO} nextSlide={this.nextSlide}/> : null}

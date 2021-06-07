@@ -20,19 +20,18 @@ class Drvo extends React.Component {
 
     componentDidMount() {
         const {slova,bg} = this.props
-        let position = [...slova]
+        const position = [...slova]
         let bgg
         switch (bg) {
             case 2: bgg=bg2; break;
             case 3: bgg=bg3; break;
             default: bgg=bg1;
         }
-
+        console.log(position);
         this.setState({
             image: bgg,
             slova: slova.sort(() => Math.random() - 0.5),
-            position: position,
-            loading: false
+            position: position
         })
     }
 
@@ -62,9 +61,8 @@ class Drvo extends React.Component {
     }
 
     render() {
-        let { slova, image, position, upperComplete, lowerComplete, err, sc, loading} = this.state
+        let { slova, image, position, upperComplete, lowerComplete, err, sc} = this.state
         return(
-            loading ? null :
             <div className={"main"} >
                 {lowerComplete ? <img src={"./slides/button.png"} alt="btn" className="main-button"  onClick={this.props.nextSlide}/> : null}
                 <PreloadImage
@@ -81,8 +79,9 @@ class Drvo extends React.Component {
                          value={slovo.value}
                          style={{width:"7%", position:"absolute", marginTop:position[i].top, left:position[i].left}}
                          onClick={this.handleClick}
-                    /> )}
-                <audio autoPlay src={"./audio/" + position[0].audio1} />
+                    />
+                )}
+                {/*<audio autoPlay src={"./audio/" + position[0].audio1} />*/}
                 {err ? <audio autoPlay src={"./audio/POKUSAJ JOS JEDANPUT.mp3"} /> : null}
                 {sc && !lowerComplete ? <audio autoPlay src={"./audio/BRAVO.mp3"} /> : null}
                 {upperComplete ? <audio autoPlay src={"./audio/" + position[0].audio2} /> : null}

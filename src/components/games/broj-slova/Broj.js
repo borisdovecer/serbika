@@ -17,7 +17,7 @@ class Broj extends React.Component {
     }
 
     onDragEnd = (result) => {
-        let {items, arr, count} = this.state
+        const {items, arr, count} = this.state
         if (!result.destination) {
             return;
         }
@@ -153,8 +153,7 @@ class Broj extends React.Component {
                         {(provided, snapshot) => (
                             <div
                                 {...provided.droppableProps}
-                                ref={provided.innerRef}
-                            >
+                                ref={provided.innerRef} >
                                 {items.map((item, index) => (
                                     <div style={{display:"inline-block", width:"15%"}} >
                                         <Draggable key={item.id} draggableId={"item-"+item.name} index={index} >
@@ -164,20 +163,16 @@ class Broj extends React.Component {
                                                     ref={provided.innerRef}
                                                     {...provided.draggableProps}
                                                     {...provided.dragHandleProps}
-                                                    className={"dzak-ponudjena"}
-                                                >
+                                                    className={"dzak-ponudjena"} >
                                                     <img
                                                         src={"./slides/" + item.image}
                                                         alt={"A"}
-                                                        style={{width:"80%"}}
-                                                    />
+                                                        style={{width:"80%"}} />
                                                 </div>
                                             )}
                                         </Draggable>
                                     </div>
-
-                                ))
-                                }
+                                ))}
                             </div>
                         )}
                     </Droppable>
@@ -186,8 +181,6 @@ class Broj extends React.Component {
             </div>
         )
     }
-
-
 }
 
 export default Broj

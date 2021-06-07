@@ -3,41 +3,102 @@
   <component name="ChangeListManager">
     <list default="true" id="280c46f3-ede2-4c44-91d9-1b20102c4174" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/slides/slika-dzacar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/slides/slog-ok.psd" beforeDir="false" afterPath="$PROJECT_DIR$/public/slides/slog-ok.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz24.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz24.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz02.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz02.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz07.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz07.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz08.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz08.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz09.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz09.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz10.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz11.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz12.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz13.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz13.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz14.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz14.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz15.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz15.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz16.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz16.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz17.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz17.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz18.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz18.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz19.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz19.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz20.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz20.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz21.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz21.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz22.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz22.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dz/Dz23.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz23.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dz/Dz25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dz/Dz25.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/games/broj-slova/Broj.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/broj-slova/Broj.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/broj-slova/Broj24.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/broj-slova/Broj24.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/broj-slova/Broj25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/broj-slova/Broj25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciDz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciDz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Dzak.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Dzak.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/hrana/Hrana.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/hrana/Hrana.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/hrana/HranaDz24.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/hrana/HranaDz24.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/hrana/HranaDz25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/hrana/HranaDz25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/karte/KarteDz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/karte/KarteDz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/leptiri/Reci25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/leptiri/Reci25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/opisivanje/OpisDz25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/opisivanje/OpisDz25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/pojmovi/PojmoviDz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/pojmovi/PojmoviDz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/povezivanje/PojmoviDz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/povezivanje/PojmoviDz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/pravilna-slova/SlovaDz25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/pravilna-slova/SlovaDz25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/puzle/Puzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/puzle/Puzle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/puzle/PuzleDz24.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/puzle/PuzleDz24.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/puzle/PuzleDz25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/puzle/PuzleDz25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/reci/ReciDz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/reci/ReciDz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/sifra/Sifra.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/sifra/Sifra.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/sifra/SifraDz24.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/sifra/SifraDz24.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/sifra/SifraDz25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/sifra/SifraDz25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/slagalica/SlagalicaDz25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/slagalica/SlagalicaDz25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/slika-i-rec/RecDz25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/slika-i-rec/RecDz25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/spajanje/PojmoviDz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/spajanje/PojmoviDz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/spirala/SlovaDz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/spirala/SlovaDz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/ukrstenica/Reci24.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/ukrstenica/Reci24.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/ukrstenica/Reci25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/ukrstenica/Reci25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/ukrstenica/Ukrstenica.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/ukrstenica/Ukrstenica.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/zoo/Zoo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/zoo/Zoo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/zoo/ZooDz25.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/zoo/ZooDz25.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/Deca.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/Deca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/Reci.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/Reci.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/Reci2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/Reci2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/Reci3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/Reci3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/Reci4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/Reci4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciB.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciC.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciCC.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciCC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciCh.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciCh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciD.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciD.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciF.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciF.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciG.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciJE.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciJE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciK.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciLJ.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciLJ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciNj.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciNj.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciSh.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciSh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciV.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciV.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/deca/ReciZh.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/deca/ReciZh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/Drvo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/Drvo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaB.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaC.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaCc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaCc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaCh.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaCh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaD.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaD.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaE.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaF.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaF.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaG.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaJ.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaJ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaK.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaLJ.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaLJ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaM.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaM.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaN.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaNj.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaNj.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaO.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaR.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaSH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaSH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaT.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaU.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaV.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaV.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/drvo/SlovaZh.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/drvo/SlovaZh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items06.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items06.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items07.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items07.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items08.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items08.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items09.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items09.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items10.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items11.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items12.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items13.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items13.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items14.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items14.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items15.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items15.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items16.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items16.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items17.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items17.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items18.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items18.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items19.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items19.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items20.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items20.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items21.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items21.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items22.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items22.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/dzak/Items23.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/dzak/Items23.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/hrana/HranaDz17.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/hrana/HranaDz17.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/hrana/HranaDz18.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/hrana/HranaDz18.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/hrana/HranaDz19.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/hrana/HranaDz19.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/hrana/HranaDz20.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/hrana/HranaDz20.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/hrana/HranaDz21.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/hrana/HranaDz21.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/hrana/HranaDz22.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/hrana/HranaDz22.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +150,7 @@
       <workItem from="1622918430589" duration="3793000" />
       <workItem from="1622966325569" duration="6310000" />
       <workItem from="1622974654007" duration="12706000" />
+      <workItem from="1623092424068" duration="5679000" />
     </task>
     <servers />
   </component>

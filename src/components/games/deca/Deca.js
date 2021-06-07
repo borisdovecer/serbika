@@ -30,7 +30,6 @@ class Deca extends React.Component{
         if(this.props.bg === 2){
             this.setState({image: bg2})
         }
-
         let ani = this.state.animation
         ani.forEach( a => {
             setTimeout( () => {
@@ -46,22 +45,12 @@ class Deca extends React.Component{
         return(
             loading ? null :
             <div className={"main"}>
-                <img src={"./slides/button.png"} alt="btn" className="main-button" style={{   marginTop: "32%"}} onClick={this.props.nextSlide}/>
+                <img src={"./slides/button.png"} alt="btn" className="main-button" style={{marginTop: "32%"}} onClick={this.props.nextSlide}/>
                 { animation[4].audio ? <img src={"./slides/button.png"} alt="btn" className="main-button" style={{   marginTop: "32%"}} onClick={this.props.nextSlide}/> : null}
                 <PreloadImage
-                    style={{
-                        position: 'absolute',
-                        width: '100%',
-                        height: '55vw',
-                        backgroundColor: '#222222'
-                    }}
-                    innerStyle={{
-                        backgroundSize: "contain",
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'repeat'
-                    }}
+                    style={{position: 'absolute', width: '100%', height: '55vw', backgroundColor: '#222222'}}
+                    innerStyle={{backgroundSize: "contain", backgroundPosition: 'center', backgroundRepeat: 'repeat'}}
                     src={image}
-                    duration={"1000ms"}
                 />
                 {reci.map( (rec, i) =>
                     <h1 key={i}
@@ -70,11 +59,7 @@ class Deca extends React.Component{
                          style={{fontSize: "3.2vw",fontWeight:"bold", position:"absolute", marginTop:rec.top, left:rec.left}}
                     >{rec.name}</h1>)}
                 <audio autoPlay src={"./audio/31 nasi drugari su napisali nesto hajde procitaj.mp3"} />
-                {animation.map((a, i) =>
-                    a.found ?
-                    <audio autoPlay src={"./audio/" + reci[i].audio} /> : null
-                )}
-
+                { animation.map((a, i) => a.found ? <audio autoPlay src={"./audio/" + reci[i].audio} /> : null )}
             </div>
         )
     }
